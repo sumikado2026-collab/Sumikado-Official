@@ -1,0 +1,10 @@
+.git
+.gitignore
+.vscode
+*.exe
+server.log
+node_modules
+Dockerfile
+.dockerignore
+cloudbuild.yaml
+nginx.conf
