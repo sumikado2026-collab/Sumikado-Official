@@ -196,6 +196,14 @@ img {
     align-items: center;
 }
 
+.brand-logo {
+    height: 36px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    object-fit: contain;
+}
+
 .brand-text {
     font-size: 1.5rem;
     color: var(--primary);
@@ -880,6 +888,18 @@ img {
 .line-btn:hover {
     background: #05a846;
     box-shadow: 0 4px 16px rgba(6,199,85,0.35);
+    transform: translateY(-2px);
+}
+
+.apple-btn {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.apple-btn:hover {
+    background: #1a1a1a;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
     transform: translateY(-2px);
 }
 
