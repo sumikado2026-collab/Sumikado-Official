@@ -1,0 +1,20 @@
+[2026-03-14 23:58:44] INFO  WEBrick 1.9.1
+[2026-03-14 23:58:44] INFO  ruby 2.6.10 (2022-04-12) [universal.arm64e-darwin24]
+[2026-03-14 23:58:44] INFO  WEBrick::HTTPServer#start: pid=45845 port=5173
+::1 - - [14/Mar/2026:23:59:11 CST] "GET / HTTP/1.1" 200 10357
+- -> /
+::1 - - [14/Mar/2026:23:59:11 CST] "GET /assets/S__51724315.jpg HTTP/1.1" 200 114729
+::1 - - [14/Mar/2026:23:59:11 CST] "GET /assets/S__51724314.jpg HTTP/1.1" 200 129943
+::1 - - [14/Mar/2026:23:59:11 CST] "GET /style.css HTTP/1.1" 200 14089
+http://localhost:5173/ -> /style.css
+http://localhost:5173/ -> /assets/S__51724314.jpg
+http://localhost:5173/ -> /assets/S__51724315.jpg
+::1 - - [14/Mar/2026:23:59:11 CST] "GET /app.js HTTP/1.1" 200 1080
+http://localhost:5173/ -> /app.js
+::1 - - [14/Mar/2026:23:59:11 CST] "GET /assets/S__51724316.jpg HTTP/1.1" 200 41832
+http://localhost:5173/ -> /assets/S__51724316.jpg
+[2026-03-14 23:59:12] ERROR '/favicon.ico' not found.
+::1 - - [14/Mar/2026:23:59:12 CST] "GET /favicon.ico HTTP/1.1" 404 282
+http://localhost:5173/ -> /favicon.ico
+[2026-03-15 00:49:53] INFO  going to shutdown ...
+[2026-03-15 00:49:53] INFO  WEBrick::HTTPServer#start done.
