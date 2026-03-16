@@ -24,8 +24,9 @@
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     
     /* Typography */
-    --font-sans: 'Outfit', sans-serif;
-    --font-serif: 'Noto Serif TC', serif;
+    /* English/Alphabet uses IPAex Mincho first; CJK falls back to Yu Mincho then Noto Serif JP */
+    --font-sans: 'IPAexMincho', 'IPAex Mincho', 'Yu Mincho', '游明朝', 'Noto Serif JP', serif;
+    --font-serif: 'IPAexMincho', 'IPAex Mincho', 'Yu Mincho', '游明朝', 'Noto Serif JP', serif;
 }
 
 /* Reset & Scaffolding */
