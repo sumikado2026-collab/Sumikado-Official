@@ -621,6 +621,12 @@ img {
     margin: 4rem 0;
 }
 
+.process-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .process-item {
     background: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
