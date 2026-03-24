@@ -21,15 +21,20 @@
                 <span class="brand-text">澄花堂 <span>SUMIKADŌ</span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#about">品牌理念</a></li>
-                <li><a href="#product">滴養之道</a></li>
-                <li><a href="#snow-realm">雪映之境</a></li>
-                <li><a href="#plans">訂購方案</a></li>
+                <li><a href="#home" data-i18n="nav.home">首頁</a></li>
+                <li><a href="#about" data-i18n="nav.about">品牌理念</a></li>
+                <li><a href="#product" data-i18n="nav.product">滴養之道</a></li>
+                <li><a href="#snow-realm" data-i18n="nav.snow-realm">雪映之境</a></li>
+                <li><a href="#plans" data-i18n="nav.plans">訂購方案</a></li>
             </ul>
             <div class="nav-actions">
-                <button id="openLogin" class="btn btn-outline" onclick="openMemberModal('login')">會員登入</button>
-                <button id="openRegister" class="btn btn-primary" onclick="openMemberModal('register')">立即註冊</button>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('tw')" title="繁體中文">🇹🇼 TW</button>
+                    <button class="lang-btn" onclick="setLanguage('jp')" title="日本語">🇯🇵 JP</button>
+                    <button class="lang-btn" onclick="setLanguage('en')" title="English">🇺🇸 EN</button>
+                </div>
+                <button id="openLogin" class="btn btn-outline" data-i18n="nav.login" onclick="openMemberModal('login')">會員登入</button>
+                <button id="openRegister" class="btn btn-primary" data-i18n="nav.register" onclick="openMemberModal('register')">立即註冊</button>
             </div>
         </div>
     </nav>
@@ -38,11 +43,11 @@
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-up">澄韻 滴養之道</h1>
-            <p class="fade-up delay-1">頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。</p>
+            <h1 class="fade-up" data-i18n="hero.title">澄韻 滴養之道</h1>
+            <p class="fade-up delay-1" data-i18n="hero.desc">頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。</p>
             <div class="hero-buttons fade-up delay-2">
-                <a href="#product" class="btn btn-primary btn-large">探索產品</a>
-                <a href="#about" class="btn btn-glass btn-large">了解品牌</a>
+                <a href="#product" class="btn btn-primary btn-large" data-i18n="hero.btn-explore">探索產品</a>
+                <a href="#about" class="btn btn-glass btn-large" data-i18n="hero.btn-about">了解品牌</a>
             </div>
         </div>
         <div class="hero-image-wrapper">
@@ -54,14 +59,14 @@
     <section class="intro-section" id="about">
         <div class="container intro-container">
             <div class="intro-text fade-in-scroll">
-                <h2>創辦人的話</h2>
-                <p>我們深信，最好的保養來自於純粹與堅持。澄花堂走遍山林，嚴選頂級烏骨雞，遵循古法滴煉，只為了將最精華的一滴，呈獻給懂得照顧自己的您。希望透過這份溫潤，陪伴您度過每一個需要力量的時刻。</p>
+                <h2 data-i18n="intro.founder-title">創辦人的話</h2>
+                <p data-i18n="intro.founder-text">我們深信，最好的保養來自於純粹與堅持。澄花堂走遍山林，嚴選頂級烏骨雞，遵循古法滴煉，只為了將最精華的一滴，呈獻給懂得照顧自己的您。希望透過這份溫潤，陪伴您度過每一個需要力量的時刻。</p>
             </div>
             <div class="intro-image fade-in-scroll right">
                 <img src="assets/創辦人形象照.jpg" alt="創辦人的話" class="rounded-image shadow-lg">
                 <div class="image-caption">
-                    <span>澄 花 堂 的 真 心 話</span>
-                    <small>【 和 您 一 起 守 護 健 康 】</small>
+                    <span data-i18n="intro.caption-title">澄 花 堂 的 真 心 話</span>
+                    <small data-i18n="intro.caption-subtitle">【 和 您 一 起 守 護 健 康 】</small>
                 </div>
             </div>
         </div>
@@ -70,26 +75,26 @@
     <section class="brand-story-section" id="brand-story">
         <div class="container brand-story-container">
             <div class="brand-story-header fade-up-scroll">
-                <h2>滴養之道 ‧ 雪映之境</h2>
-                <p class="brand-story-slogan">「一滴滴，皆是一步步。」</p>
-                <p class="brand-story-subtitle">"Every drop is a step forward." / "ひとしずくは、一歩一歩。"</p>
+                <h2 data-i18n="brand-story.title">滴養之道 ‧ 雪映之境</h2>
+                <p class="brand-story-slogan" data-i18n="brand-story.slogan">「一滴滴，皆是一步步。」</p>
+                <p class="brand-story-subtitle" data-i18n="brand-story.subtitle">"Every drop is a step forward." / "ひとしずくは、一歩一歩。"</p>
             </div>
 
             <div class="brand-story-grid">
                 <div class="brand-story-item path fade-up-scroll">
-                    <h3>滴養之道 <span class="en-label">| The Path of Essence</span></h3>
-                    <p>在澄花堂，我們相信真正的養生沒有捷徑。每一包滴雞精的誕生，都是在「滴養之道」上的扎實前行。堅持十二小時無水慢火滴萃，這不只是物理上的濃縮，更是職人靈魂的沉澱。每一步都要踏得穩健，才能換來那一滴滴溫潤的「元気」與「豐盈」。</p>
+                    <h3 data-i18n="brand-story.path-title">滴養之道 <span class="en-label">| The Path of Essence</span></h3>
+                    <p data-i18n="brand-story.path-desc">在澄花堂，我們相信真正的養生沒有捷徑。每一包滴雞精的誕生，都是在「滴養之道」上的扎實前行。堅持十二小時無水慢火滴萃，這不只是物理上的濃縮，更是職人靈魂的沉澱。每一步都要踏得穩健，才能換來那一滴滴溫潤的「元気」與「豐盈」。</p>
                 </div>
 
                 <div class="brand-story-item realm fade-up-scroll delay-1">
-                    <h3>雪映之境 <span class="en-label">| The Realm of Purity</span></h3>
-                    <p>而這條道的終點，是「雪映之境」。這是由台灣在地雪耳與鮮果交織出的純淨理想。沒有繁瑣的添加，只有如初雪映照般清澈的光輝。這份輕盈、天然與純粹，是我們對美好生活最極致的追求。</p>
+                    <h3 data-i18n="brand-story.realm-title">雪映之境 <span class="en-label">| The Realm of Purity</span></h3>
+                    <p data-i18n="brand-story.realm-desc">而這條道的終點，是「雪映之境」。這是由台灣在地雪耳與鮮果交織出的純淨理想。沒有繁瑣的添加，只有如初雪映照般清澈的光輝。這份輕盈、天然與純粹，是我們對美好生活最極致的追求。</p>
                 </div>
             </div>
 
             <div class="brand-story-footer fade-up-scroll">
-                <p class="mission-text">從扎實的「道」到光輝的「境」，澄花堂與您一起，走得慢、走得穩，走向理想的健康境界。</p>
-                <p class="jp-translation">私たちは實直に「滴養之道」を歩み、純粋な輝き「雪映之境」へとあなたを導きます。</p>
+                <p class="mission-text" data-i18n="brand-story.mission-text">從扎實的「道」到光輝的「境」，澄花堂與您一起，走得慢、走得穩，走向理想的健康境界。</p>
+                <p class="jp-translation" data-i18n="brand-story.jp-mission">私たちは實直に「滴養之道」を歩み、純粋な輝き「雪映之境」へとあなたを導きます。</p>
             </div>
         </div>
     </section>
@@ -97,52 +102,52 @@
     <!-- Features / The "4 Unique Experiences" -->
     <section class="features-section" id="product">
         <div class="container text-center">
-            <h2 class="section-title">醫師嚴選 滴養體驗</h2>
-            <p class="section-subtitle">隨時隨地，補充元氣</p>
+            <h2 class="section-title" data-i18n="features.title">醫師嚴選 滴養體驗</h2>
+            <p class="section-subtitle" data-i18n="features.subtitle">隨時隨地，補充元氣</p>
 
             <div class="features-grid">
                 <!-- Feature 1 -->
                 <div class="feature-card fade-up-scroll">
-                    <div class="feature-badge">Point 1</div>
+                    <div class="feature-badge" data-i18n="features.p1.badge">Point 1</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄韻_外包裝 (S__51724314).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-1">✨</div>
                     </div>
-                    <h3>澄韻 原味烏骨雞</h3>
-                    <p>典雅紫藤花紋設計，結合環保提把，不僅是滋補聖品，更是傳遞心意的最高誠意。</p>
+                    <h3 data-i18n="features.p1.title">澄韻 原味烏骨雞</h3>
+                    <p data-i18n="features.p1.desc">典雅紫藤花紋設計，結合環保提把，不僅是滋補聖品，更是傳遞心意的最高誠意。</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="feature-card fade-up-scroll delay-1">
-                    <div class="feature-badge">Point 2</div>
+                    <div class="feature-badge" data-i18n="features.p2.badge">Point 2</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄潤_外包裝 (S__51724315).jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">💧</div>
                     </div>
-                    <h3>澄潤 膠原古早雞</h3>
-                    <p>採用食品級高溫殺菌鋁箔包裝，鎖住每一滴營養，常溫保存，撕開即飲，隨時補充。</p>
+                    <h3 data-i18n="features.p2.title">澄潤 膠原古早雞</h3>
+                    <p data-i18n="features.p2.desc">採用食品級高溫殺菌鋁箔包裝，鎖住每一滴營養，常溫保存，撕開即飲，隨時補充。</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="feature-card fade-up-scroll delay-2">
-                    <div class="feature-badge">Point 3</div>
+                    <div class="feature-badge" data-i18n="features.p3.badge">Point 3</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄韻_內包裝 (S__51724316).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-3">📊</div>
                     </div>
-                    <h3>澄韻 原味烏骨雞</h3>
-                    <p>零膽固醇、零脂肪、無添加防腐劑。完整營養標示，通過多項SGS檢驗，讓您喝得安心。</p>
+                    <h3 data-i18n="features.p3.title">澄韻 原味烏骨雞</h3>
+                    <p data-i18n="features.p3.desc">零膽固醇、零脂肪、無添加防腐劑。完整營養標示，通過多項SGS檢驗，讓您喝得安心。</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div class="feature-card fade-up-scroll delay-3">
-                    <div class="feature-badge">Point 4</div>
+                    <div class="feature-badge" data-i18n="features.p4.badge">Point 4</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄潤_內包裝.jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">🌸</div>
                     </div>
-                    <h3>澄潤 膠原古早雞</h3>
-                    <p>嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華。</p>
+                    <h3 data-i18n="features.p4.title">澄潤 膠原古早雞</h3>
+                    <p data-i18n="features.p4.desc">嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華。</p>
                 </div>
             </div>
         </div>
@@ -160,10 +165,50 @@
         </div>
     </section>
 
+    <!-- Online Store Section (Regional Links) -->
+    <section class="online-store-section" id="online-store">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="store.title">🛒 線上官方旗艦店 (Online Store)</h2>
+            <p class="section-subtitle" data-i18n="store.subtitle">選擇配送地區，前往對應商城享受便捷購物。</p>
+            
+            <div class="store-grid">
+                <!-- Taiwan Region -->
+                <div class="store-card fade-up-scroll">
+                    <div class="store-header">
+                        <span class="region-flag">🇹🇼</span>
+                        <h3 data-i18n="store.tw-title">台灣地區配送</h3>
+                    </div>
+                    <div class="store-body">
+                        <p data-i18n="store.tw-desc">嚴選台灣在地好禮，快速配送至全台各地。</p>
+                        <a href="https://www.rakuten.com.tw/shop/sumikado" target="_blank" class="btn btn-primary btn-full">
+                            [ <span data-i18n="store.tw-btn">前往 台灣樂天市場 👉</span> ]
+                        </a>
+                        <small class="store-note" data-i18n="store.tw-note">(點擊跳轉台灣樂天)</small>
+                    </div>
+                </div>
+
+                <!-- Japan Region -->
+                <div class="store-card fade-up-scroll delay-1">
+                    <div class="store-header">
+                        <span class="region-flag">🇯🇵</span>
+                        <h3 data-i18n="store.jp-title">日本地區配送</h3>
+                    </div>
+                    <div class="store-body">
+                        <p data-i18n="store.jp-desc">日本專屬購物入口，輕鬆享受高品質直送服務。</p>
+                        <a href="https://www.rakuten.co.jp/" target="_blank" class="btn btn-outline-lilac btn-full">
+                            [ <span data-i18n="store.jp-btn">前往 日本楽天市場 👉</span> ]
+                        </a>
+                        <small class="store-note" data-i18n="store.jp-note">(點擊跳轉日本樂天)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing / Offer Plans -->
     <section class="pricing-section" id="plans">
         <div class="container text-center">
-            <h2 class="section-title text-white">選擇適合您的方案</h2>
+            <h2 class="section-title text-white" data-i18n="pricing.title">選擇適合您的方案</h2>
             
             <div class="pricing-grid">
                 <!-- Plan 1 -->
@@ -176,15 +221,15 @@
                         <span class="amount">1,680</span>
                         <span class="period">/盒</span>
                     </div>
-                    <h3 class="plan-name">純粹體驗組</h3>
+                    <h3 class="plan-name" data-i18n="pricing.p1.name">純粹體驗組</h3>
                     <ul class="plan-features">
-                        <li><span class="check">✓</span> 澄韻烏骨雞滴雞精 1盒 (8包)</li>
-                        <li><span class="check">✓</span> 首購免運費</li>
-                        <li><span class="check">✓</span> 新會員專屬購物金 $100</li>
-                        <li><span class="cross">−</span> 專屬健康諮詢</li>
-                        <li><span class="cross">−</span> 定期配送優惠</li>
+                        <li data-i18n="pricing.p1.f1"><span class="check">✓</span> 澄韻烏骨雞滴雞精 1盒 (8包)</li>
+                        <li data-i18n="pricing.p1.f2"><span class="check">✓</span> 首購免運費</li>
+                        <li data-i18n="pricing.p1.f3"><span class="check">✓</span> 新會員專屬購物金 $100</li>
+                        <li data-i18n="pricing.p1.f4"><span class="cross">−</span> 專屬健康諮詢</li>
+                        <li data-i18n="pricing.p1.f5"><span class="cross">−</span> 定期配送優惠</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-lilac btn-full mt-auto">立即體驗</a>
+                    <a href="#" class="btn btn-outline-lilac btn-full mt-auto" data-i18n="pricing.p1.btn">立即體驗</a>
                 </div>
 
                 <!-- Plan 2 -->
@@ -197,14 +242,14 @@
                         <span class="amount">6,200</span>
                         <span class="period">/4盒</span>
                     </div>
-                    <h3 class="plan-name">VIP養生方案</h3>
+                    <h3 class="plan-name" data-i18n="pricing.p2.name">VIP養生方案</h3>
                     <ul class="plan-features">
-                        <li><span class="check">✓</span> 澄韻烏骨雞滴雞精 4盒 (32包)</li>
-                        <li><span class="check">✓</span> 終身免運費</li>
-                        <li><span class="check">✓</span> 每月紅利點數雙倍送</li>
-                        <li><span class="check">✓</span> 節日VIP專屬神秘禮物</li>
+                        <li data-i18n="pricing.p2.f1"><span class="check">✓</span> 澄韻烏骨雞滴雞精 4盒 (32包)</li>
+                        <li data-i18n="pricing.p2.f2"><span class="check">✓</span> 終身免運費</li>
+                        <li data-i18n="pricing.p2.f3"><span class="check">✓</span> 每月紅利點數雙倍送</li>
+                        <li data-i18n="pricing.p2.f4"><span class="check">✓</span> 節日VIP專屬神秘禮物</li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-full mt-auto">選擇 VIP 方案</a>
+                    <a href="#" class="btn btn-primary btn-full mt-auto" data-i18n="pricing.p2.btn">選擇 VIP 方案</a>
                 </div>
             </div>
         </div>
@@ -213,7 +258,7 @@
     <!-- 3-Step Process -->
     <section class="process-section">
         <div class="container text-center">
-            <h2 class="section-title">三步驟，輕鬆享受養生之旅</h2>
+            <h2 class="section-title" data-i18n="process.title">三步驟，輕鬆享受養生之旅</h2>
             
             <div class="process-grid">
                 <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="process-item-link">
@@ -223,35 +268,35 @@
                                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
                             </svg>
                         </div>
-                        <h3>聯絡我們</h3>
-                        <p>加入官方 LINE，隨時為您服務！</p>
+                        <h3 data-i18n="process.s1.title">聯絡我們</h3>
+                        <p data-i18n="process.s1.desc">加入官方 LINE，隨時為您服務！</p>
                     </div>
                 </a>
                 <a href="https://www.rakuten.com.tw/shop/sumikado" target="_blank" class="process-item-link">
                     <div class="process-item fade-up-scroll delay-1">
                         <div class="process-icon">📦</div>
-                        <h3>輕鬆訂購</h3>
-                        <p>選擇方案，宅配到府最安心！</p>
+                        <h3 data-i18n="process.s2.title">輕鬆訂購</h3>
+                        <p data-i18n="process.s2.desc">選擇方案，宅配到府最安心！</p>
                     </div>
                 </a>
                 <div class="process-item fade-up-scroll delay-2">
                     <div class="process-icon">❤️</div>
-                    <h3>安心保證</h3>
-                    <p>嚴格把關，帶給您最純粹的健康。</p>
+                    <h3 data-i18n="process.s3.title">安心保證</h3>
+                    <p data-i18n="process.s3.desc">嚴格把關，帶給您最純粹的健康。</p>
                 </div>
             </div>
             
-            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3">即刻諮詢</a>
+            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3" data-i18n="process.cta">即刻諮詢</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <h2>澄花堂選品</h2>
-            <p>讓您的養生之旅更精彩</p>
+            <h2 data-i18n="footer.brand">澄花堂選品</h2>
+            <p data-i18n="footer.slogan">讓您的養生之旅更精彩</p>
             <div class="footer-bottom">
-                <p>&copy; 2026 澄花堂選品 Sumikado. All rights reserved.</p>
+                <p>&copy; 2026 <span data-i18n="footer.copyright">澄花堂選品 Sumikado. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
@@ -263,13 +308,13 @@
 
             <!-- Tabs -->
             <div class="modal-tabs">
-                <button id="tabLogin" class="modal-tab active" onclick="switchTab('login')">會員登入</button>
-                <button id="tabRegister" class="modal-tab" onclick="switchTab('register')">立即註冊</button>
+                <button id="tabLogin" class="modal-tab active" onclick="switchTab('login')" data-i18n="modal.tab-login">會員登入</button>
+                <button id="tabRegister" class="modal-tab" onclick="switchTab('register')" data-i18n="modal.tab-register">立即註冊</button>
             </div>
 
             <!-- Login Panel -->
             <div id="panelLogin" class="modal-panel active">
-                <p class="modal-lead">歡迎回來！以下方式快速登入</p>
+                <p class="modal-lead" data-i18n="modal.login-lead">歡迎回來！以下方式快速登入</p>
                 <button class="social-btn google-btn" onclick="loginWith('google')">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號登入
@@ -282,50 +327,50 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
                     使用 Apple 帳號登入
                 </button>
-                <div class="modal-divider"><span>或以電子郵件登入</span></div>
+                <div class="modal-divider"><span data-i18n="modal.divider-login">或以電子郵件登入</span></div>
                 <form id="loginForm" onsubmit="handleEmailLogin(event)">
                     <div class="form-group">
-                        <label for="loginEmail">電子郵件</label>
-                        <input type="email" id="loginEmail" placeholder="example@email.com" required>
+                        <label for="loginEmail" data-i18n="modal.label-email">電子郵件</label>
+                        <input type="email" id="loginEmail" placeholder="example@email.com" data-i18n-placeholder="modal.placeholder-email" required>
                     </div>
                     <div class="form-group">
-                        <label for="loginPassword">密碼</label>
-                        <input type="password" id="loginPassword" placeholder="請輸入密碼" required>
+                        <label for="loginPassword" data-i18n="modal.label-password">密碼</label>
+                        <input type="password" id="loginPassword" placeholder="請輸入密碼" data-i18n-placeholder="modal.placeholder-password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full" style="margin-top:1rem">登入</button>
+                    <button type="submit" class="btn btn-primary btn-full" style="margin-top:1rem" data-i18n="modal.btn-login">登入</button>
                 </form>
             </div>
 
             <!-- Register Panel -->
             <div id="panelRegister" class="modal-panel">
-                <p class="modal-lead">加入澄花堂，立享會員優惠</p>
+                <p class="modal-lead" data-i18n="modal.register-lead">加入澄花堂，立享會員優惠</p>
                 <button class="social-btn google-btn" onclick="registerWith('google')">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
-                    使用 Google 帳號註冊
+                    <span data-i18n="modal.btn-google-reg">使用 Google 帳號註冊</span>
                 </button>
                 <button class="social-btn line-btn" onclick="registerWith('line')">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M12 2C6.477 2 2 6.038 2 11c0 3.22 1.792 6.047 4.545 7.783-.2.727-.742 2.641-.85 3.05-.14.518.189.511.398.373.163-.11 2.59-1.76 3.638-2.473A12.1 12.1 0 0 0 12 20c5.523 0 10-4.038 10-9S17.523 2 12 2z"/></svg>
-                    使用 LINE 帳號註冊
+                    <span data-i18n="modal.btn-line-reg">使用 LINE 帳號註冊</span>
                 </button>
                 <button class="social-btn apple-btn" onclick="registerWith('apple')">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
-                    使用 Apple 帳號註冊
+                    <span data-i18n="modal.btn-apple-reg">使用 Apple 帳號註冊</span>
                 </button>
-                <div class="modal-divider"><span>或以電子郵件註冊</span></div>
+                <div class="modal-divider"><span data-i18n="modal.divider-register">或以電子郵件註冊</span></div>
                 <form id="registerForm" onsubmit="handleEmailRegister(event)">
                     <div class="form-group">
-                        <label for="regName">姓名</label>
-                        <input type="text" id="regName" placeholder="請輸入姓名" required>
+                        <label for="regName" data-i18n="modal.label-name">姓名</label>
+                        <input type="text" id="regName" placeholder="請輸入姓名" data-i18n-placeholder="modal.placeholder-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="regEmail">電子郵件</label>
-                        <input type="email" id="regEmail" placeholder="example@email.com" required>
+                        <label for="regEmail" data-i18n="modal.label-email">電子郵件</label>
+                        <input type="email" id="regEmail" placeholder="example@email.com" data-i18n-placeholder="modal.placeholder-email" required>
                     </div>
                     <div class="form-group">
-                        <label for="regPassword">密碼</label>
-                        <input type="password" id="regPassword" placeholder="至少 8 個字元" minlength="8" required>
+                        <label for="regPassword" data-i18n="modal.label-reg-password">密碼</label>
+                        <input type="password" id="regPassword" placeholder="至少 8 個字元" data-i18n-placeholder="modal.placeholder-reg-password" minlength="8" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full" style="margin-top:1rem">立即加入</button>
+                    <button type="submit" class="btn btn-primary btn-full" style="margin-top:1rem" data-i18n="modal.btn-register">立即加入</button>
                 </form>
             </div>
         </div>
