@@ -422,9 +422,11 @@ const translations = {
     }
 };
 
-function setLanguage(lang) {
-    // 1. Update localStorage
-    localStorage.setItem('preferredLang', lang);
+function setLanguage(lang, isInitial = false) {
+    // 1. Update localStorage (only if not initial auto-load)
+    if (!isInitial) {
+        localStorage.setItem('preferredLang', lang);
+    }
 
     // 2. Update button states
     const btns = document.querySelectorAll('.lang-btn');
@@ -468,16 +470,20 @@ function setLanguage(lang) {
         if (storeSection) storeSection.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 6. Handle Overlay
-    const overlay = document.getElementById('languageOverlay');
-    if (overlay) {
-        overlay.classList.remove('is-visible');
-        document.body.classList.remove('no-scroll');
+    // 6. Handle Overlay (only if not initial auto-load when no lang is saved)
+    if (!isInitial) {
+        const overlay = document.getElementById('languageOverlay');
+        if (overlay) {
+            overlay.classList.remove('is-visible');
+            document.body.classList.remove('no-scroll');
+        }
     }
 
     // 7. Feedback
     const langNames = { 'tw': '繁體中文', 'jp': '日本語', 'en': 'English' };
-    showToast(`✓ ${langNames[lang]} Loaded`);
+    if (!isInitial) {
+        showToast(`✓ ${langNames[lang]} Loaded`);
+    }
 }
 
 // Initialize language on load
@@ -486,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('languageOverlay');
 
     if (savedLang) {
-        setLanguage(savedLang);
+        setLanguage(savedLang, true); // initial load with saved lang
         if (overlay) overlay.classList.remove('is-visible');
     } else {
         // First visit: Show overlay and prevent scroll
@@ -494,8 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.add('is-visible');
             document.body.classList.add('no-scroll');
         }
-        // Default to 'tw' internally but don't save yet
-        setLanguage('tw');
-        localStorage.removeItem('preferredLang'); // Ensure it's not saved until user clicks
+        // Use 'tw' as default but don't save yet and keep overlay visible
+        setLanguage('tw', true); 
     }
 });
