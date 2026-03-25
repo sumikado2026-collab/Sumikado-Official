@@ -429,10 +429,7 @@ function setLanguage(lang) {
     // 2. Update button states
     const btns = document.querySelectorAll('.lang-btn');
     btns.forEach(btn => {
-        const onClickAttr = btn.getAttribute('onclick');
-        if (onClickAttr) {
-            btn.classList.toggle('active', onClickAttr.includes(`'${lang}'`));
-        }
+        btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${lang}'`));
     });
 
     // 3. Update Text Content (data-i18n)
@@ -468,34 +465,13 @@ function setLanguage(lang) {
         if (storeSection) storeSection.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 6. Handle Overlay
-    const overlay = document.getElementById('languageOverlay');
-    if (overlay) {
-        overlay.classList.remove('is-visible');
-        document.body.classList.remove('no-scroll');
-    }
-
-    // 7. Feedback
+    // 6. Feedback
     const langNames = { 'tw': '繁體中文', 'jp': '日本語', 'en': 'English' };
     showToast(`✓ ${langNames[lang]} Loaded`);
 }
 
 // Initialize language on load
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLang');
-    const overlay = document.getElementById('languageOverlay');
-
-    if (savedLang) {
-        setLanguage(savedLang);
-        if (overlay) overlay.classList.remove('is-visible');
-    } else {
-        // First visit: Show overlay and prevent scroll
-        if (overlay) {
-            overlay.classList.add('is-visible');
-            document.body.classList.add('no-scroll');
-        }
-        // Default to 'tw' internally but don't save yet
-        setLanguage('tw');
-        localStorage.removeItem('preferredLang'); // Ensure it's not saved until user clicks
-    }
+    const savedLang = localStorage.getItem('preferredLang') || 'tw';
+    setLanguage(savedLang);
 });
