@@ -12,6 +12,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Language Selection Overlay -->
+    <div id="languageOverlay" class="language-overlay">
+        <div class="overlay-content fade-up">
+            <div class="overlay-logo">
+                <img src="assets/商標 (logo).jpg" alt="Sumikado Logo">
+                <h2>澄花堂 <span>SUMIKADŌ</span></h2>
+            </div>
+            <p class="overlay-text">請選擇您的語言 / Please select your language / 言碼を選択してください</p>
+            <div class="language-selector">
+                <div class="custom-select">
+                    <button id="overlayLangBtn" class="select-btn">
+                        <span>繁體中文 / Traditional Chinese</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                    </button>
+                    <div class="select-options">
+                        <div onclick="selectOverlayLang('zh-TW')">繁體中文 / Traditional Chinese</div>
+                        <div onclick="selectOverlayLang('ja')">日本語 / Japanese</div>
+                        <div onclick="selectOverlayLang('en')">English</div>
+                    </div>
+                </div>
+                <button id="enterSiteBtn" class="btn btn-primary btn-large" onclick="enterSite()">進入網頁 / Enter Site</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
@@ -21,15 +45,25 @@
                 <span class="brand-text">澄花堂 <span>SUMIKADŌ</span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#about">品牌理念</a></li>
-                <li><a href="#product">滴養之道</a></li>
-
-                <li><a href="#plans">訂購方案</a></li>
+                <li><a href="#home" data-i18n="nav_home">首頁</a></li>
+                <li><a href="#about" data-i18n="nav_about">品牌理念</a></li>
+                <li><a href="#product" data-i18n="nav_product">滴養之道</a></li>
+                <li><a href="#plans" data-i18n="nav_plans">訂購方案</a></li>
             </ul>
             <div class="nav-actions">
-                <button id="openLogin" class="btn btn-outline" onclick="openMemberModal('login')">會員登入</button>
-                <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" class="btn btn-primary">輕鬆訂購</a>
+                <div class="lang-dropdown">
+                    <button class="lang-btn" id="langBtn">
+                        <span id="currentLangIcon">🌐</span>
+                        <span id="currentLangText">繁體中文</span>
+                    </button>
+                    <div class="lang-menu">
+                        <button onclick="changeLanguage('zh-TW')">繁體中文</button>
+                        <button onclick="changeLanguage('ja')">日本語</button>
+                        <button onclick="changeLanguage('en')">English</button>
+                    </div>
+                </div>
+                <button id="openLogin" class="btn btn-outline" onclick="openMemberModal('login')" data-i18n="nav_login">會員登入</button>
+                <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" class="btn btn-primary" data-i18n="nav_order">輕鬆訂購</a>
             </div>
         </div>
     </nav>
@@ -38,11 +72,11 @@
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-up">澄韻 滴養之道</h1>
-            <p class="fade-up delay-1">頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。</p>
+            <h1 class="fade-up" data-i18n="hero_title">澄韻 滴養之道</h1>
+            <p class="fade-up delay-1" data-i18n="hero_subtitle">頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。</p>
             <div class="hero-buttons fade-up delay-2">
-                <a href="#product" class="btn btn-primary btn-large">探索產品</a>
-                <a href="#about" class="btn btn-glass btn-large">了解品牌</a>
+                <a href="#product" class="btn btn-primary btn-large" data-i18n="hero_explore">探索產品</a>
+                <a href="#about" class="btn btn-glass btn-large" data-i18n="hero_brand">了解品牌</a>
             </div>
         </div>
         <div class="hero-image-wrapper">
@@ -54,14 +88,14 @@
     <section class="intro-section" id="about">
         <div class="container intro-container">
             <div class="intro-text fade-in-scroll">
-                <h2>創辦人的話</h2>
-                <p>我們深信，最好的保養來自於純粹與堅持。澄花堂走遍山林，嚴選頂級烏骨雞，遵循古法滴煉，只為了將最精華的一滴，呈獻給懂得照顧自己的您。希望透過這份溫潤，陪伴您度過每一個需要力量的時刻。</p>
+                <h2 data-i18n="intro_title">創辦人的話</h2>
+                <p data-i18n="intro_text">我們深信，最好的保養來自於純粹與堅持。澄花堂走遍山林，嚴選頂級烏骨雞，遵循古法滴煉，只為了將最精華的一滴，呈獻給懂得照顧自己的您。希望透過這份溫潤，陪伴您度過每一個需要力量的時刻。</p>
             </div>
             <div class="intro-image fade-in-scroll right">
                 <img src="assets/創辦人形象照.jpg" alt="創辦人的話" class="rounded-image shadow-lg">
                 <div class="image-caption">
-                    <span>澄 花 堂 的 真 心 話</span>
-                    <small>【 和 您 一 起 守 護 健 康 】</small>
+                    <span data-i18n="intro_caption_title">澄 花 堂 的 真 心 話</span>
+                    <small data-i18n="intro_caption_subtitle">【 和 您 一 起 守 護 健 康 】</small>
                 </div>
             </div>
         </div>
@@ -70,15 +104,15 @@
     <section class="brand-story-section" id="brand-story">
         <div class="container brand-story-container">
             <div class="brand-story-header fade-up-scroll">
-                <h2>滴養之道</h2>
-                <p class="brand-story-slogan">「一滴滴，皆是一步步。」</p>
-                <p class="brand-story-subtitle">"Every drop is a step forward." / "ひとしずくは、一歩一歩。"</p>
+                <h2 data-i18n="story_title">滴養之道</h2>
+                <p class="brand-story-slogan" data-i18n="story_slogan">「一滴滴，皆是一步步。」</p>
+                <p class="brand-story-subtitle" data-i18n="story_subtitle">"Every drop is a step forward." / "ひとしずくは、一歩一歩。"</p>
             </div>
 
             <div class="brand-story-grid">
                 <div class="brand-story-item path fade-up-scroll">
-                    <h3>滴養之道 <span class="en-label">| The Path of Essence</span></h3>
-                    <p>在澄花堂，我們相信真正的養生沒有捷徑。每一包滴雞精的誕生，都是在「滴養之道」上的扎實前行。堅持十二小時無水慢火滴萃，這不只是物理上的濃縮，更是職人靈魂的沉澱。每一步都要踏得穩健，才能換來那一滴滴溫潤的「元気」與「豐盈」。</p>
+                    <h3 data-i18n="story_item_title">滴養之道 <span class="en-label">| The Path of Essence</span></h3>
+                    <p data-i18n="story_item_text">在澄花堂，我們相信真正的養生沒有捷徑。每一包滴雞精的誕生，都是在「滴養之道」上的扎實前行。堅持十二小時無水慢火滴萃，這不只是物理上的濃縮，更是職人靈魂的沉澱。每一步都要踏得穩健，才能換來那一滴滴溫潤的「元気」與「豐盈」。</p>
                 </div>
 
 
@@ -94,52 +128,52 @@
     <!-- Features / The "4 Unique Experiences" -->
     <section class="features-section" id="product">
         <div class="container text-center">
-            <h2 class="section-title">醫師嚴選 滴養體驗</h2>
-            <p class="section-subtitle">隨時隨地，補充元氣</p>
+            <h2 class="section-title" data-i18n="features_title">醫師嚴選 滴養體驗</h2>
+            <p class="section-subtitle" data-i18n="features_subtitle">隨時隨地，補充元氣</p>
 
             <div class="features-grid">
                 <!-- Feature 1 -->
                 <div class="feature-card fade-up-scroll">
-                    <div class="feature-badge">Point 1</div>
+                    <div class="feature-badge" data-i18n="feature1_badge">Point 1</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄韻_外包裝 (S__51724314).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-1">✨</div>
                     </div>
-                    <h3>澄韻 原味烏骨雞</h3>
-                    <p>典雅紫藤花紋設計，結合環保提把，不僅是滋補聖品，更是傳遞心意的最高誠意。</p>
+                    <h3 data-i18n="feature1_title">澄韻 原味烏骨雞</h3>
+                    <p data-i18n="feature1_text">典雅紫藤花紋設計，結合環保提把，不僅是滋補聖品，更是傳遞心意的最高誠意。</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="feature-card fade-up-scroll delay-1">
-                    <div class="feature-badge">Point 2</div>
+                    <div class="feature-badge" data-i18n="feature2_badge">Point 2</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄潤_外包裝 (S__51724315).jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">💧</div>
                     </div>
-                    <h3>澄潤 膠原古早雞</h3>
-                    <p>採用食品級高溫殺菌鋁箔包裝，鎖住每一滴營養，常溫保存，撕開即飲，隨時補充。</p>
+                    <h3 data-i18n="feature2_title">澄潤 膠原古早雞</h3>
+                    <p data-i18n="feature2_text">採用食品級高溫殺菌鋁箔包裝，鎖住每一滴營養，常溫保存，撕開即飲，隨時補充。</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="feature-card fade-up-scroll delay-2">
-                    <div class="feature-badge">Point 3</div>
+                    <div class="feature-badge" data-i18n="feature3_badge">Point 3</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄韻_內包裝 (S__51724316).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-3">📊</div>
                     </div>
-                    <h3>澄韻 原味烏骨雞</h3>
-                    <p>零膽固醇、零脂肪、無添加防腐劑。完整營養標示，通過多項SGS檢驗，讓您喝得安心。</p>
+                    <h3 data-i18n="feature3_title">澄韻 原味烏骨雞</h3>
+                    <p data-i18n="feature3_text">零膽固醇、零脂肪、無添加防腐劑。完整營養標示，通過多項SGS檢驗，讓您喝得安心。</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div class="feature-card fade-up-scroll delay-3">
-                    <div class="feature-badge">Point 4</div>
+                    <div class="feature-badge" data-i18n="feature4_badge">Point 4</div>
                     <div class="feature-img-wrapper">
                         <img src="assets/澄潤_內包裝.jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">🌸</div>
                     </div>
-                    <h3>澄潤 膠原古早雞</h3>
-                    <p>嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華。</p>
+                    <h3 data-i18n="feature4_title">澄潤 膠原古早雞</h3>
+                    <p data-i18n="feature4_text">嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華。</p>
                 </div>
             </div>
         </div>
@@ -150,7 +184,7 @@
     <!-- Pricing / Offer Plans -->
     <section class="pricing-section" id="plans">
         <div class="container text-center">
-            <h2 class="section-title text-white">選擇適合您的方案</h2>
+            <h2 class="section-title text-white" data-i18n="pricing_title">選擇適合您的方案</h2>
             
             <div class="pricing-grid">
                 <!-- Plan 1 -->
@@ -161,17 +195,17 @@
                     <div class="price">
                         <span class="currency">NT$</span>
                         <span class="amount">1,680</span>
-                        <span class="period">/盒</span>
+                        <span class="period" data-i18n="per_box">/盒</span>
                     </div>
-                    <h3 class="plan-name">純粹體驗組</h3>
+                    <h3 class="plan-name" data-i18n="plan1_name">純粹體驗組</h3>
                     <ul class="plan-features">
-                        <li><span class="check">✓</span> 澄韻烏骨雞滴雞精 1盒 (8包)</li>
-                        <li><span class="check">✓</span> 首購免運費</li>
-                        <li><span class="check">✓</span> 新會員專屬購物金 $100</li>
-                        <li><span class="cross">−</span> 專屬健康諮詢</li>
-                        <li><span class="cross">−</span> 定期配送優惠</li>
+                        <li data-i18n="plan1_feat1"><span class="check">✓</span> 澄韻烏骨雞滴雞精 1盒 (8包)</li>
+                        <li data-i18n="plan1_feat2"><span class="check">✓</span> 首購免運費</li>
+                        <li data-i18n="plan1_feat3"><span class="check">✓</span> 新會員專屬購物金 $100</li>
+                        <li data-i18n="plan1_feat4"><span class="cross">−</span> 專屬健康諮詢</li>
+                        <li data-i18n="plan1_feat5"><span class="cross">−</span> 定期配送優惠</li>
                     </ul>
-                    <a href="#" class="btn btn-outline-lilac btn-full mt-auto">立即體驗</a>
+                    <a href="#" class="btn btn-outline-lilac btn-full mt-auto" data-i18n="plan_btn">立即體驗</a>
                 </div>
 
                 <!-- Plan 2 -->
@@ -182,17 +216,17 @@
                     <div class="price">
                         <span class="currency">NT$</span>
                         <span class="amount">6,200</span>
-                        <span class="period">/4盒</span>
+                        <span class="period" data-i18n="per_4box">/4盒</span>
                     </div>
-                    <h3 class="plan-name">VIP養生方案</h3>
+                    <h3 class="plan-name" data-i18n="plan2_name">VIP養生方案</h3>
                     <ul class="plan-features">
-                        <li><span class="check">✓</span> 澄韻烏骨雞滴雞精 4盒 (32包)</li>
-                        <li><span class="check">✓</span> 終身免運費</li>
-                        <li><span class="check">✓</span> 每月紅利點數雙倍送</li>
-                        <li><span class="check">✓</span> 節日VIP專屬神秘禮物</li>
-                        <li><span class="check">✓</span> 營養師一對一線上諮詢</li>
+                        <li data-i18n="plan2_feat1"><span class="check">✓</span> 澄韻烏骨雞滴雞精 4盒 (32包)</li>
+                        <li data-i18n="plan2_feat2"><span class="check">✓</span> 終身免運費</li>
+                        <li data-i18n="plan2_feat3"><span class="check">✓</span> 每月紅利點數雙倍送</li>
+                        <li data-i18n="plan2_feat4"><span class="check">✓</span> 節日VIP專屬神秘禮物</li>
+                        <li data-i18n="plan2_feat5"><span class="check">✓</span> 營養師一對一線上諮詢</li>
                     </ul>
-                    <a href="#" class="btn btn-primary btn-full mt-auto">選擇 VIP 方案</a>
+                    <a href="#" class="btn btn-primary btn-full mt-auto" data-i18n="plan_btn_vip">選擇 VIP 方案</a>
                 </div>
             </div>
         </div>
@@ -201,7 +235,7 @@
     <!-- 3-Step Process -->
     <section class="process-section">
         <div class="container text-center">
-            <h2 class="section-title">三步驟，輕鬆享受養生之旅</h2>
+            <h2 class="section-title" data-i18n="process_title">三步驟，輕鬆享受養生之旅</h2>
             
             <div class="process-grid">
                 <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="process-item-link">
@@ -211,33 +245,33 @@
                                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
                             </svg>
                         </div>
-                        <h3>聯絡我們</h3>
-                        <p>加入官方 LINE，隨時為您服務！</p>
+                        <h3 data-i18n="process_step1_title">聯絡我們</h3>
+                        <p data-i18n="process_step1_text">加入官方 LINE，隨時為您服務！</p>
                     </div>
                 </a>
                 <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" class="process-item-link">
                     <div class="process-item fade-up-scroll delay-1">
                         <div class="process-icon">📦</div>
-                        <h3>輕鬆訂購</h3>
-                        <p>選擇方案，宅配到府最安心！</p>
+                        <h3 data-i18n="process_step2_title">輕鬆訂購</h3>
+                        <p data-i18n="process_step2_text">選擇方案，宅配到府最安心！</p>
                     </div>
                 </a>
                 <div class="process-item fade-up-scroll delay-2">
                     <div class="process-icon">❤️</div>
-                    <h3>安心保證</h3>
-                    <p>嚴格把關，帶給您最純粹的健康。</p>
+                    <h3 data-i18n="process_step3_title">安心保證</h3>
+                    <p data-i18n="process_step3_text">嚴格把關，帶給您最純粹的健康。</p>
                 </div>
             </div>
             
-            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3">即刻諮詢</a>
+            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3" data-i18n="cta_btn">即刻諮詢</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <h2>澄花堂選品</h2>
-            <p>讓您的養生之旅更精彩</p>
+            <h2 data-i18n="footer_title">澄花堂選品</h2>
+            <p data-i18n="footer_subtitle">讓您的養生之旅更精彩</p>
             <div class="footer-bottom">
                 <p>&copy; 2026 澄花堂選品 Sumikado. All rights reserved.</p>
             </div>
@@ -251,13 +285,13 @@
 
             <!-- Tabs -->
             <div class="modal-tabs">
-                <button id="tabLogin" class="modal-tab active" onclick="switchTab('login')">會員登入</button>
-                <button id="tabRegister" class="modal-tab" onclick="switchTab('register')">立即註冊</button>
+                <button id="tabLogin" class="modal-tab active" onclick="switchTab('login')" data-i18n="modal_login_tab">會員登入</button>
+                <button id="tabRegister" class="modal-tab" onclick="switchTab('register')" data-i18n="modal_register_tab">立即註冊</button>
             </div>
 
             <!-- Login Panel -->
             <div id="panelLogin" class="modal-panel active">
-                <p class="modal-lead">歡迎回來！以下方式快速登入</p>
+                <p class="modal-lead" data-i18n="modal_login_lead">歡迎回來！以下方式快速登入</p>
                 <button class="social-btn google-btn" onclick="loginWith('google')">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號登入
