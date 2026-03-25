@@ -486,22 +486,10 @@ function setLanguage(lang, isInitial = false) {
     }
 }
 
-/**
- * Handle confirmation from the language selection overlay
- */
-function confirmLanguage() {
-    const langSelect = document.getElementById('langSelect');
-    if (langSelect) {
-        const selectedLang = langSelect.value;
-        setLanguage(selectedLang);
-    }
-}
-
 // Initialize language on load
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLang');
     const overlay = document.getElementById('languageOverlay');
-    const langSelect = document.getElementById('langSelect');
 
     if (savedLang) {
         setLanguage(savedLang, true); // initial load with saved lang
@@ -512,19 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.add('is-visible');
             document.body.classList.add('no-scroll');
         }
-
-        // Detect browser language
-        const browserLang = navigator.language.toLowerCase();
-        let defaultLang = 'tw';
-        if (browserLang.startsWith('ja')) defaultLang = 'jp';
-        else if (browserLang.startsWith('en')) defaultLang = 'en';
-
-        // Pre-select in dropdown
-        if (langSelect) {
-            langSelect.value = defaultLang;
-        }
-
-        // Use detected lang as initial state but don't save yet and keep overlay visible
-        setLanguage(defaultLang, true); 
+        // Use 'tw' as default but don't save yet and keep overlay visible
+        setLanguage('tw', true); 
     }
 });

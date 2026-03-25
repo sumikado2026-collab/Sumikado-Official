@@ -20,14 +20,15 @@
             </div>
             <h2 class="lang-title">Welcome to 澄花堂 SUMIKADŌ</h2>
             <p class="lang-subtitle">Please select your preferred language / 請選擇您的語言 / 言語を選択してください</p>
-            <div class="lang-dropdown-wrapper">
-                <select id="langSelect" class="lang-select-dropdown">
-                    <option value="tw" selected>🇹🇼 繁體中文</option>
-                    <option value="jp">🇯🇵 日本語</option>
-                    <option value="en">🇺🇸 English</option>
-                </select>
-                <button class="btn btn-primary btn-full lang-confirm-btn" onclick="confirmLanguage()">
-                    Confirm & Enter / 確認並進入 / 確定して進む
+            <div class="lang-options">
+                <button class="btn btn-primary lang-select-btn" onclick="setLanguage('tw')">
+                    <span class="flag">🇹🇼</span> 繁體中文
+                </button>
+                <button class="btn btn-outline-lilac lang-select-btn" onclick="setLanguage('jp')">
+                    <span class="flag">🇯🇵</span> 日本語
+                </button>
+                <button class="btn btn-outline-lilac lang-select-btn" onclick="setLanguage('en')">
+                    <span class="flag">🇺🇸</span> English
                 </button>
             </div>
         </div>
