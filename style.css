@@ -757,10 +757,12 @@ img {
     }
 
     .nav-actions .btn {
-        min-width: 0;
-        padding: 0.5rem 0.6rem;
+        width: 105px;
+        padding: 0.5rem 0.2rem;
         font-size: 0.85rem;
         height: 38px;
+        justify-content: center;
+        text-align: center;
     }
     
     .hero {
