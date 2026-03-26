@@ -252,6 +252,16 @@ img {
     align-items: center;
 }
 
+.nav-actions .btn {
+    padding: 0.6rem 1rem;
+    min-width: 120px;
+    height: 42px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* --- Hero Section --- */
 .hero {
     position: relative;
@@ -727,6 +737,30 @@ img {
 @media (max-width: 900px) {
     .nav-links {
         display: none; /* Simplification for prototype */
+    }
+    
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+    }
+
+    .brand-text span {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-actions {
+        gap: 0.5rem;
+    }
+
+    .nav-actions .btn {
+        min-width: 0;
+        padding: 0.5rem 0.6rem;
+        font-size: 0.85rem;
+        height: 38px;
     }
     
     .hero {
@@ -1259,9 +1293,7 @@ body.overlay-active {
 .lang-drop-btn {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    padding: 0.6rem 1.2rem;
-    min-width: 130px;
+    gap: 0.4rem;
     justify-content: center;
 }
 
