@@ -202,6 +202,16 @@ function setLanguage(lang) {
         langLabel.textContent = langLabels[lang];
     }
     
+    // Update active class in dropdown menu
+    const dropdownLinks = document.querySelectorAll('.lang-dropdown-content a');
+    dropdownLinks.forEach(link => {
+        if (link.getAttribute('onclick') === `setLanguage('${lang}')`) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+    
     // Update all elements with data-i18n attribute
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
