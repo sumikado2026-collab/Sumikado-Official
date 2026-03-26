@@ -60,7 +60,8 @@ const translations = {
         'modal-login-tab': '會員登入',
         'modal-register-tab': '立即註冊',
         'modal-login-lead': '歡迎回來！以下方式快速登入',
-        'modal-register-lead': '加入澄花堂，立享會員優惠'
+        'modal-register-lead': '加入澄花堂，立享會員優惠',
+        'nav-language': '語言選擇'
     },
     'ja': {
         'nav-home': 'トップ',
@@ -121,7 +122,8 @@ const translations = {
         'modal-login-tab': 'ログイン',
         'modal-register-tab': '新規登録',
         'modal-login-lead': 'お帰りなさい！',
-        'modal-register-lead': 'Sumikadoの会員になりませんか？'
+        'modal-register-lead': 'Sumikadoの会員になりませんか？',
+        'nav-language': '言語選択'
     },
     'en': {
         'nav-home': 'Home',
@@ -182,25 +184,14 @@ const translations = {
         'modal-login-tab': 'Login',
         'modal-register-tab': 'Register',
         'modal-login-lead': 'Welcome back!',
-        'modal-register-lead': 'Join Sumikado for exclusive benefits.'
+        'modal-register-lead': 'Join Sumikado for exclusive benefits.',
+        'nav-language': 'Language'
     }
-};
-
-const langLabels = {
-    'zh': '繁體中文',
-    'ja': '日本語',
-    'en': 'English'
 };
 
 function setLanguage(lang) {
     document.documentElement.lang = lang === 'zh' ? 'zh-TW' : lang;
     localStorage.setItem('selectedLanguage', lang);
-    
-    // Update dropdown label
-    const langLabel = document.getElementById('currentLangLabel');
-    if (langLabel && langLabels[lang]) {
-        langLabel.textContent = langLabels[lang];
-    }
     
     // Update active class in dropdown menu
     const dropdownLinks = document.querySelectorAll('.lang-dropdown-content a');
