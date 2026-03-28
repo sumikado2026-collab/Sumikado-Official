@@ -1357,8 +1357,346 @@ body.overlay-active {
     color: var(--primary-hover);
 }
 
+
 .lang-dropdown-content a.active {
     background: rgba(163, 140, 186, 0.15);
     color: var(--primary-hover);
     font-weight: 600;
 }
+
+/* =============================================
+   Kitchen Section (Japanese Minimalist)
+   ============================================= */
+.kitchen-section {
+    padding: 100px 0;
+    background-color: #fdfaf7; /* Very light cream */
+    position: relative;
+    overflow: hidden;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(183, 156, 219, 0.1);
+    color: #8e7cc3;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.kitchen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.kitchen-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.kitchen-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(163, 140, 186, 0.15);
+}
+
+.kitchen-card.highlight {
+    border: 1px solid rgba(183, 156, 219, 0.3);
+    position: relative;
+}
+
+.card-img {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdfaf7;
+}
+
+.mask-img-small {
+    width: 55% !important; /* Half size (approx) as requested */
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.kitchen-card:hover .card-img img {
+    transform: scale(1.08);
+}
+
+.reward-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #8e7cc3;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(142, 124, 195, 0.4);
+    z-index: 2;
+}
+
+.card-body {
+    padding: 35px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.card-body p {
+    color: #6a6a6a;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.event-guidelines {
+    background: #fdfaf7;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 3px solid #b79cdb;
+}
+
+.event-guidelines small {
+    color: #777;
+    display: block;
+    line-height: 1.7;
+    font-size: 0.85rem;
+}
+
+.btn-text {
+    color: #8e7cc3;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.btn-text:hover {
+    color: #5b4a8c;
+    transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+    .kitchen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .kitchen-section {
+        padding: 60px 0;
+    }
+    .kitchen-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .card-img {
+        height: 220px;
+    }
+}
+
+/* --- Recipe Modal --- */
+.recipe-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.recipe-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.recipe-content {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    animation: modalSlideUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes modalSlideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.recipe-flex {
+    display: flex;
+    min-height: 500px;
+}
+
+.recipe-image-side {
+    flex: 1;
+    background: #f8f9fa;
+}
+
+.recipe-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from cover to show the full portrait photo */
+    background: #f9f9f9;
+}
+
+.recipe-info-side {
+    flex: 1.2;
+    padding: 50px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.recipe-badge {
+    display: inline-block;
+    color: #b79cdb;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.recipe-info-side h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.recipe-section {
+    margin-bottom: 30px;
+}
+
+.recipe-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #8e7cc3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.recipe-list, .recipe-steps {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #555;
+}
+
+.recipe-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #b79cdb;
+}
+
+.recipe-steps li {
+    counter-increment: step-counter;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+    line-height: 1.7;
+    color: #555;
+}
+
+.recipe-steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    background: #f3f0f7;
+    color: #8e7cc3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.modal-close:hover {
+    color: #333;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .recipe-flex {
+        flex-direction: column;
+    }
+    .recipe-image-side {
+        height: 250px;
+    }
+    .recipe-info-side {
+        padding: 30px;
+    }
+}
+
+
