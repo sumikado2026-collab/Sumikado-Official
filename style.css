@@ -249,6 +249,17 @@ img {
 .nav-actions {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.nav-actions .btn {
+    padding: 0.6rem 1rem;
+    min-width: 120px;
+    height: 42px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --- Hero Section --- */
@@ -729,8 +740,38 @@ img {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .nav-links, .nav-actions {
+    .nav-links {
         display: none; /* Simplification for prototype */
+    }
+    
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        line-height: 1.2;
+    }
+
+    .brand-text span {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-actions {
+        gap: 0.5rem;
+    }
+
+    .nav-actions .btn {
+        width: 105px;
+        padding: 0.5rem 0.2rem;
+        font-size: 0.85rem;
+        height: 38px;
+        justify-content: center;
+        text-align: center;
     }
     
     .hero {
@@ -1091,7 +1132,7 @@ img {
 }
 
 
-@charset " UTF-8\;
+
 
 /* --- Language Selection Overlay --- */
 .language-overlay {
@@ -1263,10 +1304,8 @@ body.overlay-active {
 .lang-drop-btn {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    padding: 0.6rem 1.2rem;
-    min-width: 130px;
-    justify-content: space-between;
+    gap: 0.4rem;
+    justify-content: center;
 }
 
 .drop-icon {
@@ -1280,7 +1319,8 @@ body.overlay-active {
 .lang-dropdown-content {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
     margin-top: 0.5rem;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
@@ -1291,7 +1331,6 @@ body.overlay-active {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 1000;
     overflow: hidden;
@@ -1300,20 +1339,26 @@ body.overlay-active {
 .lang-dropdown:hover .lang-dropdown-content {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .lang-dropdown-content a {
     color: var(--text-main);
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     display: block;
     font-size: 0.95rem;
-    transition: background 0.2s ease;
-    text-align: left;
+    transition: all 0.2s ease;
+    text-align: center;
 }
 
 .lang-dropdown-content a:hover {
     background: rgba(163, 140, 186, 0.1);
-    color: var(--primary);
+    color: var(--primary-hover);
+}
+
+.lang-dropdown-content a.active {
+    background: rgba(163, 140, 186, 0.15);
+    color: var(--primary-hover);
+    font-weight: 600;
 }
