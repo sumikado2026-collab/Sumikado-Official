@@ -1493,6 +1493,27 @@ body.overlay-active {
     font-size: 0.85rem;
 }
 
+.event-rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-rules-list li {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 5px;
+}
+
+.event-rules-list li:last-child {
+    margin-bottom: 0;
+    color: #8e7cc3;
+    font-weight: 600;
+}
+
 .btn-text {
     color: #8e7cc3;
     font-weight: 700;
@@ -1700,3 +1721,105 @@ body.overlay-active {
 }
 
 
+
+/* --- Science Section --- */
+.science-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.science-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.science-card {
+    background: #fdfaf7;
+    padding: 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #f0e6ff;
+}
+
+.science-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(183, 156, 219, 0.1);
+}
+
+.science-card h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.science-card h3 i {
+    color: #b79cdb;
+}
+
+.science-card p {
+    color: #6a6a6a;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.comparison-box {
+    margin-top: 25px;
+}
+
+.comparison-row {
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    border-left: 4px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.comparison-row strong {
+    color: #8e7cc3;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.comparison-row:nth-child(1) { border-left-color: #4a4a4a; } /* Silkie */
+.comparison-row:nth-child(2) { border-left-color: #b79cdb; } /* Native */
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.benefit-list li {
+    margin-bottom: 15px;
+    padding-left: 28px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.benefit-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #b79cdb;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .science-section {
+        padding: 60px 0;
+    }
+    .science-card {
+        padding: 30px;
+    }
+}
