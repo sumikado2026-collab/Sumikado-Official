@@ -1389,8 +1389,8 @@ body.overlay-active {
 
 .kitchen-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 60px;
 }
 
@@ -1532,6 +1532,7 @@ body.overlay-active {
 @media (max-width: 1024px) {
     .kitchen-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
 
@@ -1541,7 +1542,7 @@ body.overlay-active {
     }
     .kitchen-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 40px;
     }
     .card-img {
         height: 220px;
@@ -1559,10 +1560,17 @@ body.overlay-active {
     backdrop-filter: blur(8px);
     z-index: 2000;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Start from top for scrolling */
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
     transition: opacity 0.3s ease;
+    overflow-y: auto; /* Allow modal itself to scroll if needed */
+}
+
+@media (max-width: 768px) {
+    .recipe-modal {
+        padding: 10px;
+    }
 }
 
 .recipe-modal.hidden {
@@ -1575,10 +1583,10 @@ body.overlay-active {
     width: 100%;
     max-width: 900px;
     border-radius: 24px;
-    overflow: hidden;
     position: relative;
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
     animation: modalSlideUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin: auto; /* Center in the scrollable modal */
 }
 
 @keyframes modalSlideUp {
@@ -1815,11 +1823,152 @@ body.overlay-active {
     font-weight: 900;
 }
 
+/* =============================================
+   Classroom Modal (Restored New Version)
+   ============================================= */
+
+.recipe-landing {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.classroom-modal-title {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.classroom-modal-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #b79cdb;
+    border-radius: 2px;
+}
+
+.classroom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.classroom-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.classroom-card.active:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(163, 140, 186, 0.15);
+    border-color: #b79cdb;
+}
+
+.class-img {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.class-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.classroom-card.active:hover .class-img img {
+    transform: scale(1.1);
+}
+
+.class-info {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-info h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.class-tag {
+    background: #b79cdb;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.classroom-card.disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.lock-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.recipe-detail-view {
+    padding: 20px;
+}
+
+.btn-back-to-list {
+    background: none;
+    border: none;
+    color: #8e7cc3;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0 0 30px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-back-to-list:hover {
+    background: #f3f0f7;
+    transform: translateX(-5px);
+}
+
+.recipe-detail-view.hidden {
+    display: none;
+}
+
+/* Adjustments for recipe content inside modal */
+.recipe-detail-view .recipe-flex {
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
-    .science-section {
-        padding: 60px 0;
+    .recipe-landing {
+        padding: 40px 20px;
     }
-    .science-card {
-        padding: 30px;
+    .classroom-grid {
+        grid-template-columns: 1fr;
+    }
+    .class-img {
+        height: 160px;
     }
 }

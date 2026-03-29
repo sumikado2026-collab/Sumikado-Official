@@ -77,12 +77,22 @@ const translations = {
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ 廚房',
         'kitchen-subtitle': '在這裡，每一滴精華都能化作餐桌上的溫暖與美力。',
-        'kitchen-recipe-title': '澄花堂 ‧ 貼心食譜',
-        'kitchen-recipe-desc': '職人研發，讓滴雞精成為料理的靈魂。從茶油炊飯到嫩滑蒸蛋，讓「食」成為一種「養」。',
-        'kitchen-btn-view': '探索食譜 &rarr;',
-        'kitchen-chef-title': '名廚教室 ‧ Master Class',
-        'kitchen-chef-desc': '台日名廚 ‧ 演繹日常的極致。邀請專業職人以「澄花堂」為墨，揮灑出具備儀式感與深度的美力料理。',
-        'kitchen-btn-class': '進入教室 &rarr;',
+        'kitchen-home-title': '澄芳家廚',
+        'kitchen-home-desc': `
+            [ 澄芳家廚 ]<br><br>
+            「澄」是初心，「芳」是芬芳。<br><br>
+            廚房是家裡最溫暖的地方，承載雙親之名，收藏歲月芬芳。<br>
+            我們在「澄花食譜」重現家的日常，與您分享愛與傳承的真滋味。
+        `,
+        'kitchen-master-title': '名廚旨趣',
+        'kitchen-master-desc': `
+            [ 名廚旨趣 ]<br><br>
+            「旨」是美味，「趣」是深意。<br><br>
+            擷取指尖淬煉，探尋職人匠心。<br>
+            將大師的私房心法捎到您家，在餐桌上吟味澄淨而深邃的生命旨趣。
+        `,
+        'kitchen-btn-home': '歡迎回家 &rarr;',
+        'kitchen-btn-enter': '進入教室 &rarr;',
         'kitchen-event-title': '澄花選味 ‧ Curated Tastes',
         'kitchen-event-desc': '民間高手 ‧ 私藏風味的選拔。尋找藏在日常裡的味覺實踐者。在這裡，每個人都是品味的策展人。「您的私房祕技，是澄花堂最珍貴的收藏。」',
         'reward-badge': '🎁 選味獎勵',
@@ -92,21 +102,36 @@ const translations = {
             <li>3. 私房食譜經採納刊登，即獲贈「面膜」乙盒（5片入）</li>
         `,
         'kitchen-btn-submit': '立即投稿',
-        'recipe-badge': '名廚教室 #01',
-        'recipe-title': '滴雞精柔滑蒸蛋',
-        'recipe-ingredients-title': '食材清單 (一人份)',
-        'recipe-ingredients-list': `
+        'recipe-home-badge': '澄芳家廚 #01',
+        'recipe-home-title': '滴雞精柔滑蒸蛋',
+        'recipe-home-ingredients': `
             <li>澄花堂滴雞精 1包 (60ml)</li>
             <li>雞蛋 2顆</li>
-            <li>溫水 100ml</li>
+            <li>溫水 140ml</li>
             <li>鹽 少許</li>
-            <li>鮮香菇 / 蔥花或鮭魚卵</li>
+            <li>鮮香菇薄片/鮭魚卵 (裝飾)</li>
         `,
-        'recipe-steps-title': '製作步驟',
-        'recipe-step-1': '將雞蛋均勻打散，加入滴雞精、溫水與少許鹽拌勻。',
-        'recipe-step-2': '進行兩次過篩，去除氣泡與雜質，這是口感「極致柔滑」的關鍵。',
-        'recipe-step-3': '輕輕橫鋪鮮香菇薄片在蛋液上。',
-        'recipe-step-4': '中火蒸 10-12 分鐘，完成後再撒上蔥花或鮭魚卵即可。'
+        'recipe-home-steps': `
+            <li>將雞蛋均勻打散，加入滴雞精、溫水與少許鹽拌勻。</li>
+            <li>進行兩次過篩，去除氣泡與雜質。</li>
+            <li>中火蒸 8-10 分鐘後快速開蓋。</li>
+            <li>鋪上香菇薄片，續蒸 3 分鐘，灑上鮭魚卵裝飾即可。</li>
+        `,
+        'recipe-chef-badge': '名廚旨趣 #01',
+        'recipe-chef-title': '日式烏骨雞高湯鍋',
+        'recipe-chef-ingredients': `
+            <li>澄花堂烏骨雞滴雞精 2包</li>
+            <li>烏骨雞 切塊 300g</li>
+            <li>大白菜/昆布高湯 800ml</li>
+            <li>鮮香菇、豆腐、季節野菜</li>
+            <li>橙醋或胡麻醬 (沾醬)</li>
+        `,
+        'recipe-chef-steps': `
+            <li>將切塊烏骨雞汆燙去血水備用。</li>
+            <li>於昆布高湯中加入雞塊燉煮 15 分鐘至軟嫩。</li>
+            <li>加入野菜、豆腐與香菇。</li>
+            <li>起鍋前倒入兩包滴雞精，鎖住營養，讓湯頭風味深邃回甘。</li>
+        `
     },
     'ja': {
         'nav-home': 'トップ',
@@ -184,12 +209,22 @@ const translations = {
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ キッチン',
         'kitchen-subtitle': '一滴の精華が、食卓のぬくもりと美しさに変わる場所。',
-        'kitchen-recipe-title': '澄花堂 ‧ 真心のレシピ',
-        'kitchen-recipe-desc': '職人が考案した、チキンエッセンスを料理の主役にするレシピ。日常の食事を「養生」へ。',
-        'kitchen-btn-view': 'レシピを見る &rarr;',
-        'kitchen-chef-title': '名匠教室 ‧ Master Class',
-        'kitchen-chef-desc': '日台の名匠が日常の極致を演繹。プロの職人が「澄花堂」を墨とし、儀式感と深みのある美力料理を描き出します。',
-        'kitchen-btn-class': '教室に入る &rarr;',
+        'kitchen-home-title': '澄芳家廚',
+        'kitchen-home-desc': `
+            [ 澄芳家廚 ]<br><br>
+            「澄」は初心、「芳」は芳しい香り。<br><br>
+            キッチンは家で最も温かい場所であり、両親の名を冠し、歳月の香りを秘めています。<br>
+            私たちは「澄花レシピ」で家の日常を再現し、愛と継承の真の味を共有します。
+        `,
+        'kitchen-master-title': '名廚旨趣',
+        'kitchen-master-desc': `
+            [ 名廚旨趣 ]<br><br>
+            「旨」は美味、「趣」は深い味わい。<br><br>
+            指先の研鑽を凝縮し、職人の匠の心を探求します。<br>
+            マスターの秘伝をあなたの家へ届け、澄み渡る深い生命の旨趣を食卓で吟味してください。
+        `,
+        'kitchen-btn-home': 'おかえりなさい &rarr;',
+        'kitchen-btn-enter': '教室に入る &rarr;',
         'kitchen-event-title': '澄花選味 ‧ Curated Tastes',
         'kitchen-event-desc': '民間達人による秘蔵の味わい選抜。日常に潜む味覚の実践者を探しています。誰もが品味のキュレーターです。',
         'reward-badge': '🎁 選味リワード',
@@ -199,21 +234,36 @@ const translations = {
             <li>3. 採用・掲載につき「パック」1枚（5枚入）をプレゼント</li>
         `,
         'kitchen-btn-submit': '今すぐ投稿',
-        'recipe-badge': '名匠教室 #01',
-        'recipe-title': 'チキンエッセンスの滑らか茶碗蒸し',
-        'recipe-ingredients-title': '材料 (1人分)',
-        'recipe-ingredients-list': `
+        'recipe-home-badge': '澄芳家廚 #01',
+        'recipe-home-title': 'チキンエッセンスの滑らか茶碗蒸し',
+        'recipe-home-ingredients': `
             <li>澄花堂チキンエッセンス 1包 (60ml)</li>
             <li>卵 2個</li>
-            <li>ぬるま湯 100ml</li>
+            <li>ぬるま湯 140ml</li>
             <li>塩 少々</li>
-            <li>しいたけ / ネギまたはいくら</li>
+            <li>しいたけスライス/いくら (トッピング)</li>
         `,
-        'recipe-steps-title': '作り方',
-        'recipe-step-1': '卵を溶きほぐし、チキンエッセンス、ぬるま湯、塩を加えて混ぜ合わせます。',
-        'recipe-step-2': '2回濾（こ）して、気泡や不純物を取り除きます。これが「極上の滑らかさ」の秘訣です。',
-        'recipe-step-3': '薄切りにしたしいたけを卵液の上にそっと並べます。',
-        'recipe-step-4': '中火で10〜12分蒸し、最後にネギやいくらを添えれば完成です。'
+        'recipe-home-steps': `
+            <li>卵を溶きほぐし、チキンエッセンス、ぬるま湯、塩を加えて混ぜます。</li>
+            <li>2回濾（こ）して、気泡や不純物を取り除きます。</li>
+            <li>中火で 8〜10 分蒸した後、素早く蓋を開けます。</li>
+            <li>しいたけをのせ、さらに 3 分蒸し、いくらを飾れば完成です。</li>
+        `,
+        'recipe-chef-badge': '名廚旨趣 #01',
+        'recipe-chef-title': '烏骨鶏だしのみぞれ鍋',
+        'recipe-chef-ingredients': `
+            <li>澄花堂烏骨鶏チキンエッセンス 2包</li>
+            <li>烏骨鶏の切り身 300g</li>
+            <li>昆布だし 800ml</li>
+            <li>しいたけ、豆腐、季節の野菜</li>
+            <li>ポン酢または胡麻だれ (お好みで)</li>
+        `,
+        'recipe-chef-steps': `
+            <li>鶏肉を湯通しして余分な油と血分を除きます。</li>
+            <li>昆布だしで鶏肉を 15 分ほど煮込み、柔らかくします。</li>
+            <li>野菜、豆腐、しいたけを加えます。</li>
+            <li>食べる直前にチキンエッセンスを注ぎ、風味と栄養を閉じ込めます。</li>
+        `
     },
     'en': {
         'nav-home': 'Home',
@@ -291,12 +341,22 @@ const translations = {
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': 'Sumikado Kitchen',
         'kitchen-subtitle': 'Where every drop of essence transforms into warmth and beauty on your table.',
-        'kitchen-recipe-title': 'Sumikado Recipes',
-        'kitchen-recipe-desc': 'Chef-crafted recipes using chicken essence as the soul of your dishes. Elevate eating to nourishing.',
-        'kitchen-btn-view': 'Explore Recipes &rarr;',
-        'kitchen-chef-title': 'Master Class',
-        'kitchen-chef-desc': 'TW & JP culinary masters performing the pinnacle of daily life. Inviting professionals to create ritualistic and deep beauty-dishes with Sumikado.',
-        'kitchen-btn-class': 'Enter Class &rarr;',
+        'kitchen-home-title': 'Home Kitchen',
+        'kitchen-home-desc': `
+            [ Home Kitchen ]<br><br>
+            "Cheng" for purity, "Fang" for fragrance.<br><br>
+            The kitchen is the warmest place at home, named after our parents, collecting the fragrance of years.<br>
+            We recreate home routines in "Sumikado Recipes," sharing true tastes of love and legacy.
+        `,
+        'kitchen-master-title': "Chef's Interest",
+        'kitchen-master-desc': `
+            [ Chef's Interest ]<br><br>
+            "Zhi" for deliciousness, "Qu" for profound meaning.<br><br>
+            Capturing reflections from fingers, exploring the heart of craftsmen.<br>
+            Bringing master secrets to your home, savoring the clear and deep meanings of life.
+        `,
+        'kitchen-btn-home': 'Welcome Home &rarr;',
+        'kitchen-btn-enter': 'Enter Class &rarr;',
         'kitchen-event-title': 'Curated Tastes',
         'kitchen-event-desc': 'A selection of hidden flavors from local masters. Everyone is a curator of taste here. "Your secret recipe is precious."',
         'reward-badge': '🎁 Selection Reward',
@@ -306,28 +366,80 @@ const translations = {
             <li>3. Receive one box of "Mask" (5pcs) upon publication</li>
         `,
         'kitchen-btn-submit': 'Submit Now',
-        'recipe-badge': 'MASTER CLASS #01',
-        'recipe-title': 'Silky Essence Steamed Egg',
-        'recipe-ingredients-title': 'Ingredients (1 Serving)',
-        'recipe-ingredients-list': `
-            <li>Sumikado Chicken Essence (60ml) x1</li>
+        'recipe-home-badge': 'Home Kitchen #01',
+        'recipe-home-title': 'Silky Essence Steamed Egg',
+        'recipe-home-ingredients': `
+            <li>Sumikado Chicken Essence 1 pack (60ml)</li>
             <li>Eggs x2</li>
-            <li>Warm water 100ml</li>
+            <li>Warm water 140ml</li>
             <li>A pinch of salt</li>
-            <li>Shiitake / Chives or Salmon Roe</li>
+            <li>Thin Shiitake slices / Salmon Roe (Garnish)</li>
         `,
-        'recipe-steps-title': 'Instructions',
-        'recipe-step-1': 'Whisk eggs, then mix in chicken essence, warm water, and salt.',
-        'recipe-step-2': 'Sift twice to remove bubbles and impurities for a silky smooth texture.',
-        'recipe-step-3': 'Gently place thin slices of shiitake mushroom on the egg mixture.',
-        'recipe-step-4': 'Steam on medium heat for 10-12 mins, then garnish with chives or salmon roe.'
+        'recipe-home-steps': `
+            <li>Whisk eggs, then mix in chicken essence, warm water, and salt.</li>
+            <li>Sift twice to remove bubbles and impurities.</li>
+            <li>Steam on medium heat for 8-10 mins and open the lid.</li>
+            <li>Add shiitake slices, steam for 3 mins, then garnish with salmon roe.</li>
+        `,
+        'recipe-chef-badge': "Chef's Interest #01",
+        'recipe-chef-title': 'Silkie Chicken Essence Soup Pot',
+        'recipe-chef-ingredients': `
+            <li>Sumikado Silkie Chicken Essence 2 packs</li>
+            <li>Silkie Chicken chunks 300g</li>
+            <li>Kelp stock 800ml</li>
+            <li>Shiitake, Tofu, seasonal vegetables</li>
+            <li>Ponzu or sesame sauce (for dipping)</li>
+        `,
+        'recipe-chef-steps': `
+            <li>Blanch chicken chunks to remove impurities.</li>
+            <li>Simmer chicken in kelp stock for 15 minutes until tender.</li>
+            <li>Add vegetables, tofu, and shiitake.</li>
+            <li>Pour in chicken essence before serving to lock in nutrition and flavor.</li>
+        `
     }
 };
 
-function toggleRecipeModal() {
+function toggleRecipeModal(type) {
     const modal = document.getElementById('recipeModal');
-    modal.classList.toggle('hidden');
-    document.body.classList.toggle('overlay-active');
+    const isHidden = modal.classList.contains('hidden');
+    
+    if (isHidden) {
+        if (type) {
+            loadRecipeData(type);
+        }
+        modal.classList.remove('hidden');
+        document.body.classList.add('overlay-active');
+        document.body.style.overflow = 'hidden'; // Ensure main body doesn't scroll
+    } else {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overlay-active');
+        document.body.style.overflow = '';
+    }
+}
+
+function loadRecipeData(type) {
+    const lang = localStorage.getItem('selectedLanguage') || 'zh';
+    const data = translations[lang];
+    
+    const badge = document.getElementById('recipeBadge');
+    const title = document.getElementById('recipeTitle');
+    const img = document.getElementById('recipeImage');
+    const ingredients = document.getElementById('recipeIngredients');
+    const steps = document.getElementById('recipeSteps');
+
+    if (type === 'home') {
+        badge.innerText = data['recipe-home-badge'];
+        title.innerText = data['recipe-home-title'];
+        img.src = 'assets/recipe_egg_portrait.jpg';
+        ingredients.innerHTML = data['recipe-home-ingredients'];
+        steps.innerHTML = data['recipe-home-steps'];
+    } else if (type === 'chef') {
+        badge.innerText = data['recipe-chef-badge'];
+        title.innerText = data['recipe-chef-title'];
+        img.src = 'assets/recipe_soup_pot.jpg';
+        ingredients.innerHTML = data['recipe-chef-ingredients'];
+        steps.innerHTML = data['recipe-chef-steps'];
+    }
 }
 
 function setLanguage(lang) {
