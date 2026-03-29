@@ -77,24 +77,24 @@ const translations = {
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ 廚房',
         'kitchen-subtitle': '在這裡，每一滴精華都能化作餐桌上的溫暖與美力。',
-        'kitchen-home-title': '澄芳家廚',
+        'kitchen-home-title': '澄花家廚',
         'kitchen-home-desc': `
-            [ 澄芳家廚 ]<br><br>
-            「澄」是初心，「芳」是芬芳。<br><br>
-            廚房是家裡最溫暖的地方，承載雙親之名，收藏歲月芬芳。<br>
-            我們在「澄花食譜」重現家的日常，與您分享愛與傳承的真滋味。
+            [ 澄花家廚 ]<br><br>
+            有父親澄雄的穩妥，有母親芳代子的馨香。<br><br>
+            廚房是家中最溫暖的場所。以父母之名，收藏歲月的馨香。<br>
+            我們以「澄花食譜」為名，復刻家常點滴，與您分享愛與傳承的真味。
         `,
-        'kitchen-master-title': '名廚旨趣',
+        'kitchen-master-title': '名廚旨味',
         'kitchen-master-desc': `
-            [ 名廚旨趣 ]<br><br>
-            「旨」是美味，「趣」是深意。<br><br>
-            擷取指尖淬煉，探尋職人匠心。<br>
-            將大師的私房心法捎到您家，在餐桌上吟味澄淨而深邃的生命旨趣。
+            [ 名廚旨味 ]<br><br>
+            沁養潤澤，餘韻悠長。<br><br>
+            指尖的倒影，是工匠之心的探尋。<br>
+            我們將名廚的私房祕技領入您的餐桌，與您共嘗生命的清鮮與厚重。
         `,
         'kitchen-btn-home': '歡迎回家 &rarr;',
         'kitchen-btn-enter': '進入教室 &rarr;',
-        'kitchen-event-title': '澄花選味 ‧ Curated Tastes',
-        'kitchen-event-desc': '民間高手 ‧ 私藏風味的選拔。尋找藏在日常裡的味覺實踐者。在這裡，每個人都是品味的策展人。「您的私房祕技，是澄花堂最珍貴的收藏。」',
+        'kitchen-event-title': '澄芳選',
+        'kitchen-event-desc': '民間高手 ‧ 私藏風味的選拔。尋找藏在日常裡的味覺實踐者。在這裡，每個人都是品味的策展人。您的私房祕技，是澄花堂最珍貴的收藏!',
         'reward-badge': '🎁 選味獎勵',
         'kitchen-event-requirements': `
             <li>1. 需包含「澄花堂」滴雞精系列產品</li>
@@ -102,7 +102,7 @@ const translations = {
             <li>3. 私房食譜經採納刊登，即獲贈「面膜」乙盒（5片入）</li>
         `,
         'kitchen-btn-submit': '立即投稿',
-        'recipe-home-badge': '澄芳家廚 #01',
+        'recipe-home-badge': '澄花家廚 #01',
         'recipe-home-title': '滴雞精柔滑蒸蛋',
         'recipe-home-ingredients': `
             <li>澄花堂滴雞精 1包 (60ml)</li>
@@ -209,24 +209,22 @@ const translations = {
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ キッチン',
         'kitchen-subtitle': '一滴の精華が、食卓のぬくもりと美しさに変わる場所。',
-        'kitchen-home-title': '澄芳家廚',
+        'kitchen-home-title': '澄花レシピ',
         'kitchen-home-desc': `
-            [ 澄芳家廚 ]<br><br>
-            「澄」は初心、「芳」は芳しい香り。<br><br>
-            キッチンは家で最も温かい場所であり、両親の名を冠し、歳月の香りを秘めています。<br>
-            私たちは「澄花レシピ」で家の日常を再現し、愛と継承の真の味を共有します。
+            父・澄雄（すみお）の穏やかさと、母・芳代子（かよこ）の馨しさを込めて。<br><br>
+            キッチンは家庭で最も温かな場所であり、兩親の名を冠したこの場所には、歲月の香りが秘められています。<br>
+            私たちは「澄花レシピ」を通じて、愛と継承の真の味を分かち合います。
         `,
-        'kitchen-master-title': '名廚旨趣',
+        'kitchen-master-title': '名廚旨味',
         'kitchen-master-desc': `
-            [ 名廚旨趣 ]<br><br>
-            「旨」は美味、「趣」は深い味わい。<br><br>
-            指先の研鑽を凝縮し、職人の匠の心を探求します。<br>
-            マスターの秘伝をあなたの家へ届け、澄み渡る深い生命の旨趣を食卓で吟味してください。
+            沁み渡る潤い、悠久に続く余韻。<br><br>
+            職人の指先から生まれる、繊細で深みのある料理の哲学。<br>
+            巨匠たちの私的な味の極みをあなたの食卓へ。澄み渡る生命の喜びを分かち合いましょう。
         `,
         'kitchen-btn-home': 'おかえりなさい &rarr;',
         'kitchen-btn-enter': '教室に入る &rarr;',
-        'kitchen-event-title': '澄花選味 ‧ Curated Tastes',
-        'kitchen-event-desc': '民間達人による秘蔵の味わい選抜。日常に潜む味覚の実践者を探しています。誰もが品味のキュレーターです。',
+        'kitchen-event-title': '澄芳の綴り',
+        'kitchen-event-desc': '民間達人による秘蔵の味わい選抜。日常に潜む味覚の実踐者を探しています。誰もが品味のキュレーターです！',
         'reward-badge': '🎁 選味リワード',
         'kitchen-event-requirements': `
             <li>1. 澄花堂チキンエッセンス製品を使用すること</li>
@@ -234,7 +232,7 @@ const translations = {
             <li>3. 採用・掲載につき「パック」1枚（5枚入）をプレゼント</li>
         `,
         'kitchen-btn-submit': '今すぐ投稿',
-        'recipe-home-badge': '澄芳家廚 #01',
+        'recipe-home-badge': '澄花レシピ #01',
         'recipe-home-title': 'チキンエッセンスの滑らか茶碗蒸し',
         'recipe-home-ingredients': `
             <li>澄花堂チキンエッセンス 1包 (60ml)</li>
@@ -344,14 +342,14 @@ const translations = {
         'kitchen-home-title': 'Home Kitchen',
         'kitchen-home-desc': `
             [ Home Kitchen ]<br><br>
-            "Cheng" for purity, "Fang" for fragrance.<br><br>
+            With the steadiness of father Sumio and the fragrance of mother Kayoko.<br><br>
             The kitchen is the warmest place at home, named after our parents, collecting the fragrance of years.<br>
             We recreate home routines in "Sumikado Recipes," sharing true tastes of love and legacy.
         `,
         'kitchen-master-title': "Chef's Interest",
         'kitchen-master-desc': `
             [ Chef's Interest ]<br><br>
-            "Zhi" for deliciousness, "Qu" for profound meaning.<br><br>
+            Moisturizing and nourishing, with a long-lasting aftertaste.<br><br>
             Capturing reflections from fingers, exploring the heart of craftsmen.<br>
             Bringing master secrets to your home, savoring the clear and deep meanings of life.
         `,
