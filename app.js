@@ -79,14 +79,12 @@ const translations = {
         'kitchen-subtitle': '在這裡，每一滴精華都能化作餐桌上的溫暖與美力。',
         'kitchen-home-title': '澄花家廚',
         'kitchen-home-desc': `
-            [ 澄花家廚 ]<br><br>
             有父親澄雄的穩妥，有母親芳代子的馨香。<br><br>
             廚房是家中最溫暖的場所。以父母之名，收藏歲月的馨香。<br>
             我們以「澄花食譜」為名，復刻家常點滴，與您分享愛與傳承的真味。
         `,
         'kitchen-master-title': '名廚旨味',
         'kitchen-master-desc': `
-            [ 名廚旨味 ]<br><br>
             沁養潤澤，餘韻悠長。<br><br>
             指尖的倒影，是工匠之心的探尋。<br>
             我們將名廚的私房祕技領入您的餐桌，與您共嘗生命的清鮮與厚重。
@@ -341,14 +339,12 @@ const translations = {
         'kitchen-subtitle': 'Where every drop of essence transforms into warmth and beauty on your table.',
         'kitchen-home-title': 'Home Kitchen',
         'kitchen-home-desc': `
-            [ Home Kitchen ]<br><br>
             With the steadiness of father Sumio and the fragrance of mother Kayoko.<br><br>
             The kitchen is the warmest place at home, named after our parents, collecting the fragrance of years.<br>
             We recreate home routines in "Sumikado Recipes," sharing true tastes of love and legacy.
         `,
         'kitchen-master-title': "Chef's Interest",
         'kitchen-master-desc': `
-            [ Chef's Interest ]<br><br>
             Moisturizing and nourishing, with a long-lasting aftertaste.<br><br>
             Capturing reflections from fingers, exploring the heart of craftsmen.<br>
             Bringing master secrets to your home, savoring the clear and deep meanings of life.
