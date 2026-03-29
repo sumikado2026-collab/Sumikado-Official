@@ -118,10 +118,10 @@ const translations = {
             <li>鋪上香菇薄片，續蒸 3 分鐘，灑上鮭魚卵裝飾即可。</li>
         `,
         'recipe-chef-badge': '名廚旨趣 #01',
-        'recipe-chef-title': '日式烏骨雞高湯鍋',
+        'recipe-chef-title': '日式膠原雞湯鍋',
         'recipe-chef-ingredients': `
-            <li>澄花堂烏骨雞滴雞精 2包</li>
-            <li>烏骨雞 切塊 300g</li>
+            <li>澄花堂澄潤膠原滴雞精 2包</li>
+            <li>嫩雞腿肉 切塊 300g</li>
             <li>大白菜/昆布高湯 800ml</li>
             <li>鮮香菇、豆腐、季節野菜</li>
             <li>橙醋或胡麻醬 (沾醬)</li>
@@ -250,10 +250,10 @@ const translations = {
             <li>しいたけをのせ、さらに 3 分蒸し、いくらを飾れば完成です。</li>
         `,
         'recipe-chef-badge': '名廚旨趣 #01',
-        'recipe-chef-title': '烏骨鶏だしのみぞれ鍋',
+        'recipe-chef-title': '日系コラーゲン鶏白湯鍋',
         'recipe-chef-ingredients': `
-            <li>澄花堂烏骨鶏チキンエッセンス 2包</li>
-            <li>烏骨鶏の切り身 300g</li>
+            <li>澄花堂澄潤コラーゲンチキンエッセンス 2包</li>
+            <li>若鶏の切り身 300g</li>
             <li>昆布だし 800ml</li>
             <li>しいたけ、豆腐、季節の野菜</li>
             <li>ポン酢または胡麻だれ (お好みで)</li>
@@ -382,10 +382,10 @@ const translations = {
             <li>Add shiitake slices, steam for 3 mins, then garnish with salmon roe.</li>
         `,
         'recipe-chef-badge': "Chef's Interest #01",
-        'recipe-chef-title': 'Silkie Chicken Essence Soup Pot',
+        'recipe-chef-title': 'Japanese Collagen Chicken Soup Pot',
         'recipe-chef-ingredients': `
-            <li>Sumikado Silkie Chicken Essence 2 packs</li>
-            <li>Silkie Chicken chunks 300g</li>
+            <li>Sumikado Collagen Chicken Essence 2 packs</li>
+            <li>Chicken thigh chunks 300g</li>
             <li>Kelp stock 800ml</li>
             <li>Shiitake, Tofu, seasonal vegetables</li>
             <li>Ponzu or sesame sauce (for dipping)</li>
@@ -436,7 +436,7 @@ function loadRecipeData(type) {
     } else if (type === 'chef') {
         badge.innerText = data['recipe-chef-badge'];
         title.innerText = data['recipe-chef-title'];
-        img.src = 'assets/recipe_soup_pot.jpg';
+        img.src = 'assets/recipe_collagen_soup.jpg';
         ingredients.innerHTML = data['recipe-chef-ingredients'];
         steps.innerHTML = data['recipe-chef-steps'];
     }
