@@ -1972,3 +1972,225 @@ body.overlay-active {
         height: 160px;
     }
 }
+
+/* --- Beautology School Section --- */
+.beautology-section {
+    padding: 10rem 0;
+    background-color: var(--bg-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.beautology-section::before {
+    content: '🌸';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 15rem;
+    opacity: 0.03;
+    filter: grayscale(1);
+}
+
+.beautology-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.beautology-header .section-badge {
+    color: var(--primary);
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.beautology-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.beautology-header .subtitle {
+    font-family: var(--font-sans);
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.beautology-intro-box {
+    max-width: 800px;
+    margin: 0 auto 6rem;
+    background: var(--bg-alt);
+    padding: 4rem;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.beautology-intro-box .quote {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.intro-content-block {
+    margin-bottom: 3rem;
+}
+
+.intro-content-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
+
+.intro-content-block p {
+    color: var(--text-muted);
+    line-height: 2;
+}
+
+/* Lesson Design */
+.beautology-lesson-item {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    border: 1px solid rgba(163, 140, 186, 0.2);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.03);
+}
+
+.lesson-banner {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.lesson-banner h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-banner p {
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.lesson-body {
+    padding: 4rem;
+}
+
+.lesson-lead {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.lesson-article {
+    background: #fcfaff;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary);
+}
+
+.lesson-article h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.lesson-article p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.lesson-footer-quote {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px dashed var(--secondary);
+    text-align: center;
+}
+
+.lesson-footer-quote p {
+    font-family: var(--font-serif);
+    color: var(--primary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Teaser List */
+.next-lessons-container {
+    max-width: 800px;
+    margin: 6rem auto 0;
+}
+
+.next-lessons-container h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+
+.teaser-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.teaser-item {
+    background: white;
+    border: 1px solid #eee;
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.teaser-item:hover {
+    border-color: var(--primary);
+    transform: translateX(10px);
+}
+
+.teaser-item span {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.teaser-item .status {
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .beautology-intro-box {
+        padding: 2rem;
+    }
+    .lesson-body {
+        padding: 2rem;
+    }
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -5,6 +5,8 @@ const translations = {
         'nav-home': '首頁',
         'nav-about': '品牌理念',
         'nav-product': '滴養之道',
+        'nav-beautology': '美力學堂',
+        'nav-science': '滴雞精科學',
 
         'btn-login': '會員登入',
         'btn-order': '輕鬆訂購',
@@ -24,7 +26,7 @@ const translations = {
         'feature-title': '醫師嚴選 滴養體驗',
         'feature-subtitle': '隨時隨地，補充元氣',
         'feature-1-title': '窗花美學',
-        'feature-1-text': '典雅紫藤花紋設計，珍藏台灣窗花文化。澄花堂的理念是守護並傳承這份珍貴的台灣寶藏，讓滋補聖品同時成為文化的載體。',
+        'feature-1-text': '典雅紫藤花紋設計，珍藏台灣窗花文化。澄花堂的理念是守護並傳承珍貴的台灣寶藏，讓滋補聖品同時成為文化的載體。',
         'feature-2-title': '豐彈美力',
         'feature-2-text': '採用食品級高溫殺菌鋁箔包裝，鎖住每一滴營養，常溫保存，撕開即飲，隨時補充。',
         'feature-3-title': '頂級食養',
@@ -129,12 +131,37 @@ const translations = {
             <li>於昆布高湯中加入雞塊燉煮 15 分鐘至軟嫩。</li>
             <li>加入野菜、豆腐與香菇。</li>
             <li>起鍋前倒入兩包滴雞精，鎖住營養，讓湯頭風味深邃回甘。</li>
-        `
+        `,
+        'beautology-badge': '美力學堂',
+        'beautology-title': '🌸 HANA 醫師的美力學堂',
+        'beautology-intro-quote': '—— 美力，是氣血盈滿後的自然溢出 ——',
+        'beautology-intro-title': '▋ 什麼是「美力」？',
+        'beautology-intro-text': '這是一門結合了美麗 (Beauty) 與 生命力 (Vitality) 的平衡學問。在漢方醫學的視角下，外在的乾枯往往源於內在的「陰虛」與「氣弱」。真正的美，不應只是表象的塗抹，而是深層生理機能盈滿後的自然綻放。',
+        'beautology-exp-title': '▋ 三巡四子：從損耗到重生的實證',
+        'beautology-exp-text': '我曾懷孕三巡、喜得四子。在經歷過孕育生命帶來的精血損耗與極度疲憊後，我仍選擇一邊育兒、一邊迅速重返職場。那段哺乳期帶來的精力耗竭，以及青春流逝的真實感，深刻地驅使我投入「漢方滋養與母乳」的深度研究。我比誰都清楚，從懷孕到哺乳這段神聖卻艱辛的過程，女性需要的不是大負擔的進補，而是「精微物質」的精準運行。',
+        'beautology-advocate-title': '▋ 我的美力主張：氣血雙補，精微修復',
+        'beautology-advocate-text': '我深信，女性體質最重要的 Reset（重開機） 機會就在產後。<br><strong>精微物質：</strong> 透過小分子胜肽與礦物質，繞過消化負擔，直達細胞修復。<br><strong>氣血雙補：</strong> 補氣以支撐育兒體力，養血以潤澤枯竭底蘊。',
+        'beautology-lesson-1-title': '第一課：🔬 漢醫新語：滴養之道的醫學實證',
+        'beautology-lesson-1-subtitle': '—— 從母乳研究到氣血重建的精微邏輯 ——',
+        'beautology-lesson-1-desc': '在「美力學堂」中，我提到了女性產後的 Reset（重開機）。身為漢醫碩士，我深究漢方典籍與現代營養學，發現「氣血雙補」不只是口號，而是有著嚴密的微量元素與生理運作邏輯。',
+        'beautology-l1-s1-title': '1. 乳汁為血所化：母乳補給的深層科學',
+        'beautology-l1-s1-text': '漢醫理論認為：「乳汁者，其源出於脾胃，其化在於肝，實則氣血所化也。」對於產後與哺乳期的女性，身體面臨的是極大的能量挪用。<br><strong>脾胃為後天之本：</strong> 我們選用台灣原生古早雞，其溫中益氣的特性，能強化脾胃運化。當「中氣」充足，攝取的營養才能轉化為質優量足的乳汁。<br><strong>滋陰養血的「黑金」：</strong> 烏骨雞入肝、腎經，富含高於一般雞種 2-3 倍的鐵 (Fe) 與 鋅 (Zn)。不僅能修復母體損耗，更能透過乳汁傳遞給寶寶。',
+        'beautology-l1-s2-title': '2. 精微物質的運行：小分子胜肽的力量',
+        'beautology-l1-s2-text': '為什麼我強調「精微修復」？產後脾胃虛弱，大魚大肉往往造成消化負擔（中醫所謂的「虛不受補」）。<br><strong>小分子轉換：</strong> 透過恆溫滴製技術，將大分子的蛋白質轉化為游離胺基酸與膠原胜肽。<br><strong>生物利用率：</strong> 這些精微物質能繞過繁瑣消化，直達細胞修復底層，達成「補而不燥、潤而不膩」的最高調養境界。',
+        'beautology-l1-s3-title': '3. 澄韻與澄潤：內在美力的雙重應援',
+        'beautology-l1-s3-text': '根據我的研究與三次分娩的實證，我將這份專業轉化為兩款精準處方：<br><strong>【澄韻｜元氣之雫】：</strong> 以古早雞為主，側重「益氣」。適合產前衝刺體力、產後補足中氣。<br><strong>【澄潤｜飲用美容液】：</strong> 以烏骨雞為主，側重「滋陰」。添加膠原蛋白，針對產後氣色暗沈與結構修復。',
+        'beautology-footer-quote': '「我的研究初衷很簡單：用最科學的漢方邏輯，守護每一位正在孕育生命、或在職場與家庭間奔波的女性。」 —— HANA 醫師',
+        'beautology-next-lessons-title': '即將上線內容',
+        'beautology-lesson-2': '第二課：環境養土論——為什麼「澄韻」是孕育的根基？',
+        'beautology-lesson-3': '第三課：黑金聖品的滋陰學——烏骨雞與妳的飲用美容液。',
+        'beautology-lesson-4': '第四課：Reset 關鍵 60 天——漢醫碩士的產後調養計畫',
     },
     'ja': {
         'nav-home': 'トップ',
         'nav-about': 'ブランド理念',
         'nav-product': '滴養之道',
+        'nav-beautology': '美力学堂',
+        'nav-science': '滴鶏精科学',
 
         'btn-login': 'ログイン',
         'btn-order': 'お得な注文',
@@ -259,12 +286,37 @@ const translations = {
             <li>昆布だしで鶏肉を 15 分ほど煮込み、柔らかくします。</li>
             <li>野菜、豆腐、しいたけを加えます。</li>
             <li>食べる直前にチキンエッセンスを注ぎ、風味と栄養を閉じ込めます。</li>
-        `
+        `,
+        'beautology-badge': '美力學堂',
+        'beautology-title': '🌸 HANA医師の美力學堂',
+        'beautology-intro-quote': '—— 美力とは、気血が満ち溢れた後の自然な輝き ——',
+        'beautology-intro-title': '▋ 「美力」とは？',
+        'beautology-intro-text': '美しさ (Beauty) と生命力 (Vitality) を融合させた、調和の学問。外見の乾きは、内側の「陰虛」と「気弱」に起因します。真の美しさは、深層の生理機能が満たされてこそ、自然に溢れ出すものです。',
+        'beautology-exp-title': '▋ 母としての経験：消耗から再生への実証',
+        'beautology-exp-text': '3度の出産で4人の子を授かりました。命を育むことによる精血の消耗と、極度の疲弊を経験しながらも、育児と仕事の両立を選択しました。その過程で「漢方滴養と母乳」の深い研究に没頭。女性の心身を守るには、負担の大きい補給ではなく「精微物質」による精密な修復が必要であることを確信しました。',
+        'beautology-advocate-title': '▋ 私の美力主張：気血双補、精微修復',
+        'beautology-advocate-text': '産後は、女性の体質をReset（再起動）する最大の機会です。<br><strong>精微物質：</strong> 小分子ペプチドとミネラルが、消化の負担なく細胞を直接修復。<br><strong>気血双補：</strong> 気を補い育児の体力を支え、血を養い枯渇した内側を潤します。',
+        'beautology-lesson-1-title': '第1回：🔬 漢医新語：滴養之道（テキヨウノミチ）の医学的実証',
+        'beautology-lesson-1-subtitle': '—— 母乳研究から気血再建への精微ロジック ——',
+        'beautology-lesson-1-desc': '漢医修士として、古典と現代栄養学を深く探究しました。「気血双補」は単なるスローガンではなく、厳密な微量元素と生理機能のメカニズムに基づいています。',
+        'beautology-l1-s1-title': '1. 乳汁は血から成る：母乳補給の科学',
+        'beautology-l1-s1-text': '漢医理論では「乳汁は脾胃に源を発し、肝で化し、実は気血の変化したものである」とされます。産後の女性には、莫大なエネルギーの転用が必要です。台湾自生鶏（古早鶏）は脾胃を強め、烏骨鶏（黒金）は2〜3倍の鉄分と亜鉛を含み、母体の消耗を補い、質の高い母乳を育みます。',
+        'beautology-l1-s2-title': '2. 精微物質の運行：小分子ペプチドの力',
+        'beautology-l1-s2-text': '産後の弱った脾胃には、重い食事はかえって負担（虛不受補）となります。恒温抽出法によりタンパク質を遊離アミノ酸とコラーゲンペプチドへ変換。これら「精微物質」は、消化のプロセスを飛び越えて細胞の修復現場へ直行し、潤いを与えます。',
+        'beautology-l1-s3-title': '3. 澄韻と澄潤：内なる美力の二重サポート',
+        'beautology-l1-s3-text': '実証データに基づき、2種類の処方を開発しました。<br><strong>【澄韻｜元気の雫】：</strong> 古早鶏を主とし「益気」に重点。産前産後の体力維持に。<br><strong>【澄潤｜飲む美容液】：</strong> 烏骨鶏を主とし「滋陰」に重点。コラーゲン配合で産後のくすみと構造の修復に。',
+        'beautology-footer-quote': '「科学的な漢方ロジックで、命を育むすべての女性の美力（生命力）を守りたい。」 —— HANA医師',
+        'beautology-next-lessons-title': '今後の予定',
+        'beautology-lesson-2': '第2回：環境養土論 — なぜ「澄韻」が育みの基礎なのか？',
+        'beautology-lesson-3': '第3回：ブラックゴールドの滋陰学 — 烏骨鶏とあなたの飲む美容液。',
+        'beautology-lesson-4': '第4回：Reset 鍵となる60日間 — 漢医修士の産後ケア計画',
     },
     'en': {
         'nav-home': 'Home',
         'nav-about': 'Philosophy',
         'nav-product': 'Essence',
+        'nav-beautology': 'Vital Beauty',
+        'nav-science': 'Science',
 
         'btn-login': 'Member Login',
         'btn-order': 'Easy Order',
@@ -389,7 +441,30 @@ const translations = {
             <li>Simmer chicken in kelp stock for 15 minutes until tender.</li>
             <li>Add vegetables, tofu, and shiitake.</li>
             <li>Pour in chicken essence before serving to lock in nutrition and flavor.</li>
-        `
+        `,
+        'beautology-badge': 'VITAL BEAUTY',
+        'beautology-title': "🌸 Dr. Hana's Vital Beauty",
+        'beautology-intro-quote': '— Beauty is the natural overflow of vital energy —',
+        'beautology-intro-title': '▋ What is "Vital Beauty"?',
+        'beautology-intro-text': 'A discipline combining Beauty and Vitality. In TCM, external dryness stems from internal "Yin Deficiency" and "Qi Weakness". True beauty is the natural radiance that blossoms once deep physiological functions are fully restored.',
+        'beautology-exp-title': '▋ Three Pregnancies, Four Children: Evidence of Rebirth',
+        'beautology-exp-text': 'Having raised four children through three pregnancies, I experienced profound exhaustion and nutrient depletion. Choosing to return to professional life quickly, I delved into "TCM Nourishment & Lactation". I learned that mothers need precision "micro-substances" rather than heavy, burdensome supplements.',
+        'beautology-advocate-title': '▋ My Advocacy: Qi-Blood Dual Support & Micro-Repair',
+        'beautology-advocate-text': 'Postpartum is the most critical "Reset" for a woman\'s body.<br><strong>Micro-substances:</strong> Small molecule peptides and minerals bypass digestive strain, repairing cells directly.<br><strong>Dual Support:</strong> Tonifying Qi sustains stamina for motherhood; nourishing Blood restores the depleted soul.',
+        'beautology-lesson-1-title': 'Lesson 1: 🔬 Modern TCM: Medical Evidence of Essence',
+        'beautology-lesson-1-subtitle': '— From Lactation Research to Cellular Reconstruction —',
+        'beautology-lesson-1-desc': 'As a TCM Master, I analyzed classical texts and modern nutrition. "Dual Tonification of Qi and Blood" is not just a slogan; it is a systematic logic of micronutrients and physiological operation.',
+        'beautology-l1-s1-title': '1. Milk is Blood Transformed: The Science of Motherhood',
+        'beautology-l1-s1-text': 'TCM states: "Milk originates from the spleen and stomach, is transformed by the liver, and is essentially the product of Qi and Blood." For nursing mothers, local ancient breed chickens enhance spleen energy, while Silkie chickens provide 2-3x more Iron (Fe) and Zinc (Zn) to repair the mother and nourish the child through milk.',
+        'beautology-l1-s2-title': '2. Micro-substances: The Power of Small Molecule Peptides',
+        'beautology-l1-s2-text': 'Why "Micro-repair"? A weak postpartum digestion cannot handle heavy meals (Deficiency Resistance). Our low-heat extraction transforms protein into free amino acids and collagen peptides. These micro-substances bypass complex digestion to repair cells directly, achieving nourishment without irritation.',
+        'beautology-l1-s3-title': '3. Double Support: Nourishing Inner Beauty',
+        'beautology-l1-s3-text': 'Based on three successful births, I formulated two precise treatments:<br><strong>【Cheng Yun | Essence of Qi】：</strong> Focuses on "Qi" for stamina during and after pregnancy.<br><strong>【Cheng Run | Drinkable Beauty Liquid】：</strong> Focuses on "Yin" with added collagen for structural repair and radiance.',
+        'beautology-footer-quote': '"My research began with a simple goal: to safeguard every woman navigating motherhood and professional life using scientific TCM logic." —— Dr. HANA',
+        'beautology-next-lessons-title': 'Upcoming Lectures',
+        'beautology-lesson-2': 'Lesson 2: Soil Theory — Why "Cheng Yun" is the Foundation of Life.',
+        'beautology-lesson-3': 'Lesson 3: The Yin Science of Silkie Chicken Essence.',
+        'beautology-lesson-4': 'Lesson 4: Reset Key 60 Days — Postpartum Recovery Plan.',
     }
 };
 
