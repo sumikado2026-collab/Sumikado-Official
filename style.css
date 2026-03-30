@@ -1431,6 +1431,12 @@ body.overlay-active {
     object-fit: contain !important;
 }
 
+.mask-img-chef {
+    width: 80% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
 .card-img img {
     width: 100%;
     height: 100%;
