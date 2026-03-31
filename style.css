@@ -1424,10 +1424,9 @@ body.overlay-active {
     justify-content: center;
     background: #fdfaf7;
 }
-
-.mask-img-small {
-    width: 55% !important; /* Half size (approx) as requested */
-    height: auto !important;
+.gift-img-contain {
+    width: 98% !important;
+    height: 98% !important;
     object-fit: contain !important;
 }
 
@@ -1440,6 +1439,11 @@ body.overlay-active {
 
 .kitchen-card:hover .card-img img {
     transform: scale(1.08);
+}
+
+/* Ensure the zoomed gift image stays zoomed on hover */
+.kitchen-card:hover .gift-img-contain {
+    transform: scale(1.05);
 }
 
 .reward-overlay {
