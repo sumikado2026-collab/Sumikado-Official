@@ -99,7 +99,7 @@ const translations = {
         'kitchen-event-requirements': `
             <li>1. 需包含「澄花堂」滴雞精系列產品</li>
             <li>2. 需提供詳細食材清單、步驟與完成品特寫</li>
-            <li>3. 私房食譜經採納刊登，即獲贈「澄芳選」專屬贈禮乙份</li>
+            <li>3. 私房食譜經採納刊登，即獲贈「面膜」乙盒（5片入）</li>
         `,
         'kitchen-btn-submit': '立即投稿',
         'recipe-home-badge': '澄花家廚 #01',
@@ -145,11 +145,11 @@ const translations = {
         'beautology-lesson-1-subtitle': '—— 從母乳研究到氣血重建的精微邏輯 ——',
         'beautology-lesson-1-desc': '在「美力學堂」中，我提到了女性產後的 Reset（重開機）。身為漢醫碩士，我深究漢方典籍與現代營養學，發現「氣血雙補」不只是口號，而是有著嚴密的微量元素與生理運作邏輯。',
         'beautology-l1-s1-title': '1. 乳汁為血所化：母乳補給的深層科學',
-        'beautology-l1-s1-text': '漢醫認為「乳汁為氣血所化」，產後女性面臨巨大的能量挪用。我們選用**台灣原生古早雞**強化脾胃運化，確保營養能轉化為優質乳汁；並以**烏骨雞（黑金）**滋陰養血，其鐵、鋅含量高於一般雞種 2-3 倍，能有效修復母體損耗，並將營養傳遞給寶寶。',
+        'beautology-l1-s1-text': '漢醫理論認為：「乳汁者，其源出於脾胃，其化在於肝，實則氣血所化也。」對於產後與哺乳期的女性，身體面臨的是極大的能量挪用。<br><strong>脾胃為後天之本：</strong> 我們選用台灣原生古早雞，其溫中益氣的特性，能強化脾胃運化。當「中氣」充足，攝取的營養才能轉化為質優量足的乳汁。<br><strong>滋陰養血的「黑金」：</strong> 烏骨雞入肝、腎經，富含高於一般雞種 2-3 倍的鐵 (Fe) 與 鋅 (Zn)。不僅能修復母體損耗，更能透過乳汁傳遞給寶寶。',
         'beautology-l1-s2-title': '2. 精微物質的運行：小分子胜肽的力量',
-        'beautology-l1-s2-text': '產後脾胃虛弱，大魚大肉易造成負擔。我們透過**恆溫滴製技術**，將大分子蛋白質轉化為**小分子胺基酸與膠原胜肽**。這些精微物質能繞過消化門檻，直達細胞修復底層，實現「補而不燥、潤而不膩」的精準調養。',
+        'beautology-l1-s2-text': '為什麼我強調「精微修復」？產後脾胃虛弱，大魚大肉往往造成消化負擔（中醫所謂的「虛不受補」）。<br><strong>小分子轉換：</strong> 透過恆溫滴製技術，將大分子的蛋白質轉化為游離胺基酸與膠原胜肽。<br><strong>生物利用率：</strong> 這些精微物質能繞過繁瑣消化，直達細胞修復底層，達成「補而不燥、潤而不膩」的最高調養境界。',
         'beautology-l1-s3-title': '3. 澄韻與澄潤：內在美力的雙重應援',
-        'beautology-l1-s3-text': '結合學理與三次分娩實證，我開發了兩款精準處方：**【澄韻｜元氣之雫】**以古早雞為主，側重益氣，助妳補足產後中氣；**【澄潤｜飲用美容液】**以烏骨雞為主，側重滋陰，添加膠原蛋白，專為產後氣色修復而生。',
+        'beautology-l1-s3-text': '根據我的研究與三次分娩的實證，我將這份專業轉化為兩款精準處方：<br><strong>【澄韻｜元氣之雫】：</strong> 以古早雞為主，側重「益氣」。適合產前衝刺體力、產後補足中氣。<br><strong>【澄潤｜飲用美容液】：</strong> 以烏骨雞為主，側重「滋陰」。添加膠原蛋白，針對產後氣色暗沈與結構修復。',
         'beautology-footer-quote': '「我的研究初衷很簡單：用最科學的漢方邏輯，守護每一位正在孕育生命、或在職場與家庭間奔波的女性。」 —— HANA 醫師',
         'beautology-next-lessons-title': '即將上線內容',
         'beautology-lesson-2': '第二課：環境養土論——為什麼「澄韻」是孕育的根基？',
@@ -254,7 +254,7 @@ const translations = {
         'kitchen-event-requirements': `
             <li>1. 澄花堂チキンエッセンス製品を使用すること</li>
             <li>2. 詳細なレシピ、手順、完成品写真を送付</li>
-            <li>3. 採用・掲載につき「澄芳の綴り」專屬ギフトをプレゼント</li>
+            <li>3. 採用・掲載につき「パック」1枚（5枚入）をプレゼント</li>
         `,
         'kitchen-btn-submit': '今すぐ投稿',
         'recipe-home-badge': '澄花レシピ #01',
@@ -409,7 +409,7 @@ const translations = {
         'kitchen-event-requirements': `
             <li>1. Must include Sumikado Chicken Essence products</li>
             <li>2. Provide detailed ingredients, steps, and dish photos</li>
-            <li>3. Receive private "Sumifang Selection" curated gift upon publication</li>
+            <li>3. Receive one box of "Mask" (5pcs) upon publication</li>
         `,
         'kitchen-btn-submit': 'Submit Now',
         'recipe-home-badge': 'Home Kitchen #01',

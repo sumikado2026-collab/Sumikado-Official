@@ -2097,9 +2097,9 @@ body.overlay-active {
 }
 
 .lesson-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .lesson-article {
@@ -2182,7 +2182,7 @@ body.overlay-active {
     letter-spacing: 1px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .beautology-intro-box {
         padding: 2rem;
     }
@@ -2190,18 +2190,7 @@ body.overlay-active {
         padding: 2rem;
     }
     .lesson-grid {
-        gap: 1.5rem;
-    }
-    .lesson-article {
-        padding: 1.5rem;
-        grid-column: span 1 !important;
-    }
-    .teaser-item {
-        padding: 1.2rem 1.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        border-radius: 20px;
+        grid-template-columns: 1fr;
     }
 }
 
