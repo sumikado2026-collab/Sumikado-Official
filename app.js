@@ -139,9 +139,10 @@ const translations = {
         'beautology-intro-text': '這是一門結合了美麗 (Beauty) 與 生命力 (Vitality) 的平衡學問。在漢方醫學的視角下，外在的乾枯往往源於內在的「陰虛」與「氣弱」。真正的美，不應只是表象的塗抹，而是深層生理機能盈滿後的自然綻放。',
         'beautology-exp-title': '▋ 三巡四子：從損耗到重生的實證',
         'beautology-exp-text': '我曾懷孕三巡、喜得四子。在經歷過孕育生命帶來的精血損耗與極度疲憊後，我仍選擇一邊育兒、一邊迅速重返職場。那段哺乳期帶來的精力耗竭，以及青春流逝的真實感，深刻地驅使我投入「漢方滋養與母乳」的深度研究。我比誰都清楚，從懷孕到哺乳這段神聖卻艱辛的過程，女性需要的不是大負擔的進補，而是「精微物質」的精準運行。',
-        'beautology-advocate-title': '▋ 我的美力主張：氣血雙補，精微修復',
-        'beautology-advocate-text': '我深信，女性體質最重要的 Reset（重開機） 機會就在產後。<br><strong>精微物質：</strong> 透過小分子胜肽與礦物質，繞過消化負擔，直達細胞修復。<br><strong>氣血雙補：</strong> 補氣以支撐育兒體力，養血以潤澤枯竭底蘊。',
+        'beautology-advocate-title': '▋ 我的研究初衷',
+        'beautology-advocate-text': '「我的研究初衷很簡單：用最科學的漢方邏輯，守護每一位正在孕育生命、或在職場與家庭間奔波的女性。」 —— HANA 醫師',
         'beautology-lesson-1-title': '第一課：漢醫新語：滴養之道的醫學實證',
+        'beautology-tag-hot': '熱門文章',
         'beautology-lesson-1-subtitle': '—— 從母乳研究到氣血重建的精微邏輯 ——',
         'beautology-lesson-1-desc': '在「美力學堂」中，我提到了女性產後的 Reset（重開機）。身為漢醫碩士，我深究漢方典籍與現代營養學，發現「氣血雙補」不只是口號，而是有著嚴密的微量元素與生理運作邏輯。',
         'beautology-l1-s1-title': '1. 乳汁為血所化：母乳補給的深層科學',
@@ -151,7 +152,7 @@ const translations = {
         'beautology-l1-s3-title': '3. 澄韻與澄潤：內在美力的雙重應援',
         'beautology-l1-s3-text': '根據我的研究與三次分娩的實證，我將這份專業轉化為兩款精準處方：<br><strong>【澄韻｜元氣之雫】：</strong> 以古早雞為主，側重「益氣」。適合產前衝刺體力、產後補足中氣。<br><strong>【澄潤｜飲用美容液】：</strong> 以烏骨雞為主，側重「滋陰」。添加膠原蛋白，針對產後氣色暗沈與結構修復。',
         'beautology-footer-quote': '「我的研究初衷很簡單：用最科學的漢方邏輯，守護每一位正在孕育生命、或在職場與家庭間奔波的女性。」 —— HANA 醫師',
-        'beautology-next-lessons-title': '即將上線內容',
+        'beautology-next-lessons-title': '我的講義',
         'beautology-lesson-2': '第二課：環境養土論——為什麼「澄韻」是孕育的根基？',
         'beautology-lesson-3': '第三課：黑金聖品的滋陰學——烏骨雞與妳的飲用美容液。',
         'beautology-lesson-4': '第四課：Reset 關鍵 60 天——漢醫碩士的產後調養計畫',
@@ -297,6 +298,7 @@ const translations = {
         'beautology-advocate-title': '▋ 私の美力主張：気血双補、精微修復',
         'beautology-advocate-text': '産後は、女性の体質をReset（再起動）する最大の機会です。<br><strong>精微物質：</strong> 小分子ペプチドとミネラルが、消化の負担なく細胞を直接修復。<br><strong>気血双補：</strong> 気を補い育児の体力を支え、血を養い枯渇した内側を潤します。',
         'beautology-lesson-1-title': '第1回：漢医新語：滴養之道（テキヨウノミチ）の医学的実証',
+        'beautology-tag-hot': '人気記事',
         'beautology-lesson-1-subtitle': '—— 母乳研究から気血再建への精微ロジック ——',
         'beautology-lesson-1-desc': '漢医修士として、古典と現代栄養学を深く探究しました。「気血双補」は単なるスローガンではなく、厳密な微量元素と生理機能のメカニズムに基づいています。',
         'beautology-l1-s1-title': '1. 乳汁は血から成る：母乳補給の科学',
@@ -306,7 +308,7 @@ const translations = {
         'beautology-l1-s3-title': '3. 澄韻と澄潤：内なる美力の二重サポート',
         'beautology-l1-s3-text': '実証データに基づき、2種類の処方を開発しました。<br><strong>【澄韻｜元気の雫】：</strong> 古早鶏を主とし「益気」に重点。産前産後の体力維持に。<br><strong>【澄潤｜飲む美容液】：</strong> 烏骨鶏を主とし「滋陰」に重点。コラーゲン配合で産後のくすみと構造の修復に。',
         'beautology-footer-quote': '「科学的な漢方ロジックで、命を育むすべての女性の美力（生命力）を守りたい。」 —— HANA医師',
-        'beautology-next-lessons-title': '今後の予定',
+        'beautology-next-lessons-title': '私の講義ノート',
         'beautology-lesson-2': '第2回：環境養土論 — なぜ「澄韻」が育みの基礎なのか？',
         'beautology-lesson-3': '第3回：ブラックゴールドの滋陰学 — 烏骨鶏とあなたの飲む美容液。',
         'beautology-lesson-4': '第4回：Reset 鍵となる60日間 — 漢医修士の産後ケア計画',
@@ -449,9 +451,10 @@ const translations = {
         'beautology-intro-text': 'A discipline combining Beauty and Vitality. In TCM, external dryness stems from internal "Yin Deficiency" and "Qi Weakness". True beauty is the natural radiance that blossoms once deep physiological functions are fully restored.',
         'beautology-exp-title': '▋ Three Pregnancies, Four Children: Evidence of Rebirth',
         'beautology-exp-text': 'Having raised four children through three pregnancies, I experienced profound exhaustion and nutrient depletion. Choosing to return to professional life quickly, I delved into "TCM Nourishment & Lactation". I learned that mothers need precision "micro-substances" rather than heavy, burdensome supplements.',
-        'beautology-advocate-title': '▋ My Advocacy: Qi-Blood Dual Support & Micro-Repair',
-        'beautology-advocate-text': 'Postpartum is the most critical "Reset" for a woman\'s body.<br><strong>Micro-substances:</strong> Small molecule peptides and minerals bypass digestive strain, repairing cells directly.<br><strong>Dual Support:</strong> Tonifying Qi sustains stamina for motherhood; nourishing Blood restores the depleted soul.',
+        'beautology-advocate-title': '▋ My Research Vision',
+        'beautology-advocate-text': '"My research began with a simple goal: to safeguard every woman navigating motherhood and professional life using scientific TCM logic." —— Dr. HANA',
         'beautology-lesson-1-title': 'Lesson 1: Modern TCM: Medical Evidence of Essence',
+        'beautology-tag-hot': 'Popular',
         'beautology-lesson-1-subtitle': '— From Lactation Research to Cellular Reconstruction —',
         'beautology-lesson-1-desc': 'As a TCM Master, I analyzed classical texts and modern nutrition. "Dual Tonification of Qi and Blood" is not just a slogan; it is a systematic logic of micronutrients and physiological operation.',
         'beautology-l1-s1-title': '1. Milk is Blood Transformed: The Science of Motherhood',
@@ -461,7 +464,7 @@ const translations = {
         'beautology-l1-s3-title': '3. Double Support: Nourishing Inner Beauty',
         'beautology-l1-s3-text': 'Based on three successful births, I formulated two precise treatments:<br><strong>【Cheng Yun | Essence of Qi】：</strong> Focuses on "Qi" for stamina during and after pregnancy.<br><strong>【Cheng Run | Drinkable Beauty Liquid】：</strong> Focuses on "Yin" with added collagen for structural repair and radiance.',
         'beautology-footer-quote': '"My research began with a simple goal: to safeguard every woman navigating motherhood and professional life using scientific TCM logic." —— Dr. HANA',
-        'beautology-next-lessons-title': 'Upcoming Lectures',
+        'beautology-next-lessons-title': 'My Lecture Notes',
         'beautology-lesson-2': 'Lesson 2: Soil Theory — Why "Cheng Yun" is the Foundation of Life.',
         'beautology-lesson-3': 'Lesson 3: The Yin Science of Silkie Chicken Essence.',
         'beautology-lesson-4': 'Lesson 4: Reset Key 60 Days — Postpartum Recovery Plan.',
@@ -508,6 +511,73 @@ function loadRecipeData(type) {
         img.src = 'assets/recipe_collagen_soup.jpg';
         ingredients.innerHTML = data['recipe-chef-ingredients'];
         steps.innerHTML = data['recipe-chef-steps'];
+    }
+}
+
+/* =============================================
+   Lesson Modal Functions
+   ============================================= */
+
+function toggleLessonModal(lessonId) {
+    const modal = document.getElementById('lessonModal');
+    if (!modal) return;
+    
+    const isHidden = modal.classList.contains('hidden');
+    
+    if (isHidden) {
+        if (lessonId) {
+            loadLessonData(lessonId);
+            modal.classList.remove('hidden');
+            document.body.classList.add('overlay-active');
+            document.body.style.overflow = 'hidden';
+        }
+    } else {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overlay-active');
+        document.body.style.overflow = '';
+    }
+}
+
+function loadLessonData(id) {
+    const lang = localStorage.getItem('selectedLanguage') || 'zh';
+    const data = translations[lang];
+    
+    // Elements in the lesson modal
+    const title = document.getElementById('lessonModalTitle');
+    const subtitle = document.getElementById('lessonModalSubtitle');
+    const lead = document.getElementById('lessonModalLead');
+    const grid = document.getElementById('lessonModalGrid');
+    const quote = document.getElementById('lessonModalQuote');
+
+    if (id === 'lesson-1') {
+        title.innerText = data['beautology-lesson-1-title'];
+        subtitle.innerText = data['beautology-lesson-1-subtitle'];
+        lead.innerText = data['beautology-lesson-1-desc'];
+        
+        // Build the grid items manually for now or use a dedicated key if complex
+        grid.innerHTML = `
+            <div class="lesson-article">
+                <h4>${data['beautology-l1-s1-title']}</h4>
+                <p>${data['beautology-l1-s1-text']}</p>
+            </div>
+            <div class="lesson-article">
+                <h4>${data['beautology-l1-s2-title']}</h4>
+                <p>${data['beautology-l1-s2-text']}</p>
+            </div>
+            <div class="lesson-article full-width">
+                <h4>${data['beautology-l1-s3-title']}</h4>
+                <p>${data['beautology-l1-s3-text']}</p>
+            </div>
+        `;
+        quote.innerText = data['beautology-footer-quote'];
+    } else {
+        // Placeholder for Coming Soon lessons
+        const lessonNum = id.split('-')[1];
+        title.innerText = data['beautology-lesson-' + lessonNum];
+        subtitle.innerText = "Coming Soon";
+        lead.innerText = "敬請期待";
+        grid.innerHTML = `<div class="coming-soon-placeholder"><p>更多精彩內容正在準備中，敬請期待。</p></div>`;
+        quote.innerText = "";
     }
 }
 

@@ -220,6 +220,100 @@ img {
     color: var(--text-muted);
 }
 
+.teaser-item.active-lesson {
+    background: linear-gradient(to right, white, rgba(216, 180, 254, 0.1));
+    border-color: var(--primary);
+    cursor: pointer;
+}
+
+.teaser-item.active-lesson:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.teaser-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lesson-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 600;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.status-online {
+    background: var(--primary);
+    color: white !important;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem !important;
+}
+
+.badge-hot {
+    background: #FF4D4D;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(255, 77, 77, 0.2);
+}
+
+/* Lesson Modal Specifics */
+.lesson-modal-content {
+    max-width: 1000px !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.lesson-modal-body {
+    background: white;
+}
+
+.lesson-modal-body .lesson-banner {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #fafafa, white);
+}
+
+.lesson-body-padding {
+    padding: 4rem;
+}
+
+.lesson-grid.modal-grid {
+    margin-top: 3rem;
+}
+
+.lesson-article.full-width {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .lesson-body-padding {
+        padding: 2rem;
+    }
+    
+    .founder-vision-quote {
+        font-size: 1.1rem;
+    }
+    
+    .lesson-num {
+        display: none;
+    }
+}
+
+.teaser-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -2031,13 +2125,42 @@ body.overlay-active {
 }
 
 .beautology-intro-box .quote {
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    color: var(--primary);
     display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--primary);
     margin-bottom: 3rem;
     font-style: italic;
+    opacity: 0.8;
+}
+
+.intro-content-block.highlight-quote {
+    background: rgba(216, 180, 254, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    border-left: 4px solid var(--primary);
+    margin-top: 3rem;
+}
+
+.founder-vision-quote {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    font-weight: 500;
     text-align: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.beautology-lessons-list {
+    margin-top: 5rem;
+}
+
+.lessons-list-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--text-main);
 }
 
 .intro-content-block {
