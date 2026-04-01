@@ -2102,8 +2102,8 @@ body.overlay-active {
 
 .lesson-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .lesson-article {
@@ -2194,7 +2194,7 @@ body.overlay-active {
         padding: 2rem;
     }
     .lesson-grid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
