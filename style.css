@@ -487,9 +487,9 @@ img {
 
 .image-caption {
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     right: 20px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(212, 196, 225, 0.5); /* Light purple ~50% opacity */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
     padding: 1rem 1.5rem;
@@ -497,6 +497,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    line-break: strict;
+    overflow-wrap: break-word; /* Better for English, still works for CJK */
+    word-break: normal;
 }
 
 .image-caption span {
