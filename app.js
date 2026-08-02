@@ -30,16 +30,6 @@ function setLanguage(lang) {
         }
     });
 
-    // Hide overlay if it exists
-    const overlay = document.getElementById('languageOverlay');
-    if (overlay) {
-        overlay.classList.add('fade-out');
-        setTimeout(() => {
-            overlay.style.display = 'none';
-        }, 500);
-    }
-    
-    document.body.style.overflow = '';
     closeLanguageMenu();
     closeNavigationMenu();
 }
@@ -74,21 +64,49 @@ function toggleLanguageMenu() {
     if (isOpen) closeNavigationMenu();
 }
 
+let heroCarouselIndex = 0;
+let heroCarouselTimer = null;
+
+function showHeroCarouselSlide(index) {
+    const carousel = document.querySelector('[data-carousel]');
+    if (!carousel) return;
+
+    const slides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'));
+    const dots = Array.from(carousel.querySelectorAll('[data-carousel-index]'));
+    if (!slides.length) return;
+
+    heroCarouselIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === heroCarouselIndex;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+    });
+    dots.forEach((dot, dotIndex) => {
+        const isActive = dotIndex === heroCarouselIndex;
+        dot.classList.toggle('is-active', isActive);
+        dot.setAttribute('aria-current', String(isActive));
+    });
+}
+
+function stopHeroCarousel() {
+    if (heroCarouselTimer) clearInterval(heroCarouselTimer);
+    heroCarouselTimer = null;
+}
+
+function startHeroCarousel() {
+    const carousel = document.querySelector('[data-carousel]');
+    if (!carousel || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    stopHeroCarousel();
+    heroCarouselTimer = setInterval(() => showHeroCarouselSlide(heroCarouselIndex + 1), 5000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Language i18n Logic
     const savedLang = localStorage.getItem('selectedLanguage');
-    const overlay = document.getElementById('languageOverlay');
-    
-    if (savedLang) {
-        setLanguage(savedLang);
-        if (overlay) overlay.style.display = 'none';
-    } else {
-        if (overlay) {
-            overlay.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-    }
+    const browserLang = navigator.language.toLowerCase();
+    const initialLang = savedLang || (browserLang.startsWith('ja') ? 'ja' : browserLang.startsWith('en') ? 'en' : 'zh');
+    setLanguage(initialLang);
 
     // Central interaction wiring. HTML declares data-action; behavior stays here.
     document.addEventListener('click', (e) => {
@@ -109,6 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (action === 'toggle-nav') {
             e.preventDefault();
             toggleNavigationMenu();
+        } else if (action === 'carousel-prev') {
+            showHeroCarouselSlide(heroCarouselIndex - 1);
+            startHeroCarousel();
+        } else if (action === 'carousel-next') {
+            showHeroCarouselSlide(heroCarouselIndex + 1);
+            startHeroCarousel();
+        } else if (action === 'carousel-go') {
+            showHeroCarouselSlide(Number(target.dataset.carouselIndex));
+            startHeroCarousel();
         } else if (action === 'open-recipe') {
             toggleRecipeModal(target.dataset.recipe);
         } else if (action === 'open-lesson') {
@@ -117,14 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleRecipeModal();
         } else if (action === 'close-lesson') {
             toggleLessonModal();
-        } else if (action === 'close-member') {
-            closeMemberModal();
-        } else if (action === 'switch-member-tab') {
-            switchTab(target.dataset.tab);
-        } else if (action === 'member-login') {
-            loginWith(target.dataset.provider);
-        } else if (action === 'member-register') {
-            registerWith(target.dataset.provider);
         }
     });
 
@@ -136,9 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    document.getElementById('loginForm')?.addEventListener('submit', handleEmailLogin);
-    document.getElementById('registerForm')?.addEventListener('submit', handleEmailRegister);
 
     ['recipeModal', 'lessonModal'].forEach((id) => {
         const modal = document.getElementById(id);
@@ -153,6 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
+        if (!navbar) return;
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
@@ -160,9 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 1200) closeNavigationMenu();
-    });
+    window.addEventListener('resize', closeNavigationMenu);
 
     // 2. Intersection Observer for scroll animations
     const observerOptions = {
@@ -181,18 +196,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.fade-up-scroll, .fade-in-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
-    // 3. Close modal when clicking the overlay background
-    const modal = document.getElementById('memberModal');
-    if (modal) {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeMemberModal();
+    const heroCarousel = document.querySelector('[data-carousel]');
+    if (heroCarousel) {
+        showHeroCarouselSlide(0);
+        startHeroCarousel();
+        heroCarousel.querySelector('[data-action="carousel-prev"]')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showHeroCarouselSlide(heroCarouselIndex - 1);
+            startHeroCarousel();
+        });
+        heroCarousel.querySelector('[data-action="carousel-next"]')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showHeroCarouselSlide(heroCarouselIndex + 1);
+            startHeroCarousel();
+        });
+        heroCarousel.addEventListener('mouseenter', stopHeroCarousel);
+        heroCarousel.addEventListener('mouseleave', startHeroCarousel);
+        heroCarousel.addEventListener('focusin', stopHeroCarousel);
+        heroCarousel.addEventListener('focusout', (e) => {
+            if (!heroCarousel.contains(e.relatedTarget)) startHeroCarousel();
         });
     }
 
-    // 4. Close modal on Escape key
+    // 3. Close open menus and content modals on Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
-            closeMemberModal();
             closeNavigationMenu();
             closeLanguageMenu();
             if (!document.getElementById('recipeModal')?.classList.contains('hidden')) {

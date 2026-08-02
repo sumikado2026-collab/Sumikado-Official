@@ -84,6 +84,7 @@
     background-color: var(--bg-dark);
     color: var(--text-light);
     padding: 6rem 0;
+    overflow-x: hidden;
 }
 
 .intro-container {

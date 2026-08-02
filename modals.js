@@ -1,5 +1,6 @@
 function toggleRecipeModal(type) {
     const modal = document.getElementById('recipeModal');
+    if (!modal) return;
     const isHidden = modal.classList.contains('hidden');
     
     if (isHidden) {
@@ -106,68 +107,4 @@ function loadLessonData(id) {
         grid.innerHTML = `<div class="coming-soon-placeholder"><p>更多精彩內容正在準備中，敬請期待。</p></div>`;
         quote.innerText = "";
     }
-}/* =============================================
-   Member Modal Functions
-   ============================================= */
-
-function openMemberModal(tab) {
-    const modal = document.getElementById('memberModal');
-    modal.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-    switchTab(tab || 'login');
-}
-
-function closeMemberModal() {
-    const modal = document.getElementById('memberModal');
-    modal.classList.remove('is-open');
-    document.body.style.overflow = '';
-}
-
-function switchTab(tab) {
-    // Update tab buttons
-    document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
-    document.getElementById('tabRegister').classList.toggle('active', tab === 'register');
-    // Update panels
-    document.getElementById('panelLogin').classList.toggle('active', tab === 'login');
-    document.getElementById('panelRegister').classList.toggle('active', tab === 'register');
-}
-
-/* --- Social Login Helpers --- */
-function loginWith(provider) {
-    showToast('已開啟登入視窗...');
-}
-
-function registerWith(provider) {
-    loginWith(provider);
-}
-
-/* --- Email Form Handlers --- */
-function handleEmailLogin(e) {
-    e.preventDefault();
-    const email = document.getElementById('loginEmail').value;
-    closeMemberModal();
-    showToast(`✓ 歡迎回來！已以 ${email} 登入`);
-}
-
-function handleEmailRegister(e) {
-    e.preventDefault();
-    const name = document.getElementById('regName').value;
-    const email = document.getElementById('regEmail').value;
-    closeMemberModal();
-    showToast(`🎉 歡迎加入澄花堂，${name}！我們已寄驗證信至 ${email}`);
-}
-
-/* --- Toast Notification --- */
-function showToast(message) {
-    let toast = document.getElementById('memberToast');
-    if (!toast) {
-        toast = document.createElement('div');
-        toast.id = 'memberToast';
-        toast.className = 'member-toast';
-        document.body.appendChild(toast);
-    }
-    toast.textContent = message;
-    toast.classList.add('show');
-    clearTimeout(toast._timer);
-    toast._timer = setTimeout(() => toast.classList.remove('show'), 3500);
 }

@@ -26,22 +26,43 @@ function checkJavaScript(relativePath) {
 
 function checkLocalReference(reference) {
     if (/^(https?:|#|data:|mailto:|javascript:)/i.test(reference)) return;
-    requireFile(reference.split('?')[0]);
+    requireFile(reference.split(/[?#]/)[0]);
 }
 
 function collectReferences(contents, pattern) {
     return [...contents.matchAll(pattern)].map((match) => match[1]);
 }
 
-const indexPath = requireFile('index.html');
+const htmlPages = ['index.html', 'science.html', 'kitchen.html', 'beautology.html'];
 const stylePath = requireFile('style.css');
+let translationData = null;
 
 ['translations.js', 'modals.js', 'app.js'].forEach(checkJavaScript);
 
-if (fs.existsSync(indexPath)) {
-    const html = fs.readFileSync(indexPath, 'utf8');
-    collectReferences(html, /(?:src|href)=["']([^"']+)["']/g).forEach(checkLocalReference);
+const translationPath = path.join(siteRoot, 'translations.js');
+if (fs.existsSync(translationPath)) {
+    const sandbox = { window: {} };
+    vm.createContext(sandbox);
+    vm.runInContext(fs.readFileSync(translationPath, 'utf8'), sandbox, { filename: 'translations.js' });
+    translationData = sandbox.window.translations;
 }
+
+htmlPages.forEach((relativePath) => {
+    const htmlPath = requireFile(relativePath);
+    if (!fs.existsSync(htmlPath)) return;
+    const html = fs.readFileSync(htmlPath, 'utf8');
+    collectReferences(html, /(?:src|href)=["']([^"']+)["']/g).forEach(checkLocalReference);
+    if (translationData) {
+        const keys = collectReferences(html, /data-i18n=["']([^"']+)["']/g);
+        Object.keys(translationData).forEach((language) => {
+            keys.forEach((key) => {
+                if (!(key in translationData[language])) {
+                    failures.push(`Missing ${language} translation for ${key} in ${relativePath}`);
+                }
+            });
+        });
+    }
+});
 
 if (fs.existsSync(stylePath)) {
     const stylesheet = fs.readFileSync(stylePath, 'utf8');
