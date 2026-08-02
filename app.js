@@ -20,7 +20,9 @@ function setLanguage(lang) {
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            if (el.tagName === 'INPUT' && el.dataset.i18nTarget === 'placeholder') {
+            if (el.dataset.i18nTarget === 'aria-label') {
+                el.setAttribute('aria-label', translations[lang][key]);
+            } else if (el.tagName === 'INPUT' && el.dataset.i18nTarget === 'placeholder') {
                 el.placeholder = translations[lang][key];
             } else {
                 el.innerHTML = translations[lang][key];
@@ -38,6 +40,38 @@ function setLanguage(lang) {
     }
     
     document.body.style.overflow = '';
+    closeLanguageMenu();
+    closeNavigationMenu();
+}
+
+function closeNavigationMenu() {
+    document.getElementById('navLinks')?.classList.remove('is-open');
+    document.querySelector('[data-action="toggle-nav"]')?.setAttribute('aria-expanded', 'false');
+}
+
+function toggleNavigationMenu() {
+    const menu = document.getElementById('navLinks');
+    const toggle = document.querySelector('[data-action="toggle-nav"]');
+    if (!menu || !toggle) return;
+
+    const isOpen = menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    closeLanguageMenu();
+}
+
+function closeLanguageMenu() {
+    document.querySelector('.lang-dropdown')?.classList.remove('is-open');
+    document.getElementById('langSelectBtn')?.setAttribute('aria-expanded', 'false');
+}
+
+function toggleLanguageMenu() {
+    const dropdown = document.querySelector('.lang-dropdown');
+    const toggle = document.getElementById('langSelectBtn');
+    if (!dropdown || !toggle) return;
+
+    const isOpen = dropdown.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) closeNavigationMenu();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,6 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Central interaction wiring. HTML declares data-action; behavior stays here.
     document.addEventListener('click', (e) => {
+        if (e.target.closest('#navLinks a')) closeNavigationMenu();
+        if (!e.target.closest('.lang-dropdown')) closeLanguageMenu();
+        if (!e.target.closest('.nav-container')) closeNavigationMenu();
+
         const target = e.target.closest('[data-action]');
         if (!target) return;
 
@@ -65,6 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (action === 'set-language') {
             e.preventDefault();
             setLanguage(target.dataset.language);
+        } else if (action === 'toggle-language-menu') {
+            e.preventDefault();
+            toggleLanguageMenu();
+        } else if (action === 'toggle-nav') {
+            e.preventDefault();
+            toggleNavigationMenu();
         } else if (action === 'open-recipe') {
             toggleRecipeModal(target.dataset.recipe);
         } else if (action === 'open-lesson') {
@@ -116,6 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1200) closeNavigationMenu();
+    });
+
     // 2. Intersection Observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
@@ -143,6 +191,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Close modal on Escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeMemberModal();
+        if (e.key === 'Escape') {
+            closeMemberModal();
+            closeNavigationMenu();
+            closeLanguageMenu();
+            if (!document.getElementById('recipeModal')?.classList.contains('hidden')) {
+                toggleRecipeModal();
+            }
+            if (!document.getElementById('lessonModal')?.classList.contains('hidden')) {
+                toggleLessonModal();
+            }
+        }
     });
 });

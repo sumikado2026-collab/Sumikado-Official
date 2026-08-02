@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -49,7 +49,7 @@
                 <img src="assets/brand/商標 (logo).jpg" alt="Sumikado Logo" class="brand-logo">
                 <span class="brand-text">澄花堂 <span>SUMIKADŌ</span></span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home" data-i18n="nav-home">首頁</a></li>
                 <li><a href="#about" data-i18n="nav-about">品牌理念</a></li>
                 <li><a href="#product" data-i18n="nav-product">滴養之道</a></li>
@@ -60,19 +60,24 @@
             </ul>
             <div class="nav-actions">
                 <div class="lang-dropdown">
-                    <button id="langSelectBtn" class="btn btn-outline lang-drop-btn">
+                    <button id="langSelectBtn" class="btn btn-outline lang-drop-btn" data-action="toggle-language-menu" aria-expanded="false" aria-controls="languageMenu">
                         <span id="currentLangLabel" data-i18n="nav-language">語言選擇</span>
                         <svg class="drop-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <div class="lang-dropdown-content">
+                    <div class="lang-dropdown-content" id="languageMenu">
                         <a href="#" data-action="set-language" data-language="zh">繁體中文</a>
                         <a href="#" data-action="set-language" data-language="ja">日本語</a>
                         <a href="#" data-action="set-language" data-language="en">English</a>
                     </div>
                 </div>
                 <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btn-order">輕鬆訂購</a>
+                <button class="mobile-menu-toggle" data-action="toggle-nav" aria-expanded="false" aria-controls="navLinks" aria-label="開啟導覽選單" data-i18n="nav-menu" data-i18n-target="aria-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -84,8 +89,8 @@
             <h1 class="fade-up" data-i18n="hero-title">澄韻 滴養之道</h1>
             <p class="fade-up delay-1" data-i18n="hero-desc">頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。</p>
             <div class="hero-buttons fade-up delay-2">
-                <a href="#product" class="btn btn-primary btn-large" data-i18n="hero-explore">探索產品</a>
                 <a href="#about" class="btn btn-glass btn-large" data-i18n="hero-learn">了解品牌</a>
+                <a href="#product" class="btn btn-primary btn-large" data-i18n="hero-explore">探索產品</a>
             </div>
         </div>
         <div class="hero-image-wrapper">
@@ -373,10 +378,10 @@
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號登入
                 </button>
-                <button class="social-btn line-btn" data-action="member-login" data-provider="line">
+                <button class="social-btn line-btn" data-action="member-login" data-provider="line" aria-label="LINE login">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M12 2C6.477 2 2 6.038 2 11c0 3.22 1.792 6.047 4.545 7.783-.2.727-.742 2.641-.85 3.05-.14.518.189.511.398.373.163-.11 2.59-1.76 3.638-2.473A12.1 12.1 0 0 0 12 20c5.523 0 10-4.038 10-9S17.523 2 12 2z"/></svg>
                 </button>
-                <button class="social-btn apple-btn" data-action="member-login" data-provider="apple">
+                <button class="social-btn apple-btn" data-action="member-login" data-provider="apple" aria-label="Apple login">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
                 </button>
                 <div class="modal-divider"><span>或以電子郵件登入</span></div>
@@ -400,10 +405,10 @@
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號註冊
                 </button>
-                <button class="social-btn line-btn" data-action="member-register" data-provider="line">
+                <button class="social-btn line-btn" data-action="member-register" data-provider="line" aria-label="LINE registration">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M12 2C6.477 2 2 6.038 2 11c0 3.22 1.792 6.047 4.545 7.783-.2.727-.742 2.641-.85 3.05-.14.518.189.511.398.373.163-.11 2.59-1.76 3.638-2.473A12.1 12.1 0 0 0 12 20c5.523 0 10-4.038 10-9S17.523 2 12 2z"/></svg>
                 </button>
-                <button class="social-btn apple-btn" data-action="member-register" data-provider="apple">
+                <button class="social-btn apple-btn" data-action="member-register" data-provider="apple" aria-label="Apple registration">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
                 </button>
                 <div class="modal-divider"><span>或以電子郵件註冊</span></div>
@@ -482,8 +487,8 @@
         </div>
     </div>
 
-    <script src="translations.js?v=1"></script>
+    <script src="translations.js?v=2"></script>
     <script src="modals.js?v=1"></script>
-    <script src="app.js?v=4"></script>
+    <script src="app.js?v=8"></script>
 </body>
 </html>

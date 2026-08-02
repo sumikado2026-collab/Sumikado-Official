@@ -58,6 +58,7 @@ window.translations = {
         'modal-login-lead': '歡迎回來！以下方式快速登入',
         'modal-register-lead': '加入澄花堂，立享會員優惠',
         'nav-language': '語言選擇',
+        'nav-menu': '開啟導覽選單',
         'nav-kitchen': '澄花堂廚房',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ 廚房',
@@ -195,6 +196,7 @@ window.translations = {
         'modal-login-lead': 'お帰りなさい！',
         'modal-register-lead': 'Sumikadoの会員になりませんか？',
         'nav-language': '言語選択',
+        'nav-menu': 'ナビゲーションメニューを開く',
         'nav-kitchen': '澄花堂キッチン',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ キッチン',
@@ -332,6 +334,7 @@ window.translations = {
         'modal-login-lead': 'Welcome back!',
         'modal-register-lead': 'Join Sumikado for exclusive benefits.',
         'nav-language': 'Language',
+        'nav-menu': 'Open navigation menu',
         'nav-kitchen': 'Kitchen',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': 'Sumikado Kitchen',
@@ -413,4 +416,3 @@ window.translations = {
         'beautology-lesson-4': 'Lesson 4: Reset Key 60 Days — Postpartum Recovery Plan.',
     }
 };
-
