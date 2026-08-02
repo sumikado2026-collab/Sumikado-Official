@@ -1,0 +1,358 @@
+/* index.css - Design System & Styling */
+
+:root {
+    /* Color Palette */
+    --primary: #A38CBA;       /* Lilac/Lavender main accent */
+    --primary-hover: #8D73A6;
+    --secondary: #D4C4E1;     /* Light Lilac */
+    --accent: #E8D5A6;        /* Soft Gold for contrast */
+    
+    --bg-main: #FFFFFF;
+    --bg-alt: #F8F9FA;
+    --bg-dark: #1A1A1A;       /* For founder section */
+    --bg-pricing: #B59CD1;    /* Pricing background based on Lilac */
+    
+    --text-main: #333333;
+    --text-muted: #666666;
+    --text-light: #FFFFFF;
+    
+    --border-radius: 12px;
+    --border-radius-lg: 24px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --box-shadow-hover: 0 15px 40px rgba(163, 140, 186, 0.15);
+    
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    /* Typography */
+    /* Mobile-friendly Traditional Chinese fonts (Source Han / System fallbacks) */
+    --font-sans: 'EB Garamond', 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic', 'Microsoft JhengHei', sans-serif;
+    --font-serif: 'EB Garamond', 'Noto Serif TC', 'Songti TC', 'Apple LiSung', 'PMingLiU', 'Microsoft JhengHei', serif;
+}
+
+/* Reset & Scaffolding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .brand-text {
+    font-family: var(--font-serif);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: var(--text-light);
+}
+
+/* Typography Utilities */
+.section-title {
+    font-size: clamp(1.8rem, 4vw + 1rem, 2.5rem);
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.section-subtitle {
+    font-size: clamp(0.95rem, 2vw + 0.5rem, 1.1rem);
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.btn-large {
+    padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.1rem);
+    border-radius: 12px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(163, 140, 186, 0.3);
+}
+
+.btn-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.btn-outline-lilac {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-outline-lilac:hover {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-main);
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* --- Navbar --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 0.5rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 36px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    object-fit: contain;
+}
+
+.brand-text {
+    font-size: clamp(1.2rem, 3vw + 0.5rem, 1.5rem);
+    color: var(--primary);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.brand-text span {
+    font-size: 0.8rem;
+    font-family: var(--font-sans);
+    letter-spacing: 2px;
+    color: var(--text-muted);
+}
+
+.teaser-item.active-lesson {
+    background: linear-gradient(to right, white, rgba(216, 180, 254, 0.1));
+    border-color: var(--primary);
+    cursor: pointer;
+}
+
+.teaser-item.active-lesson:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.teaser-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lesson-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 600;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.status-online {
+    background: var(--primary);
+    color: white !important;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem !important;
+}
+
+.badge-hot {
+    background: #FF4D4D;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(255, 77, 77, 0.2);
+}
+
+/* Lesson Modal Specifics */
+.lesson-modal-content {
+    max-width: 1000px !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.lesson-modal-body {
+    background: white;
+}
+
+.lesson-modal-body .lesson-banner {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #fafafa, white);
+}
+
+.lesson-body-padding {
+    padding: 4rem;
+}
+
+.lesson-grid.modal-grid {
+    margin-top: 3rem;
+}
+
+.lesson-article.full-width {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .lesson-body-padding {
+        padding: 2rem;
+    }
+    
+    .founder-vision-quote {
+        font-size: 1.1rem;
+    }
+    
+    .lesson-num {
+        display: none;
+    }
+}
+
+.teaser-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    color: var(--text-main);
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-actions .btn {
+    padding: 0.6rem 1rem;
+    min-width: 120px;
+    height: 42px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

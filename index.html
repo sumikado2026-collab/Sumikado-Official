@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>澄花堂選品 Sumikado | 頂級烏骨雞滴雞精</title>
     <meta name="description" content="澄花堂選品，提供頂級澄韻烏骨雞滴雞精，滴養之道，為您補充元氣。">
+    <link rel="icon" type="image/jpeg" href="assets/brand/商標 (logo).jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +18,20 @@
     <div id="languageOverlay" class="language-overlay">
         <div class="language-modal">
             <div class="lang-brand">
-                <img src="assets/商標 (logo).jpg" alt="Sumikado Logo" class="lang-logo">
+                <img src="assets/brand/商標 (logo).jpg" alt="Sumikado Logo" class="lang-logo">
                 <div class="lang-brand-text">澄花堂 SUMIKADŌ</div>
             </div>
             <h2>請選擇您的語言 / <span>言語を選択してください / Select Language</span></h2>
             <div class="lang-options">
-                <button class="lang-btn" onclick="setLanguage('zh')">
+                <button class="lang-btn" data-action="set-language" data-language="zh">
                     <span class="lang-main">繁體中文</span>
                     <span class="lang-sub">Traditional Chinese</span>
                 </button>
-                <button class="lang-btn" onclick="setLanguage('ja')">
+                <button class="lang-btn" data-action="set-language" data-language="ja">
                     <span class="lang-main">日本語</span>
                     <span class="lang-sub">Japanese</span>
                 </button>
-                <button class="lang-btn" onclick="setLanguage('en')">
+                <button class="lang-btn" data-action="set-language" data-language="en">
                     <span class="lang-main">English</span>
                     <span class="lang-sub">English</span>
                 </button>
@@ -45,7 +46,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="assets/商標 (logo).jpg" alt="Sumikado Logo" class="brand-logo">
+                <img src="assets/brand/商標 (logo).jpg" alt="Sumikado Logo" class="brand-logo">
                 <span class="brand-text">澄花堂 <span>SUMIKADŌ</span></span>
             </div>
             <ul class="nav-links">
@@ -66,12 +67,12 @@
                         </svg>
                     </button>
                     <div class="lang-dropdown-content">
-                        <a href="javascript:void(0)" onclick="setLanguage('zh')">繁體中文</a>
-                        <a href="javascript:void(0)" onclick="setLanguage('ja')">日本語</a>
-                        <a href="javascript:void(0)" onclick="setLanguage('en')">English</a>
+                        <a href="#" data-action="set-language" data-language="zh">繁體中文</a>
+                        <a href="#" data-action="set-language" data-language="ja">日本語</a>
+                        <a href="#" data-action="set-language" data-language="en">English</a>
                     </div>
                 </div>
-                <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" class="btn btn-primary" data-i18n="btn-order">輕鬆訂購</a>
+                <a href="https://www.rakuten.com.tw/shop/sumikado/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btn-order">輕鬆訂購</a>
             </div>
         </div>
     </nav>
@@ -88,7 +89,7 @@
             </div>
         </div>
         <div class="hero-image-wrapper">
-             <img src="assets/澄韻_外包裝 (S__51724314).jpg" alt="澄花堂 澄韻烏骨雞滴雞精 禮盒" class="hero-float">
+             <img src="assets/products/澄韻_外包裝 (S__51724314).jpg" alt="澄花堂 澄韻烏骨雞滴雞精 禮盒" class="hero-float">
         </div>
     </header>
 
@@ -100,7 +101,7 @@
                 <p data-i18n="founder-text">我們深信，最好的保養來自於純粹與堅持。澄花堂走遍山林，嚴選頂級烏骨雞，遵循古法滴煉，只為了將最精華的一滴，呈獻給懂得照顧自己的您。希望透過這份溫潤，陪伴您度過每一個需要力量的時刻。</p>
             </div>
             <div class="intro-image fade-in-scroll right">
-                <img src="assets/創辦人形象照_refined.png" alt="創辦人的話" class="rounded-image shadow-lg">
+                <img src="assets/people/創辦人形象照_refined.png" alt="創辦人的話" class="rounded-image shadow-lg">
                 <div class="image-caption">
                     <span data-i18n="founder-caption">澄 花 堂 的 真 心 話</span>
                     <small data-i18n="founder-sub">【 和 您 一 起 守 護 健 康 】</small>
@@ -140,7 +141,7 @@
                 <div class="feature-card fade-up-scroll">
                     <div class="feature-badge">Point 1</div>
                     <div class="feature-img-wrapper">
-                        <img src="assets/澄韻_外包裝 (S__51724314).jpg" alt="澄韻 原味烏骨雞">
+                        <img src="assets/products/澄韻_外包裝 (S__51724314).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-1">✨</div>
                     </div>
                     <h3 data-i18n="feature-1-title">澄韻 原味烏骨雞</h3>
@@ -151,7 +152,7 @@
                 <div class="feature-card fade-up-scroll delay-1">
                     <div class="feature-badge">Point 2</div>
                     <div class="feature-img-wrapper">
-                        <img src="assets/澄潤_外包裝 (S__51724315).jpg" alt="澄潤 膠原古早雞">
+                        <img src="assets/products/澄潤_外包裝 (S__51724315).jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">💧</div>
                     </div>
                     <h3 data-i18n="feature-2-title">澄潤 膠原古早雞</h3>
@@ -162,7 +163,7 @@
                 <div class="feature-card fade-up-scroll delay-2">
                     <div class="feature-badge">Point 3</div>
                     <div class="feature-img-wrapper">
-                        <img src="assets/澄韻_內包裝 (S__51724316).jpg" alt="澄韻 原味烏骨雞">
+                        <img src="assets/products/澄韻_內包裝 (S__51724316).jpg" alt="澄韻 原味烏骨雞">
                         <div class="floating-icon icon-3">📊</div>
                     </div>
                     <h3 data-i18n="feature-3-title">澄韻 原味烏骨雞</h3>
@@ -173,7 +174,7 @@
                 <div class="feature-card fade-up-scroll delay-3">
                     <div class="feature-badge">Point 4</div>
                     <div class="feature-img-wrapper">
-                        <img src="assets/澄潤膠原_內包裝.jpg" alt="澄潤 膠原古早雞">
+                        <img src="assets/products/澄潤膠原_內包裝.jpg" alt="澄潤 膠原古早雞">
                         <div class="floating-icon icon-2">🌸</div>
                     </div>
                     <h3 data-i18n="feature-4-title">澄潤 膠原古早雞</h3>
@@ -196,31 +197,31 @@
                 <!-- Sumikado Home Kitchen -->
                 <div class="kitchen-card fade-up-scroll">
                     <div class="card-img">
-                        <img src="assets/kitchen_home.jpg" alt="Sumikado Home Kitchen">
+                        <img src="assets/kitchen/kitchen_home.jpg" alt="Sumikado Home Kitchen">
                     </div>
                     <div class="card-body">
                         <h3 data-i18n="kitchen-home-title">澄花家廚</h3>
                         <p data-i18n="kitchen-home-desc">廚房是家裡最溫暖的地方，也掌管了全家人的健康。</p>
-                        <button class="btn-clean btn-text" onclick="toggleRecipeModal('home')" data-i18n="kitchen-btn-home" style="border:none; background:none; padding:0; cursor:pointer; text-align:left;">回家吃飯 &rarr;</button>
+                        <button class="btn-clean btn-text" data-action="open-recipe" data-recipe="home" data-i18n="kitchen-btn-home" style="border:none; background:none; padding:0; cursor:pointer; text-align:left;">回家吃飯 &rarr;</button>
                     </div>
                 </div>
 
                 <!-- Master Culinary Arts -->
                 <div class="kitchen-card fade-up-scroll delay-1">
                     <div class="card-img">
-                        <img src="assets/kitchen_master_chef.jpg" alt="Master Culinary Arts">
+                        <img src="assets/kitchen/kitchen_master_chef.jpg" alt="Master Culinary Arts">
                     </div>
                     <div class="card-body">
                         <h3 data-i18n="kitchen-master-title">名廚旨味</h3>
                         <p data-i18n="kitchen-master-desc">指尖的倒影，是匠心的探尋。</p>
-                        <button class="btn-clean btn-text" onclick="toggleRecipeModal('chef')" data-i18n="kitchen-btn-enter" style="border:none; background:none; padding:0; cursor:pointer; text-align:left;">廚藝教室 &rarr;</button>
+                        <button class="btn-clean btn-text" data-action="open-recipe" data-recipe="chef" data-i18n="kitchen-btn-enter" style="border:none; background:none; padding:0; cursor:pointer; text-align:left;">廚藝教室 &rarr;</button>
                     </div>
                 </div>
 
                 <!-- Sumikado Curated Tastes -->
                 <div class="kitchen-card highlight fade-up-scroll delay-2">
                     <div class="card-img">
-                        <img src="assets/gift_reward_new.jpg" alt="Curated Tastes" class="gift-img-contain">
+                        <img src="assets/kitchen/gift_reward_new.jpg" alt="Curated Tastes" class="gift-img-contain">
                         <div class="reward-overlay" data-i18n="reward-badge">🎁 選味獎勵</div>
                     </div>
                     <div class="card-body">
@@ -233,7 +234,7 @@
                                 <li>3. 私房食譜經採納刊登即贈「面膜」乙盒</li>
                             </ul>
                         </div>
-                        <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-full mt-auto" data-i18n="kitchen-btn-submit">立即投稿</a>
+                        <a href="https://line.me/R/ti/p/@902daadp" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full mt-auto" data-i18n="kitchen-btn-submit">立即投稿</a>
                     </div>
                 </div>
             </div>
@@ -269,7 +270,7 @@
                 <h3 class="lessons-list-title" data-i18n="beautology-next-lessons-title">學堂課程目錄</h3>
                 <div class="teaser-list">
                     <!-- Lesson 1 (Clickable) -->
-                    <div class="teaser-item active-lesson" onclick="toggleLessonModal('lesson-1')">
+                    <div class="teaser-item active-lesson" data-action="open-lesson" data-lesson="lesson-1" role="button" tabindex="0">
                         <div class="teaser-info">
                             <span class="lesson-num">Lesson 01</span>
                             <span id="lessonTitle1" data-i18n="beautology-lesson-1-title">第一課：漢醫新語：滴養之道的醫學實證</span>
@@ -278,21 +279,21 @@
                     </div>
 
                     <!-- Upcoming Lessons -->
-                    <div class="teaser-item" onclick="toggleLessonModal('lesson-2')">
+                    <div class="teaser-item" data-action="open-lesson" data-lesson="lesson-2" role="button" tabindex="0">
                         <div class="teaser-info">
                             <span class="lesson-num">Lesson 02</span>
                             <span data-i18n="beautology-lesson-2">第二課：環境養土論——為什麼「澄韻」是孕育的根基？</span>
                         </div>
                         <span class="status">Coming Soon</span>
                     </div>
-                    <div class="teaser-item" onclick="toggleLessonModal('lesson-3')">
+                    <div class="teaser-item" data-action="open-lesson" data-lesson="lesson-3" role="button" tabindex="0">
                         <div class="teaser-info">
                             <span class="lesson-num">Lesson 03</span>
                             <span data-i18n="beautology-lesson-3">第三課：黑金聖品的滋陰學——烏骨雞與妳的飲用美容液。</span>
                         </div>
                         <span class="status">Coming Soon</span>
                     </div>
-                    <div class="teaser-item" onclick="toggleLessonModal('lesson-4')">
+                    <div class="teaser-item" data-action="open-lesson" data-lesson="lesson-4" role="button" tabindex="0">
                         <div class="teaser-info">
                             <span class="lesson-num">Lesson 04</span>
                             <span data-i18n="beautology-lesson-4">第四課：Reset 關鍵 60 天——漢醫碩士的產後調養計畫</span>
@@ -338,7 +339,7 @@
                 </div>
             </div>
             
-            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3" data-i18n="btn-consult">了解更多科研細節</a>
+            <a href="https://line.me/R/ti/p/@902daadp" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large cta-bottom fade-up-scroll delay-3" data-i18n="btn-consult">了解更多科研細節</a>
         </div>
     </section>
 
@@ -357,29 +358,29 @@
     <!-- Member Modal -->
     <div id="memberModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-box">
-            <button class="modal-close" onclick="closeMemberModal()" aria-label="關閉">&times;</button>
+            <button class="modal-close" data-action="close-member" aria-label="關閉">&times;</button>
 
             <!-- Tabs -->
             <div class="modal-tabs">
-                <button id="tabLogin" class="modal-tab active" onclick="switchTab('login')" data-i18n="modal-login-tab">會員登入</button>
-                <button id="tabRegister" class="modal-tab" onclick="switchTab('register')" data-i18n="modal-register-tab">立即註冊</button>
+                <button id="tabLogin" class="modal-tab active" data-action="switch-member-tab" data-tab="login" data-i18n="modal-login-tab">會員登入</button>
+                <button id="tabRegister" class="modal-tab" data-action="switch-member-tab" data-tab="register" data-i18n="modal-register-tab">立即註冊</button>
             </div>
 
             <!-- Login Panel -->
             <div id="panelLogin" class="modal-panel active">
                 <p class="modal-lead" data-i18n="modal-login-lead">歡迎回來！以下方式快速登入</p>
-                <button class="social-btn google-btn" onclick="loginWith('google')">
+                <button class="social-btn google-btn" data-action="member-login" data-provider="google">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號登入
                 </button>
-                <button class="social-btn line-btn" onclick="loginWith('line')">
+                <button class="social-btn line-btn" data-action="member-login" data-provider="line">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M12 2C6.477 2 2 6.038 2 11c0 3.22 1.792 6.047 4.545 7.783-.2.727-.742 2.641-.85 3.05-.14.518.189.511.398.373.163-.11 2.59-1.76 3.638-2.473A12.1 12.1 0 0 0 12 20c5.523 0 10-4.038 10-9S17.523 2 12 2z"/></svg>
                 </button>
-                <button class="social-btn apple-btn" onclick="loginWith('apple')">
+                <button class="social-btn apple-btn" data-action="member-login" data-provider="apple">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
                 </button>
                 <div class="modal-divider"><span>或以電子郵件登入</span></div>
-                <form id="loginForm" onsubmit="handleEmailLogin(event)">
+                <form id="loginForm">
                     <div class="form-group">
                         <label for="loginEmail">電子郵件</label>
                         <input type="email" id="loginEmail" placeholder="example@email.com" required>
@@ -395,18 +396,18 @@
             <!-- Register Panel -->
             <div id="panelRegister" class="modal-panel">
                 <p class="modal-lead" data-i18n="modal-register-lead">加入澄花堂，立享會員優惠</p>
-                <button class="social-btn google-btn" onclick="registerWith('google')">
+                <button class="social-btn google-btn" data-action="member-register" data-provider="google">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="22" height="22">
                     使用 Google 帳號註冊
                 </button>
-                <button class="social-btn line-btn" onclick="registerWith('line')">
+                <button class="social-btn line-btn" data-action="member-register" data-provider="line">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M12 2C6.477 2 2 6.038 2 11c0 3.22 1.792 6.047 4.545 7.783-.2.727-.742 2.641-.85 3.05-.14.518.189.511.398.373.163-.11 2.59-1.76 3.638-2.473A12.1 12.1 0 0 0 12 20c5.523 0 10-4.038 10-9S17.523 2 12 2z"/></svg>
                 </button>
-                <button class="social-btn apple-btn" onclick="registerWith('apple')">
+                <button class="social-btn apple-btn" data-action="member-register" data-provider="apple">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="#ffffff"><path d="M16.365 1.583c-.8.04-1.921.5-2.529 1.137-.53.557-.96 1.488-.778 2.378.892.052 1.956-.462 2.508-1.07.568-.628.916-1.52.799-2.445zm-1.637 4.194c-1.391-.019-2.618.896-3.323.896-.714 0-1.802-.85-2.923-.827-1.464.02-2.822.848-3.578 2.164-1.543 2.666-.394 6.611 1.096 8.761.727 1.049 1.579 2.222 2.723 2.181 1.1-.041 1.522-.712 2.853-.712 1.321 0 1.71.712 2.862.69 1.18-.02 1.905-1.066 2.62-2.112.827-1.205 1.168-2.373 1.189-2.434-.026-.011-2.28-1.026-2.302-3.483-.027-2.062 1.638-3.045 1.715-3.093-1.03-1.503-2.64-1.66-3.21-1.745z"/></svg>
                 </button>
                 <div class="modal-divider"><span>或以電子郵件註冊</span></div>
-                <form id="registerForm" onsubmit="handleEmailRegister(event)">
+                <form id="registerForm">
                     <div class="form-group">
                         <label for="regName">姓名</label>
                         <input type="text" id="regName" placeholder="請輸入姓名" required>
@@ -426,15 +427,15 @@
     </div>
 
     <!-- Recipe Modal -->
-    <div id="recipeModal" class="recipe-modal hidden" onclick="if(event.target === this) toggleRecipeModal()">
+    <div id="recipeModal" class="recipe-modal hidden">
         <div class="recipe-content">
-            <button class="modal-close" onclick="toggleRecipeModal()">&times;</button>
+            <button class="modal-close" data-action="close-recipe">&times;</button>
             
             <!-- Detail View -->
             <div id="recipeDetailView" class="recipe-detail-view">
                 <div class="recipe-flex">
                     <div class="recipe-image-side">
-                        <img id="recipeImage" src="assets/recipe_egg_portrait.jpg" alt="Recipe Image">
+                        <img id="recipeImage" src="assets/recipes/recipe_egg_portrait.jpg" alt="Recipe Image">
                     </div>
                     <div class="recipe-info-side">
                         <div class="recipe-header">
@@ -460,9 +461,9 @@
     </div>
 
     <!-- Lesson Modal -->
-    <div id="lessonModal" class="recipe-modal hidden" onclick="if(event.target === this) toggleLessonModal()">
+    <div id="lessonModal" class="recipe-modal hidden">
         <div class="recipe-content lesson-modal-content">
-            <button class="modal-close" onclick="toggleLessonModal()">&times;</button>
+            <button class="modal-close" data-action="close-lesson">&times;</button>
             <div class="lesson-modal-body">
                 <div class="lesson-banner">
                     <h2 id="lessonModalTitle">課程標題</h2>
@@ -481,6 +482,8 @@
         </div>
     </div>
 
-    <script src="app.js?v=3"></script>
+    <script src="translations.js?v=1"></script>
+    <script src="modals.js?v=1"></script>
+    <script src="app.js?v=4"></script>
 </body>
 </html>

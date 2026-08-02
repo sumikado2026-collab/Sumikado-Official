@@ -1,4 +1,6 @@
 steps:
+  # The main-branch trigger uses this file to deploy the staging preview.
+  # Production deployment will use a separate release-branch or tag configuration.
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/official-website:$COMMIT_SHA', '.']
@@ -7,13 +9,13 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/official-website:$COMMIT_SHA']
 
-  # Deploy container image to Cloud Run
+  # Deploy container image to the current staging Cloud Run service.
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       - 'run'
       - 'deploy'
-      - 'official-website'
+      - 'official-website' # staging preview service
       - '--image'
       - 'gcr.io/$PROJECT_ID/official-website:$COMMIT_SHA'
       - '--region'
