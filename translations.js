@@ -4,13 +4,22 @@ window.translations = {
     'zh': {
         'nav-home': '首頁',
         'nav-about': '品牌理念',
-        'nav-product': '滴養之道',
+        'nav-product': '產品一覽',
         'nav-beautology': '美力學堂',
         'nav-science': '滴雞精科學',
 
+        'page-home-title': '澄花堂選品 Sumikado｜頂級烏骨雞滴雞精',
+        'page-home-desc': '澄花堂選品提供澄韻烏骨雞滴雞精、澄潤膠原古早雞滴雞精與植萃面膜，從日常滋養到肌膚保養，細緻照顧每一天。',
+        'page-kitchen-title': '澄花堂廚房｜Sumikado',
+        'page-kitchen-desc': '探索澄花堂滴雞精食譜、名廚旨味與澄芳選私房食譜徵選活動。',
+        'page-beautology-title': 'HANA 醫師的美力學堂｜澄花堂',
+        'page-beautology-desc': 'HANA 醫師從漢方醫學與現代營養學出發，分享女性滋養、美力與滴養之道。',
+        'page-science-title': '滴雞精科學｜澄花堂選品 Sumikado',
+        'page-science-desc': '了解澄花堂滴雞精的 12 小時無水滴煉製程、雞種差異與營養成分。',
+
         'btn-login': '會員登入',
         'btn-order': '輕鬆訂購',
-        'hero-title': '澄韻 滴養之道',
+        'hero-title': '滴養之道',
         'hero-desc': '頂級烏骨雞滴雞精，傳承自然本味，為您注入每日活力。',
         'hero-explore': '探索產品',
         'hero-learn': '了解品牌',
@@ -23,6 +32,44 @@ window.translations = {
         'brand-story-item-title': '滴養之道',
         'brand-story-item-text': '在澄花堂，我們相信真正的養生沒有捷徑。每一包滴雞精的誕生，都是在「滴養之道」上的扎實前行。花蓮純淨大地放養足齡120天，堅持12小時無水慢火滴萃，這不只是物理上的濃縮，更是職人靈魂的沉澱。每一步都要踏得穩健，才能換來那一滴滴溫潤的「元氣」與「豐美」。',
         'brand-footer-text': '澄花堂與您一起，走得慢、走得穩，走向理想的健康境界。',
+        'products-title': '從日常滋養到肌膚保養，更自在地照顧自己。',
+        'products-lead': '滴雞精與面膜，從飲食補給到日常保養，以純粹原料與細緻工法，回應每一天不同的需要。',
+        'product-chengyun-eyebrow': 'ORIGINAL SILKIE ESSENCE',
+        'product-chengyun-copy': '嚴選足齡烏骨雞，12 小時無水慢火滴煉。溫潤不腥的純粹本味，為忙碌日常補回穩定元氣。',
+        'product-chengrun-eyebrow': 'COLLAGEN NATIVE CHICKEN ESSENCE',
+        'product-chengrun-copy': '古早雞精華揉合膠原滋養，入口清爽、常溫即飲。從每日一包開始，照顧活力，也照顧由內而外的光采。',
+        'product-availability-note': '本產品目前尚未上市，敬請期待。',
+        'product-coming-soon': '尚未上市',
+        'product-mask-eyebrow': 'COPPER PEPTIDE PHYTO-REJUVENATING MASK',
+        'product-mask-title': '澄潤 藍銅肽植萃新生面膜',
+        'product-mask-copy': '藍銅肽結合植萃配方，為每日肌膚保養留下一段溫柔而專注的時光。一盒 5 片，適合日常使用與心意贈禮。',
+        'fact-slow': '慢火滴煉',
+        'fact-water': '不加一滴水',
+        'fact-tested': '多項檢驗',
+        'fact-double': '雙重滋養',
+        'fact-room': '常溫保存',
+        'fact-ready': '撕開即飲',
+        'fact-copper-peptide': '藍銅肽',
+        'fact-phyto': '植萃配方',
+        'fact-mask-count': '一盒 5 片',
+        'product-consult': '諮詢這款產品',
+        'product-scroll-label': '產品滑動進度',
+        'trust-1-title': '醫師嚴選',
+        'trust-1-copy': '三十年臨床經驗的選品標準',
+        'trust-2-title': '純粹製程',
+        'trust-2-copy': '無水慢火，留下食材本味',
+        'trust-3-title': '日常安心',
+        'trust-3-copy': '完整標示與多項品質檢驗',
+        'concept-title': '一滴滴，皆是一步步。',
+        'concept-lead': '澄花堂相信，真正的滋養沒有捷徑。從選品、滴煉到承載文化的包裝，每一步都踏得穩，才成就值得長久信賴的一滴。',
+        'concept-1-title': '以醫師的嚴謹，為家人做選擇',
+        'concept-1-copy': '源於漢方涵養與三十年西醫實證，我們從原料、營養到檢驗逐一把關，把專業化為日常可以信任的溫柔照顧。',
+        'concept-2-title': '用時間，滴出食材最純粹的本味',
+        'concept-2-copy': '足齡雞隻經 12 小時無水慢火滴萃，再以細緻工序去脂除腥。慢，不只是製程，也是我們對品質的耐心。',
+        'concept-3-title': '讓台灣窗花，守護每一份心意',
+        'concept-3-copy': '紫藤窗花不只是裝飾，也是團圓與守護的記憶。我們將文化印記放進產品，讓每一次自用與贈禮都更有溫度。',
+        'concept-closing': '醫師嚴選・母親呵護・台灣心意',
+        'concept-science-link': '深入了解滴雞精科學',
         'feature-title': '醫師嚴選 滴養體驗',
         'feature-subtitle': '隨時隨地，補充元氣',
         'feature-1-title': '窗花美學',
@@ -32,9 +79,7 @@ window.translations = {
         'feature-3-title': '頂級食養',
         'feature-3-text': '零膽固醇、零脂肪、無添加防腐劑。完整營養標示，通過多項SGS檢驗，讓您喝得安心。',
         'feature-4-title': '元氣滿滿',
-        'feature-4-text': '嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華。',
-        'feature-4-title': '元氣滿滿',
-        'feature-4-text': '嚴選優質烏骨雞，12小時慢火滴煉，萃取小分子胺基酸，口感溫潤不腥，滴滴精華',
+        'feature-4-text': '嚴選優質烏骨雞，12 小時慢火滴煉，萃取游離胺基酸，口感溫潤不腥，滴滴精華。',
         'process-title': '滴雞精科學 | The Science of Essence',
         'science-method-title': '古法滴煉 ‧ 蒸汽不回流',
         'science-method-desc': '堅持 12 小時慢火萃取，利用蒸氣孔洞原理將精華滴出。過程中不添加一滴水，且通過兩道脫油技術，去脂除腥，保留純粹小分子營養。',
@@ -47,8 +92,8 @@ window.translations = {
         `,
         'science-benefits-title': '科研成分與健康益處',
         'science-benefit-1': '<strong>高效抗疲勞</strong>：顯著增加體內肝醣儲存，提升運動與耐力表現。',
-        'science-benefit-2': '<strong>快速修復</strong>：小分子胺基酸能在短時間內吸收，適合術後或體虛調養。',
-        'science-benefit-3': '<strong>彈力支撐</strong>：富含豐富膠原胜肽，支持肌膚彈性與關節潤滑。',
+        'science-benefit-2': '<strong>快速修復</strong>：游離胺基酸能在短時間內吸收，適合術後或體虛調養。',
+        'science-benefit-3': '<strong>彈力支撐</strong>：富含膠原胜肽，支持肌膚彈性與關節潤滑。',
         'btn-consult': '了解更多科研細節',
         'footer-brand': '澄花堂選品',
         'footer-slogan': '讓您的養生之旅更精彩',
@@ -57,6 +102,12 @@ window.translations = {
         'modal-register-tab': '立即註冊',
         'modal-login-lead': '歡迎回來！以下方式快速登入',
         'modal-register-lead': '加入澄花堂，立享會員優惠',
+        'modal-close': '關閉',
+        'recipe-ingredients-title': '食材',
+        'recipe-steps-title': '作法',
+        'coming-soon': '即將公開',
+        'coming-soon-lead': '敬請期待',
+        'coming-soon-copy': '更多精彩內容正在準備中，敬請期待。',
         'nav-language': '切換語言',
         'nav-menu': '開啟導覽選單',
         'nav-menu-label': '選單',
@@ -68,10 +119,29 @@ window.translations = {
         'carousel-label': '產品外盒輪播',
         'carousel-prev': '上一個產品',
         'carousel-next': '下一個產品',
+        'carousel-select': '選擇產品',
+        'brand-home-label': '澄花堂首頁',
+        'brand-logo-alt': '澄花堂 Sumikado 標誌',
+        'product-chengyun-package-alt': '澄韻原味烏骨雞滴雞精外包裝',
+        'product-chengyun-pouch-alt': '澄韻原味烏骨雞滴雞精內包裝',
+        'product-chengrun-package-alt': '澄潤膠原古早雞滴雞精外包裝',
+        'product-chengrun-pouch-alt': '澄潤膠原古早雞滴雞精內包裝',
+        'product-mask-package-alt': '澄潤藍銅肽植萃新生面膜禮盒',
+        'product-mask-sheet-alt': '展開的面膜布膜示意圖',
+        'product-chengyun-features-label': '澄韻產品特色',
+        'product-chengrun-features-label': '澄潤產品特色',
+        'product-mask-features-label': '澄潤藍銅肽植萃新生面膜特色',
+        'trust-strip-label': '澄花堂安心承諾',
+        'concept-founder-alt': '澄花堂創辦人形象照',
+        'concept-craft-alt': '澄花堂職人料理與滴煉意象',
+        'concept-window-alt': '台灣鐵窗花細節',
         'nav-kitchen': '澄花堂廚房',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': '澄花堂 ‧ 廚房',
         'kitchen-subtitle': '在這裡，每一滴精華都能化作餐桌上的溫暖與美力。',
+        'kitchen-home-image-alt': '澄花堂家常料理',
+        'kitchen-master-image-alt': '名廚料理與廚藝示範',
+        'kitchen-event-image-alt': '澄芳選投稿活動面膜獎品',
         'kitchen-home-title': '澄花家廚',
         'kitchen-home-desc': `
             廚房是家裡最溫暖的地方，也掌管了全家人的健康。記憶裡的滋味，還收藏著歲月的馨香。<br>
@@ -85,7 +155,7 @@ window.translations = {
         'kitchen-btn-home': '回家吃飯 &rarr;',
         'kitchen-btn-enter': '廚藝教室 &rarr;',
         'kitchen-event-title': '澄芳選',
-        'kitchen-event-desc': '民間高手 ‧ 私藏風味的選拔。尋找藏在日常裡的味覺實踐者。在這裡，每個人都是品味的策展人。您的私房祕技，是澄花堂最珍貴的收藏!',
+        'kitchen-event-desc': '民間高手 ‧ 私藏風味的選拔。尋找藏在日常裡的味覺實踐者。在這裡，每個人都是品味的策展人。您的私房祕技，是澄花堂最珍貴的收藏！',
         'reward-badge': '🎁 選味獎勵',
         'kitchen-event-requirements': `
             <li>1. 需包含「澄花堂」滴雞精系列產品</li>
@@ -95,27 +165,30 @@ window.translations = {
         'kitchen-btn-submit': '立即投稿',
         'recipe-home-badge': '澄花家廚 #01',
         'recipe-home-title': '滴雞精柔滑蒸蛋',
+        'recipe-home-image-alt': '滴雞精柔滑蒸蛋完成品',
         'recipe-home-ingredients': `
-            <li>澄花堂滴雞精 1包 (60ml)</li>
+            <li>澄花堂滴雞精 1 包（60 ml）</li>
             <li>雞蛋 2顆</li>
             <li>溫水 140ml</li>
             <li>鹽 少許</li>
-            <li>鮮香菇薄片/鮭魚卵 (裝飾)</li>
+            <li>鮮香菇薄片／鮭魚卵（裝飾）</li>
         `,
         'recipe-home-steps': `
             <li>將雞蛋均勻打散，加入滴雞精、溫水與少許鹽拌勻。</li>
             <li>進行兩次過篩，去除氣泡與雜質。</li>
-            <li>中火蒸 8-10 分鐘後快速開蓋。</li>
+            <li>中火蒸 8–10 分鐘後快速開蓋。</li>
             <li>鋪上香菇薄片，續蒸 3 分鐘，灑上鮭魚卵裝飾即可。</li>
         `,
         'recipe-chef-badge': '名廚旨趣 #01',
         'recipe-chef-title': '日式膠原雞湯鍋',
+        'recipe-chef-image-alt': '日式膠原雞湯鍋完成品',
         'recipe-chef-ingredients': `
-            <li>澄花堂澄潤膠原滴雞精 2包</li>
+            <li>澄花堂澄潤膠原滴雞精 2 包</li>
             <li>嫩雞腿肉 切塊 300g</li>
-            <li>大白菜/昆布高湯 800ml</li>
+            <li>大白菜 適量</li>
+            <li>昆布高湯 800ml</li>
             <li>鮮香菇、豆腐、季節野菜</li>
-            <li>橙醋或胡麻醬 (沾醬)</li>
+            <li>橙醋或胡麻醬（沾醬）</li>
         `,
         'recipe-chef-steps': `
             <li>將切塊烏骨雞汆燙去血水備用。</li>
@@ -141,7 +214,7 @@ window.translations = {
         'beautology-l1-s2-title': '2. 精微物質的運行：小分子胜肽的力量',
         'beautology-l1-s2-text': '為什麼我強調「精微修復」？產後脾胃虛弱，大魚大肉往往造成消化負擔（中醫所謂的「虛不受補」）。<br><strong>小分子轉換：</strong> 透過恆溫滴製技術，將大分子的蛋白質轉化為游離胺基酸與膠原胜肽。<br><strong>生物利用率：</strong> 這些精微物質能繞過繁瑣消化，直達細胞修復底層，達成「補而不燥、潤而不膩」的最高調養境界。',
         'beautology-l1-s3-title': '3. 澄韻與澄潤：內在美力的雙重應援',
-        'beautology-l1-s3-text': '根據我的研究與三次分娩的實證，我將這份專業轉化為兩款精準處方：<br><strong>【澄韻｜元氣之雫】：</strong> 以古早雞為主，側重「益氣」。適合產前衝刺體力、產後補足中氣。<br><strong>【澄潤｜飲用美容液】：</strong> 以烏骨雞為主，側重「滋陰」。添加膠原蛋白，針對產後氣色暗沈與結構修復。',
+        'beautology-l1-s3-text': '根據我的研究與三次分娩的實證，我將這份專業轉化為兩款精準處方：<br><strong>【澄韻｜元氣之雫】：</strong> 以烏骨雞為主，側重日常元氣補給，適合產前補充體力、產後補足中氣。<br><strong>【澄潤｜飲用美容液】：</strong> 以古早雞為主，添加膠原蛋白，照顧產後氣色與由內而外的光采。',
         'beautology-footer-quote': '「我的研究初衷很簡單：用最科學的漢方邏輯，守護每一位正在孕育生命、或在職場與家庭間奔波的女性。」 —— HANA 醫師',
         'beautology-next-lessons-title': '我的講義',
         'beautology-lesson-2': '第二課：環境養土論——為什麼「澄韻」是孕育的根基？',
@@ -149,297 +222,443 @@ window.translations = {
         'beautology-lesson-4': '第四課：Reset 關鍵 60 天——漢醫碩士的產後調養計畫',
     },
     'ja': {
-        'nav-home': 'トップ',
+        'nav-home': 'ホーム',
         'nav-about': 'ブランド理念',
-        'nav-product': '滴養之道',
-        'nav-beautology': '美力学堂',
-        'nav-science': '滴鶏精科学',
+        'nav-product': '商品一覧',
+        'nav-beautology': '美力アカデミー',
+        'nav-science': 'チキンエッセンスの科学',
+
+        'page-home-title': '澄花堂 Sumikado｜上質な烏骨鶏チキンエッセンス',
+        'page-home-desc': '澄花堂の烏骨鶏チキンエッセンス、コラーゲン配合の台湾在来鶏チキンエッセンス、植物エキス配合シートマスクをご紹介します。毎日の滋養からスキンケアまで、健やかな日々に寄り添います。',
+        'page-kitchen-title': '澄花堂キッチン｜Sumikado',
+        'page-kitchen-desc': '澄花堂チキンエッセンスを使ったレシピ、名シェフのひと皿、オリジナルレシピ募集企画「澄芳セレクション」をご紹介します。',
+        'page-beautology-title': 'HANA医師の美力アカデミー｜澄花堂',
+        'page-beautology-desc': 'HANA医師が、漢方医学と現代栄養学の視点から、女性の滋養、美しさと生命力、滴養の考え方をお届けします。',
+        'page-science-title': 'チキンエッセンスの科学｜澄花堂 Sumikado',
+        'page-science-desc': '澄花堂チキンエッセンスの12時間無水抽出、鶏種による違い、栄養成分についてご紹介します。',
 
         'btn-login': 'ログイン',
-        'btn-order': 'お得な注文',
-        'hero-title': '澄韻 滴養之道',
-        'hero-desc': '究極の烏骨鶏チキンエッセンス。自然本来の味を継承し、毎日の活力を。',
-        'hero-explore': '製品を見る',
-        'hero-learn': 'ブランドを知る',
+        'btn-order': 'かんたん注文',
+        'hero-title': '滴養の道',
+        'hero-desc': '上質な烏骨鶏チキンエッセンス。素材本来の味わいを生かし、毎日に健やかな活力を届けます。',
+        'hero-explore': '商品を見る',
+        'hero-learn': 'ブランドについて',
         'founder-title': 'ブランド理念',
-        'founder-text': '漢方の叡智と三十年にわたる西洋医学の臨床経験を礎に、澄花堂は医師の厳格な視点で真の純粋さを吟味します。母親のような細やかな慈愛を込め、大地の精華を優雅な活力へと昇華させました。台湾の伝統的な窓飾りに守護の願いを込めて、皆様の健康な日々に寄り添います。',
-        'founder-caption': '澄花堂 ‧ ブランド理念',
-        'founder-sub': '【 医師の厳選 ‧ 母の慈しみ 】',
-        'brand-story-title': '滴養之道',
-        'brand-story-slogan': '「ひとしずくは、一歩一歩。」',
-        'brand-story-item-title': '滴養之道',
-        'brand-story-item-text': '澄花堂では、真の健康に近道はないと信じています。チキンエッセンスの一滴一滴は、「滴養之道」を着実に歩んだ結果です。花蓮の清らかな大地で120日間放牧飼育され、12時間の無水抽出を行う――それは単なる濃縮ではなく、職人の魂の結晶。一歩一歩を着実に踏みしめることで、はじめて一滴一滴に温かな「元気」と「豊美」が宿るのです。',
-        'brand-footer-text': '私たちは實直に「滴養之道」を歩み、あなたを導きます。',
-        'feature-title': '医師厳選 滴養体験',
-        'feature-subtitle': 'いつでもどこでも、元気をチャージ',
-        'feature-1-title': '窓飾り美学',
-        'feature-1-text': '優雅な藤の花のデザイン。台灣の「窓格子（窗花）」文化を大切にし、貴重な台灣の宝を守り受け継ぐことが澄花堂の理念です。',
-        'feature-2-title': '彈力と美しさ',
-        'feature-2-text': '食品グレードの高温殺菌アルミパック。常温保存可能で、いつでも手輕に飲めます。',
-        'feature-3-title': '究極の食養',
-        'feature-3-text': 'コレステロールゼロ、脂肪ゼロ、保存料無添加。SGS検査済みの安心品質。',
-        'feature-4-title': '元気いっぱい',
-        'feature-4-text': '厳選された烏骨鶏。12時間の低温抽出で、豊潤で臭みのない精華を抽出。',
-        'feature-4-title': '元気いっぱい',
-        'feature-4-text': '厳選された烏骨鶏。12時間の低温抽出で、豊潤で臭みのない精華を抽出。',
-        'process-title': 'チキンエッセンスの科学',
-        'science-method-title': '古法蒸留 ‧ 完全無添加水分',
-        'science-method-desc': '12時間の低温抽出により、一滴の水も加えずに純粋な成分を抽出。独自の技術で脂質と臭みを除去し、小分子栄養をそのまま凝縮。',
-        'science-chicken-title': '鶏種の科学分析：烏骨鶏 vs 本地鶏',
-        'science-chicken-desc': '鶏の品種によって栄養密度が異なります。国家機関のデータによると、烏骨鶏は微量元素とカルノシン含有量で優れています。',
+        'founder-text': '漢方に培われた知見と30年にわたる西洋医学の臨床経験を礎に、澄花堂は医師の厳しい目で、一つひとつの純粋さを確かめます。母のような細やかな心配りで、大地の穏やかな恵みを、上品に取り入れられる毎日の活力へ。台湾の伝統的な窓飾りに守りの願いを込め、皆さまの健やかな初心に寄り添います。',
+        'founder-caption': '澄花堂・ブランド理念',
+        'founder-sub': '【 医師の厳選・母の慈しみ 】',
+        'brand-story-title': '滴養の道',
+        'brand-story-slogan': '「一滴一滴が、一歩一歩。」',
+        'brand-story-item-title': '滴養の道',
+        'brand-story-item-text': '澄花堂は、本当の養生に近道はないと考えます。一袋のチキンエッセンスが生まれるまでには、「滴養の道」を着実に進む一つひとつの工程があります。花蓮の清らかな大地で120日間のびのびと育てた鶏を、水を一滴も加えず、弱火で12時間じっくり抽出。それは単なる濃縮ではなく、職人の思いと技を積み重ねる時間です。一歩一歩を丁寧に重ねてこそ、穏やかな「元気」と豊かな滋味を一滴一滴に込めることができます。',
+        'brand-footer-text': 'ゆっくり、着実に、理想の健やかさへ。澄花堂は、皆さまとともに歩みます。',
+        'products-title': '毎日の滋養からスキンケアまで、もっと心地よく自分をいたわる。',
+        'products-lead': 'チキンエッセンスとシートマスク。食からの滋養と毎日のスキンケアを、厳選素材と丁寧なものづくりで支えます。',
+        'product-chengyun-eyebrow': 'ORIGINAL SILKIE ESSENCE',
+        'product-chengyun-copy': '十分に育った烏骨鶏を厳選し、水を一滴も加えず、弱火で12時間じっくり抽出。まろやかで臭みのない素材本来の味わいが、忙しい毎日に穏やかな活力を届けます。',
+        'product-chengrun-eyebrow': 'COLLAGEN NATIVE CHICKEN ESSENCE',
+        'product-chengrun-copy': '台湾在来鶏のチキンエッセンスにコラーゲンをプラス。すっきりとした飲み口で、常温のまま手軽にお召し上がりいただけます。1日1袋から、活力と内側からの美しさを支えます。',
+        'product-availability-note': '本商品はまだ発売されていません。発売まで今しばらくお待ちください。',
+        'product-coming-soon': '発売前',
+        'product-mask-eyebrow': 'COPPER PEPTIDE PHYTO-REJUVENATING MASK',
+        'product-mask-title': '澄潤 銅ペプチド・ボタニカルマスク',
+        'product-mask-copy': '銅ペプチドと植物由来エキスを組み合わせたシートマスク。毎日のスキンケアに、肌と丁寧に向き合う穏やかなひとときを届けます。1箱5枚入りで、ご自宅用にも大切な方への贈り物にもおすすめです。',
+        'fact-slow': 'じっくり抽出',
+        'fact-water': '加水なし',
+        'fact-tested': '各種検査済み',
+        'fact-double': 'ダブルの滋養',
+        'fact-room': '常温保存',
+        'fact-ready': '開封してすぐ飲める',
+        'fact-copper-peptide': '銅ペプチド',
+        'fact-phyto': '植物由来エキス',
+        'fact-mask-count': '1箱5枚',
+        'product-consult': 'この商品について相談する',
+        'product-scroll-label': '商品スライダーの進行状況',
+        'trust-1-title': '医師が厳選',
+        'trust-1-copy': '30年の臨床経験に基づく選定基準',
+        'trust-2-title': '素材を生かす製法',
+        'trust-2-copy': '水を加えずじっくり抽出し、素材本来の味わいを生かす',
+        'trust-3-title': '毎日に安心を',
+        'trust-3-copy': '分かりやすい表示と各種品質検査',
+        'concept-title': '一滴一滴が、一歩一歩。',
+        'concept-lead': '澄花堂は、本当の滋養に近道はないと考えます。素材選びから抽出、文化を受け継ぐパッケージまで、一歩一歩を着実に重ねてこそ、末永く信頼していただける一滴が生まれます。',
+        'concept-1-title': '医師の厳しい目で、家族のために選ぶ',
+        'concept-1-copy': '漢方に培われた知見と30年にわたる西洋医学の臨床経験をもとに、原料・栄養・検査を一つひとつ確認。専門性を、毎日の暮らしで信頼できるやさしいケアへとつなげます。',
+        'concept-2-title': '時間をかけ、素材本来の味を引き出す',
+        'concept-2-copy': '十分に育った鶏を、水を一滴も加えず、弱火で12時間じっくり抽出。その後も丁寧な工程で脂と臭みを取り除きます。時間をかけることは、品質に向き合う私たちの姿勢そのものです。',
+        'concept-3-title': '台湾の窓飾りに、一つひとつの思いを託して',
+        'concept-3-copy': '藤をあしらった窓飾りは、単なる装飾ではなく、家族の団らんと守りの記憶です。その文化の印を商品に込め、ご自宅用にも贈り物にも、ぬくもりを添えます。',
+        'concept-closing': '医師の厳選・母の慈しみ・台湾からの思い',
+        'concept-science-link': 'チキンエッセンスの科学を知る',
+        'feature-title': '医師厳選の「滴養」体験',
+        'feature-subtitle': 'いつでも、どこでも、元気を補う',
+        'feature-1-title': '窓飾りの美意識',
+        'feature-1-text': '上品な藤の花をあしらい、台湾の伝統的な窓飾り文化を映したデザイン。大切な台湾の文化を守り、次の世代へ受け継ぐことも、澄花堂の願いです。滋養の品を、文化を伝える器へと仕立てました。',
+        'feature-2-title': '弾むような美しさ',
+        'feature-2-text': '食品用の高温殺菌アルミパウチが、一滴一滴の栄養を閉じ込めます。常温で保存でき、開封してすぐ、いつでも手軽にお召し上がりいただけます。',
+        'feature-3-title': '上質な食養生',
+        'feature-3-text': 'コレステロールゼロ、脂質ゼロ、保存料不使用。栄養成分を明確に表示し、SGSによる各種検査を実施しています。毎日安心してお召し上がりいただける品質です。',
+        'feature-4-title': '毎日に元気を',
+        'feature-4-text': '上質な烏骨鶏を厳選し、弱火で12時間じっくり抽出。遊離アミノ酸を含む、まろやかで臭みのない一滴に仕上げました。',
+        'process-title': 'チキンエッセンスの科学｜The Science of Essence',
+        'science-method-title': '伝統の滴下抽出・蒸気を戻さない製法',
+        'science-method-desc': '弱火で12時間じっくり加熱し、蒸気孔の仕組みを利用してエッセンスを一滴ずつ抽出します。水は一滴も加えず、2段階の脱脂工程で脂と臭みを除去。低分子の栄養成分を生かした、純粋な味わいに仕上げます。',
+        'science-chicken-title': '鶏種の科学的比較：烏骨鶏 vs. 台湾在来鶏',
+        'science-chicken-desc': '鶏は品種によって栄養密度が異なります。公的機関の検査データでは、烏骨鶏は微量元素とカルノシンの含有量において、ほかの鶏種を大きく上回っています。',
         'science-chicken-comparison': `
-            <div class="comparison-row"><strong>烏骨鶏 (Silkie)</strong>：天然メラニンと高濃度のBCAAを含み、薬食同源の代表格です。</div>
-            <div class="comparison-row"><strong>台灣本地土鶏 (Native)</strong>：肉質が堅実で、豊富かつバランスの良いコラーゲンとペプチドを含みます。</div>
-            <div class="comparison-row"><strong>若鶏 (Broiler)</strong>：飼育期間が短く栄養密度が低いため、添加物等が必要になる場合があります。</div>
+            <div class="comparison-row"><strong>烏骨鶏（Silkie）</strong>：天然の黒色色素と、より高濃度の分岐鎖アミノ酸（BCAA）を含み、薬膳や滋養食に適しています。</div>
+            <div class="comparison-row"><strong>台湾在来鶏（Native Chicken）</strong>：引き締まった肉質とまろやかな旨味が特長で、コラーゲンとペプチドをバランスよく含みます。</div>
+            <div class="comparison-row"><strong>一般的なブロイラー（Broiler）</strong>：飼育期間が短く、栄養密度は比較的低いため、味付けや加水が必要になることがあります。</div>
         `,
-        'science-benefits-title': '科学的成分と健康へのメリット',
-        'science-benefit-1': '<strong>抗疲労効果</strong>：体内のグリコーゲン貯蔵量を増やし、瞬発力と持久力をサポート。',
-        'science-benefit-2': '<strong>急速修復</strong>：小分子アミノ酸が短時間で吸収され、術後や体質改善に最適。',
-        'science-benefit-3': '<strong>弾力サポート</strong>：豊富なコラーゲンペプチドが肌のハリと関節の滑らかさを保ちます。',
-        'btn-consult': '科学的詳細をもっと知る',
+        'science-benefits-title': '注目成分と健康への働き',
+        'science-benefit-1': '<strong>疲労対策</strong>：体内の肝グリコーゲンの蓄積量を高め、運動時のパフォーマンスと持久力を支えます。',
+        'science-benefit-2': '<strong>すばやい回復を支える</strong>：遊離アミノ酸は短時間で吸収されやすく、術後や体力が落ちているときの栄養補給に適しています。',
+        'science-benefit-3': '<strong>しなやかさを支える</strong>：豊富なコラーゲンペプチドが、肌の弾力と関節のなめらかな動きを支えます。',
+        'btn-consult': '科学的な特長を詳しく見る',
         'footer-brand': '澄花堂選品',
-        'footer-slogan': 'あなたの健康の旅をより豊かに',
-        'footer-copy': '&copy; 2026 Sumikado. All rights reserved.',
+        'footer-slogan': '健やかな毎日を、もっと豊かに',
+        'footer-copy': '&copy; 2026 澄花堂選品 Sumikado. All rights reserved.',
         'modal-login-tab': 'ログイン',
         'modal-register-tab': '新規登録',
-        'modal-login-lead': 'お帰りなさい！',
-        'modal-register-lead': 'Sumikadoの会員になりませんか？',
+        'modal-login-lead': 'おかえりなさい。以下の方法でかんたんにログインできます。',
+        'modal-register-lead': '澄花堂の会員に登録して、会員限定特典をご利用ください。',
+        'modal-close': '閉じる',
+        'recipe-ingredients-title': '材料',
+        'recipe-steps-title': '作り方',
+        'coming-soon': '近日公開',
+        'coming-soon-lead': '公開まで今しばらくお待ちください',
+        'coming-soon-copy': '新しいコンテンツを準備中です。公開まで今しばらくお待ちください。',
         'nav-language': '言語を切り替える',
         'nav-menu': 'ナビゲーションメニューを開く',
         'nav-menu-label': 'メニュー',
         'btn-line-order': 'かんたん注文',
         'btn-line-shop': 'LINEで購入する',
         'btn-line-ask': 'LINEで相談する',
-        'product-chengyun-title': '澄韻 原味烏骨鶏',
-        'product-chengrun-title': '澄潤 コラーゲン古早鶏',
-        'carousel-label': '商品パッケージスライダー',
+        'product-chengyun-title': '澄韻 オリジナル烏骨鶏',
+        'product-chengrun-title': '澄潤 コラーゲン・台湾在来鶏',
+        'carousel-label': '商品パッケージのスライダー',
         'carousel-prev': '前の商品',
         'carousel-next': '次の商品',
+        'carousel-select': '商品を選ぶ',
+        'brand-home-label': '澄花堂ホーム',
+        'brand-logo-alt': '澄花堂 Sumikadoのロゴ',
+        'product-chengyun-package-alt': '澄韻 オリジナル烏骨鶏チキンエッセンスの外箱',
+        'product-chengyun-pouch-alt': '澄韻 オリジナル烏骨鶏チキンエッセンスの個包装',
+        'product-chengrun-package-alt': '澄潤 コラーゲン配合・台湾在来鶏チキンエッセンスの外箱',
+        'product-chengrun-pouch-alt': '澄潤 コラーゲン配合・台湾在来鶏チキンエッセンスの個包装',
+        'product-mask-package-alt': '澄潤 銅ペプチド・植物エキス配合シートマスクのギフトボックス',
+        'product-mask-sheet-alt': '広げたシートマスクのイメージ',
+        'product-chengyun-features-label': '澄韻の商品の特長',
+        'product-chengrun-features-label': '澄潤チキンエッセンスの特長',
+        'product-mask-features-label': '澄潤シートマスクの特長',
+        'trust-strip-label': '澄花堂の安心への取り組み',
+        'concept-founder-alt': '澄花堂創業者のポートレート',
+        'concept-craft-alt': '澄花堂の料理と抽出工程を表すイメージ',
+        'concept-window-alt': '台湾の伝統的な鉄製窓飾りのディテール',
         'nav-kitchen': '澄花堂キッチン',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
-        'kitchen-title': '澄花堂 ‧ キッチン',
-        'kitchen-subtitle': '一滴の精華が、食卓のぬくもりと美しさに変わる場所。',
-        'kitchen-home-title': '澄花レシピ',
+        'kitchen-title': '澄花堂・キッチン',
+        'kitchen-subtitle': '一滴一滴のエッセンスが、食卓のぬくもりと美しさに変わる場所。',
+        'kitchen-home-image-alt': '澄花堂の家庭料理',
+        'kitchen-master-image-alt': '名シェフの料理と調理風景',
+        'kitchen-event-image-alt': '澄芳セレクションのシートマスク賞品',
+        'kitchen-home-title': '澄花の家ごはん',
         'kitchen-home-desc': `
-            キッチンは家の中で最も温かい場所であり、家族全員の健康を司る場所でもあります。記憶の中の味わいが、歳月の香りを今に伝えます。<br>
-            『澄花レシピ』の名のもとに、家庭のささやかな日常を再現し、愛と伝統の真実の味をお届けします。
+            キッチンは、家の中でいちばん温かな場所。家族みんなの健やかさを支える場所でもあります。記憶に残る味わいには、重ねた年月の香りが息づいています。<br>
+            「澄花レシピ」として、いつもの家庭の味を丁寧に再現し、愛情と受け継がれてきた本当のおいしさをお届けします。
         `,
-        'kitchen-master-title': '名廚旨味',
+        'kitchen-master-title': '名シェフの滋味',
         'kitchen-master-desc': `
-            指先に映るこだわりは、匠の心の探求。<br>
-            巨匠の秘伝をあなたの食卓へ。人生の甘み、和やかな潤い、そして悠久に続く余韻を共に味わいましょう。
+            指先の所作に映るのは、おいしさを探求する職人の心。<br>
+            名シェフのとっておきの技をご家庭の食卓へ。滋味深いひと皿と、心に残る余韻をともにお楽しみください。
         `,
-        'kitchen-btn-home': 'おかえりなさい &rarr;',
+        'kitchen-btn-home': 'おうちごはんへ &rarr;',
         'kitchen-btn-enter': '料理教室 &rarr;',
-        'kitchen-event-title': '澄芳の綴り',
-        'kitchen-event-desc': '民間達人による秘蔵の味わい選抜。日常に潜む味覚の実踐者を探しています。誰もが品味のキュレーターです！',
-        'reward-badge': '🎁 選味リワード',
+        'kitchen-event-title': '澄芳セレクション',
+        'kitchen-event-desc': '料理上手な皆さまの、とっておきの味を選ぶ企画。日々の暮らしの中で腕を磨く、食の実践者を探しています。ここでは誰もが味覚のキュレーター。あなたの秘伝のレシピは、澄花堂にとって何より大切なコレクションです！',
+        'reward-badge': '🎁 採用特典',
         'kitchen-event-requirements': `
-            <li>1. 澄花堂チキンエッセンス製品を使用すること</li>
-            <li>2. 詳細なレシピ、手順、完成品写真を送付</li>
-            <li>3. 採用・掲載につき「パック」1枚（5枚入）をプレゼント</li>
+            <li>1. 「澄花堂」チキンエッセンスシリーズの商品を使用していること</li>
+            <li>2. 詳しい材料一覧、作り方、完成料理のアップ写真をご用意ください</li>
+            <li>3. レシピが採用・掲載された方に、シートマスク1箱（5枚入り）をプレゼント</li>
         `,
-        'kitchen-btn-submit': '今すぐ投稿',
-        'recipe-home-badge': '澄花レシピ #01',
-        'recipe-home-title': 'チキンエッセンスの滑らか茶碗蒸し',
+        'kitchen-btn-submit': 'レシピを投稿する',
+        'recipe-home-badge': '澄花の家ごはん #01',
+        'recipe-home-title': 'チキンエッセンスのなめらか茶碗蒸し',
+        'recipe-home-image-alt': 'チキンエッセンスのなめらか茶碗蒸しの完成イメージ',
         'recipe-home-ingredients': `
-            <li>澄花堂チキンエッセンス 1包 (60ml)</li>
+            <li>澄花堂チキンエッセンス 1袋（60ml）</li>
             <li>卵 2個</li>
             <li>ぬるま湯 140ml</li>
             <li>塩 少々</li>
-            <li>しいたけスライス/いくら (トッピング)</li>
+            <li>生しいたけの薄切り／いくら（飾り用）</li>
         `,
         'recipe-home-steps': `
-            <li>卵を溶きほぐし、チキンエッセンス、ぬるま湯、塩を加えて混ぜます。</li>
-            <li>2回濾（こ）して、気泡や不純物を取り除きます。</li>
-            <li>中火で 8〜10 分蒸した後、素早く蓋を開けます。</li>
-            <li>しいたけをのせ、さらに 3 分蒸し、いくらを飾れば完成です。</li>
+            <li>卵をむらなく溶きほぐし、チキンエッセンス、ぬるま湯、塩少々を加えて混ぜます。</li>
+            <li>2度こし、気泡や混ざり切らなかった部分を取り除きます。</li>
+            <li>中火で8〜10分蒸したら、ふたをさっと開けます。</li>
+            <li>しいたけの薄切りをのせ、さらに3分蒸します。仕上げにいくらを飾れば完成です。</li>
         `,
-        'recipe-chef-badge': '名廚旨趣 #01',
-        'recipe-chef-title': '日系コラーゲン鶏白湯鍋',
+        'recipe-chef-badge': '名シェフの滋味 #01',
+        'recipe-chef-title': '和風コラーゲン鶏だし鍋',
+        'recipe-chef-image-alt': '和風コラーゲン鶏だし鍋の完成イメージ',
         'recipe-chef-ingredients': `
-            <li>澄花堂澄潤コラーゲンチキンエッセンス 2包</li>
-            <li>若鶏の切り身 300g</li>
+            <li>澄花堂「澄潤」コラーゲンチキンエッセンス 2袋</li>
+            <li>やわらかい鶏もも肉（一口大）300g</li>
+            <li>白菜 適量</li>
             <li>昆布だし 800ml</li>
-            <li>しいたけ、豆腐、季節の野菜</li>
-            <li>ポン酢または胡麻だれ (お好みで)</li>
+            <li>生しいたけ、豆腐、季節の野菜</li>
+            <li>ポン酢またはごまだれ（つけだれ）</li>
         `,
         'recipe-chef-steps': `
-            <li>鶏肉を湯通しして余分な油と血分を除きます。</li>
-            <li>昆布だしで鶏肉を 15 分ほど煮込み、柔らかくします。</li>
-            <li>野菜、豆腐、しいたけを加えます。</li>
-            <li>食べる直前にチキンエッセンスを注ぎ、風味と栄養を閉じ込めます。</li>
+            <li>一口大に切った鶏肉をさっと下ゆでし、血やアクを除いておきます。</li>
+            <li>昆布だしに鶏肉を入れ、やわらかくなるまで15分煮込みます。</li>
+            <li>季節の野菜、豆腐、しいたけを加えます。</li>
+            <li>火を止める直前にチキンエッセンス2袋を加え、奥行きのある、あとを引く味わいに仕上げます。</li>
         `,
-        'beautology-badge': '美力學堂',
-        'beautology-title': '🌸 HANA医師の美力學堂',
-        'beautology-intro-quote': '—— 美力とは、気血が満ち溢れた後の自然な輝き ——',
+        'beautology-badge': '美力アカデミー',
+        'beautology-title': '🌸 HANA医師の美力アカデミー',
+        'beautology-intro-quote': '—— 美力とは、気血が満ちたときに自然とあふれ出すもの ——',
         'beautology-intro-title': '▋ 「美力」とは？',
-        'beautology-intro-text': '美しさ (Beauty) と生命力 (Vitality) を融合させた、調和の学問。外見の乾きは、内側の「陰虛」と「気弱」に起因します。真の美しさは、深層の生理機能が満たされてこそ、自然に溢れ出すものです。',
-        'beautology-exp-title': '▋ 母としての経験：消耗から再生への実証',
-        'beautology-exp-text': '3度の出産で4人の子を授かりました。命を育むことによる精血の消耗と、極度の疲弊を経験しながらも、育児と仕事の両立を選択しました。その過程で「漢方滴養と母乳」の深い研究に没頭。女性の心身を守るには、負担の大きい補給ではなく「精微物質」による精密な修復が必要であることを確信しました。',
-        'beautology-advocate-title': '▋ 私の美力主張：気血双補、精微修復',
-        'beautology-advocate-text': '澄 . 澄み渡る純粋な本源へ <br> 花 . 潤いとともに咲き誇る輝き <br><br> 時の流れに寄り添い、一滴一滴が潤いを与える。気血が雲のように自在に流れるとき、自然な調和が生命の輝きを再び呼び覚まします。— HANA 医師',
-        'beautology-lesson-1-title': '第1回：漢医新語：滴養之道（テキヨウノミチ）の医学的実証',
+        'beautology-intro-text': '美しさ（Beauty）と生命力（Vitality）の調和を考える学びです。漢方医学の視点では、外に現れる乾燥や衰えは、内側の「陰虚」や「気虚」に由来することがあります。本当の美しさは、表面を取り繕うだけではなく、体の深い部分の働きが満たされたときに、自然と花開くものです。',
+        'beautology-exp-title': '▋ 三度の妊娠、四児の母：消耗から再生までの実体験',
+        'beautology-exp-text': '私は三度の妊娠を経験し、四人の子どもに恵まれました。命を育むことで精血を消耗し、極度の疲れを抱えながらも、育児を続け、早くから仕事にも復帰しました。あの頃の尽きていくような気力と、若さが少しずつ失われていく実感が、私を「漢方による滋養と母乳」の研究へと向かわせました。尊くも厳しい時期を乗り越え、自分自身を少しずつ取り戻すために女性が必要とするのは、体に負担をかける大量の滋養ではなく、「精微な物質」を的確に巡らせることだと考えています。',
+        'beautology-advocate-title': '▋ 私が研究を始めた理由',
+        'beautology-advocate-text': '澄・澄みきった原点へ立ち返ること <br> 花・潤いをたたえ、花開く輝き <br><br> 季節の移ろいに寄り添い、一滴一滴で丁寧に潤す。気血が雲のようにのびやかに巡るとき、自然と調和が、命本来の輝きをもう一度呼び覚まします。— HANA医師',
+        'beautology-lesson-1-title': '第1講：現代に読み解く漢方医学―「滴養の道」を支える医学的根拠',
         'beautology-tag-hot': '人気記事',
-        'beautology-lesson-1-subtitle': '—— 母乳研究から気血再建への精微ロジック ——',
-        'beautology-lesson-1-desc': '漢医修士として、古典と現代栄養学を深く探究しました。「気血双補」は単なるスローガンではなく、厳密な微量元素と生理機能のメカニズムに基づいています。',
-        'beautology-l1-s1-title': '1. 乳汁は血から成る：母乳補給の科学',
-        'beautology-l1-s1-text': '漢医理論では「乳汁は脾胃に源を発し、肝で化し、実は気血の変化したものである」とされます。産後の女性には、莫大なエネルギーの転用が必要です。台湾自生鶏（古早鶏）は脾胃を強め、烏骨鶏（黒金）は2〜3倍の鉄分と亜鉛を含み、母体の消耗を補い、質の高い母乳を育みます。',
+        'beautology-lesson-1-subtitle': '—— 母乳研究から気血の回復へ。「精微」の考え方 ——',
+        'beautology-lesson-1-desc': '「美力アカデミー」では、産後の女性に必要なReset（リセット）についてお話ししました。漢方医学の修士号を持つ私は、漢方の古典と現代栄養学を掘り下げる中で、「気血双補」は単なる言葉ではなく、微量元素と体の働きに支えられた緻密な考え方だと捉えるようになりました。',
+        'beautology-l1-s1-title': '1. 乳汁は血から生まれる：母乳を支える深い科学',
+        'beautology-l1-s1-text': '漢方医学では、「乳汁は脾胃を源とし、肝の働きによって生成され、もとは気血が変化したものである」と考えます。産後や授乳期の女性の体では、大きなエネルギーの再配分が起こります。<br><strong>脾胃は後天の本：</strong> 澄花堂が選ぶ台湾在来鶏には、体の中心を温め、気を補う性質があるとされ、脾胃の「運化」を支えます。中気が満ちてこそ、摂った栄養を質・量ともに十分な母乳へと変えていくことができます。<br><strong>滋陰養血の「黒い宝」：</strong> 烏骨鶏は肝・腎の経に入るとされ、一般的な鶏の2〜3倍の鉄（Fe）と亜鉛（Zn）を含みます。母体の消耗を補うだけでなく、母乳を通じて赤ちゃんへ栄養を届けます。',
         'beautology-l1-s2-title': '2. 精微物質の運行：小分子ペプチドの力',
-        'beautology-l1-s2-text': '産後の弱った脾胃には、重い食事はかえって負担（虛不受補）となります。恒温抽出法によりタンパク質を遊離アミノ酸とコラーゲンペプチドへ変換。これら「精微物質」は、消化のプロセスを飛び越えて細胞の修復現場へ直行し、潤いを与えます。',
+        'beautology-l1-s2-text': 'なぜ「精微な物質による回復」を重視するのでしょうか。産後は脾胃が弱り、肉や魚をたくさん食べるとかえって消化の負担になることがあります。漢方でいう「虚不受補」です。<br><strong>低分子への変換：</strong> 一定温度でじっくり抽出する製法により、高分子のたんぱく質を遊離アミノ酸とコラーゲンペプチドへ変えます。<br><strong>体内での利用されやすさ：</strong> これらの精微な物質は、複雑な消化の負担を抑えながら、体のすみずみまで届きやすくなります。「補っても熱がこもらず、潤しても重くならない」という、理想的な養生を目指します。',
         'beautology-l1-s3-title': '3. 澄韻と澄潤：内なる美力の二重サポート',
-        'beautology-l1-s3-text': '実証データに基づき、2種類の処方を開発しました。<br><strong>【澄韻｜元気の雫】：</strong> 古早鶏を主とし「益気」に重点。産前産後の体力維持に。<br><strong>【澄潤｜飲む美容液】：</strong> 烏骨鶏を主とし「滋陰」に重点。コラーゲン配合で産後のくすみと構造の修復に。',
-        'beautology-footer-quote': '「科学的な漢方ロジックで、命を育むすべての女性の美力（生命力）を守りたい。」 —— HANA医師',
-        'beautology-next-lessons-title': '私の講義ノート',
-        'beautology-lesson-2': '第2回：環境養土論 — なぜ「澄韻」が育みの基礎なのか？',
-        'beautology-lesson-3': '第3回：ブラックゴールドの滋陰学 — 烏骨鶏とあなたの飲む美容液。',
-        'beautology-lesson-4': '第4回：Reset 鍵となる60日間 — 漢医修士の産後ケア計画',
+        'beautology-l1-s3-text': '研究と三度の出産を通じた実体験をもとに、この知見を目的の異なる2つの商品へ落とし込みました。<br><strong>【澄韻｜元気の雫】：</strong> 烏骨鶏を主原料に、毎日の元気を補うことを重視。出産前の体力づくりや、産後の中気を補いたいときに。<br><strong>【澄潤｜飲む美容液】：</strong> 台湾在来鶏を主原料にコラーゲンを配合。産後の顔色や、内側からの輝きを支えます。',
+        'beautology-footer-quote': '「私が研究を始めた理由は、とてもシンプルです。科学的な漢方の考え方で、命を育む女性、そして仕事と家庭の間を懸命に走る女性を守りたい。」 —— HANA医師',
+        'beautology-next-lessons-title': '講義ノート',
+        'beautology-lesson-2': '第2講：環境養土論―なぜ「澄韻」が育む力の土台になるのか？',
+        'beautology-lesson-3': '第3講：「黒い宝」の滋陰学―烏骨鶏と、あなたのための飲む美容液。',
+        'beautology-lesson-4': '第4講：Resetの鍵は60日間―漢方医学修士による産後ケアプラン',
     },
     'en': {
         'nav-home': 'Home',
-        'nav-about': 'Philosophy',
-        'nav-product': 'Essence',
-        'nav-beautology': 'Vital Beauty',
-        'nav-science': 'Science',
+        'nav-about': 'BRAND CONCEPTS',
+        'nav-product': 'PRODUCTS',
+        'nav-beautology': 'VITAL BEAUTY ACADEMY',
+        'nav-science': 'THE SCIENCE OF ESSENCE',
+
+        'page-home-title': 'Sumikado | Premium Silkie Chicken Essence',
+        'page-home-desc': 'Discover Sumikado Silkie Chicken Essence, collagen-infused Taiwanese heritage chicken essence, and a botanical sheet mask—thoughtful daily care from nourishment to skincare.',
+        'page-kitchen-title': 'Sumikado Kitchen',
+        'page-kitchen-desc': 'Explore Sumikado chicken essence recipes, chef-inspired dishes, and the Cheng Fang Selection home-recipe submission campaign.',
+        'page-beautology-title': "Dr. HANA's Vital Beauty Academy | Sumikado",
+        'page-beautology-desc': 'Dr. HANA shares insights on nourishment, beauty, vitality, and the Sumikado approach through the lenses of Chinese medicine and modern nutrition.',
+        'page-science-title': 'The Science of Chicken Essence | Sumikado',
+        'page-science-desc': "Learn about Sumikado's 12-hour waterless extraction process, the differences between chicken breeds, and their nutritional composition.",
 
         'btn-login': 'Member Login',
-        'btn-order': 'Easy Order',
-        'hero-title': 'The Path of Essence',
-        'hero-desc': 'Premium Silkie Chicken Essence. Inheriting natural purity to inject daily vitality into your life.',
+        'btn-order': 'Order with Ease',
+        'hero-title': 'Nourishment, Drop by Drop',
+        'hero-desc': 'Premium Silkie Chicken Essence that preserves the ingredient’s natural flavor and brings gentle vitality to every day.',
         'hero-explore': 'Explore Products',
-        'hero-learn': 'Learn More',
+        'hero-learn': 'Our Philosophy',
         'founder-title': 'Brand Philosophy',
-        'founder-text': "Founded on three decades of medical expertise, Sumikado selects only the purest essentials with a physician's rigor and a mother's tender care. We transform the earth's gentle essence into an elegant source of vitality. Under the icon of the Taiwanese window grille, we guard your wellness with unwavering dedication.",
-        'founder-caption': 'Sumikado ‧ Brand Philosophy',
-        'founder-sub': '[ Doctor Selected ‧ Motherly Care ]',
-        'brand-story-title': 'The Way of Nourishment',
-        'brand-story-slogan': '"Every drop is a step forward."',
-        'brand-story-item-title': 'The Path of Essence',
-        'brand-story-item-text': 'At Sumikado, we believe there are no shortcuts to true health. Each pack is born from persistent progress on "The Path of Essence". Pasture-raised in the pure lands of Hualien for 120 days and extracted through 12 hours of waterless heat—this is not just concentration, but the distillation of the artisan’s soul. Only through such steady steps can we yield every drop of warm "Vitality" and "Abundance".',
-        'brand-footer-text': 'Slowly and steadily, we walk towards an ideal state of health with you.',
-        'feature-title': 'Doctor Selected Essence',
-        'feature-subtitle': 'Replenish your energy anytime, anywhere.',
-        'feature-1-title': 'Window Grille Aesthetics',
-        'feature-1-text': "Elegant wisteria pattern preserving Taiwan's window grille culture. Sumikado's philosophy is to guard and pass on these precious Taiwanese treasures.",
-        'feature-2-title': 'Bouncy & Beautiful',
-        'feature-2-text': 'Food-grade high-temperature sterilized aluminum foil. Room temperature storage, drink anytime.',
-        'feature-3-title': 'Top-tier Nourishment',
-        'feature-3-text': 'Zero cholesterol, zero fat, no preservatives. SGS tested and certified for complete peace of mind.',
-        'feature-4-title': 'Full of Vitality',
-        'feature-4-text': 'Strictly selected Silkie chickens. 12-hour extraction of small-molecule amino acids. Smooth taste.',
-        'feature-4-title': 'Full of Vitality',
-        'feature-4-text': 'Strictly selected Silkie chickens. 12-hour extraction of small-molecule amino acids. Smooth taste.',
-        'process-title': 'The Science of Essence',
-        'science-method-title': '12-Hour Waterless Steam Extraction',
-        'science-method-desc': 'We adhere to a 12-hour slow extraction method with zero water added. Double fat-removal technology ensures a pure, nutrient-dense extract rich in small-molecule peptides.',
-        'science-chicken-title': 'Chicken Breed Science: Silkie vs. Native',
-        'science-chicken-desc': 'Nutritional density varies by breed. National lab tests show that Silkie chickens excel in BCAA and Carnosine content over common breeds.',
+        'founder-text': "Rooted in the wisdom of Chinese herbal medicine and 30 years of Western clinical practice, Sumikado applies a physician’s discerning eye to every ingredient. With a mother’s attentive care, we transform the earth’s gentle bounty into an elegant source of everyday vitality. Beneath the emblem of Taiwan’s traditional window grille, we remain true to one purpose: protecting the foundation of your well-being.",
+        'founder-caption': 'Sumikado · Brand Philosophy',
+        'founder-sub': '[ Selected by a Physician · Made with a Mother’s Care ]',
+        'brand-story-title': 'Nourishment, Drop by Drop',
+        'brand-story-slogan': '“Every drop is a step forward.”',
+        'brand-story-item-title': 'Nourishment, Drop by Drop',
+        'brand-story-item-text': 'At Sumikado, we believe there are no shortcuts to true well-being. Every pouch of chicken essence is the result of steady progress, one careful step at a time. Our chickens are raised free-range for 120 days on the pristine land of Hualien, then gently extracted over low heat for 12 hours without a drop of added water. This is more than concentration—it is time, craftsmanship, and care distilled. Only by honoring every step can we capture gentle vitality and abundant flavor in every drop.',
+        'brand-footer-text': 'Slowly and steadily, Sumikado walks with you toward lasting well-being.',
+        'products-title': 'From daily nourishment to skincare, care for yourself with ease.',
+        'products-lead': 'Chicken essence and sheet masks bring thoughtful care to both diet and skincare, crafted with pure ingredients and meticulous attention to detail.',
+        'product-chengyun-eyebrow': 'ORIGINAL SILKIE ESSENCE',
+        'product-chengyun-copy': 'Fully grown Silkie chickens are carefully selected and gently extracted over low heat for 12 hours without a drop of added water. Pure, mellow, and free from gaminess, each pouch brings steady vitality to busy days.',
+        'product-chengrun-eyebrow': 'COLLAGEN NATIVE CHICKEN ESSENCE',
+        'product-chengrun-copy': 'Taiwanese heritage chicken essence meets the nourishment of collagen in a clean-tasting, shelf-stable pouch. Start with one a day to support everyday vitality and radiance from within.',
+        'product-availability-note': 'This product has not yet launched. Please stay tuned for its release.',
+        'product-coming-soon': 'NOT YET RELEASED',
+        'product-mask-eyebrow': 'COPPER PEPTIDE PHYTO-REJUVENATING MASK',
+        'product-mask-title': 'Cheng Run Copper Peptide Botanical Mask',
+        'product-mask-copy': 'Copper peptide and botanical extracts come together in a sheet mask that creates a gentle, mindful moment in your daily skincare ritual. Each box contains five masks, ideal for everyday care or a thoughtful gift.',
+        'fact-slow': 'Slow-extracted',
+        'fact-water': 'No added water',
+        'fact-tested': 'Multiple quality tests',
+        'fact-double': 'Dual nourishment',
+        'fact-room': 'Shelf-stable',
+        'fact-ready': 'Ready to drink',
+        'fact-copper-peptide': 'Copper peptide',
+        'fact-phyto': 'Botanical extracts',
+        'fact-mask-count': '5 masks per box',
+        'product-consult': 'Ask about this product',
+        'product-scroll-label': 'Product slider progress',
+        'trust-1-title': 'Physician-selected',
+        'trust-1-copy': 'Selection standards shaped by 30 years of clinical experience',
+        'trust-2-title': 'Pure craftsmanship',
+        'trust-2-copy': 'Slow extraction without added water preserves natural flavor',
+        'trust-3-title': 'Everyday assurance',
+        'trust-3-copy': 'Complete labeling and multiple quality checks',
+        'concept-title': 'Every drop is a step forward.',
+        'concept-lead': 'At Sumikado, we believe true nourishment has no shortcut. From ingredient selection and extraction to packaging that carries cultural meaning, every steady step creates a drop worthy of lasting trust.',
+        'concept-1-title': 'A physician’s rigor, choosing with family in mind',
+        'concept-1-copy': 'Rooted in the wisdom of Chinese herbal medicine and 30 years of Western clinical practice, we examine every ingredient, nutrient, and test result—turning expertise into gentle care you can trust each day.',
+        'concept-2-title': 'Time draws out the ingredient’s purest flavor',
+        'concept-2-copy': 'Fully grown chickens are gently extracted over low heat for 12 hours without added water, then carefully defatted and deodorized. Taking time is not only part of our process; it reflects our patience and commitment to quality.',
+        'concept-3-title': 'Taiwan’s window grilles safeguard every heartfelt gesture',
+        'concept-3-copy': 'The wisteria window grille is more than decoration—it carries memories of togetherness and protection. By bringing this cultural motif into our products, we add warmth to every purchase, whether for yourself or someone you care about.',
+        'concept-closing': 'Selected by a physician · Made with a mother’s care · A heartfelt gift from Taiwan',
+        'concept-science-link': 'Explore the science of chicken essence',
+        'feature-title': 'A Nourishing Ritual, Selected by a Physician',
+        'feature-subtitle': 'Everyday vitality, wherever you are.',
+        'feature-1-title': 'The Art of Taiwan’s Window Grilles',
+        'feature-1-text': 'An elegant wisteria motif preserves the beauty of Taiwan’s traditional window grilles. Sumikado is committed to protecting and passing on this cultural treasure, making each nourishing product a vessel for Taiwanese heritage.',
+        'feature-2-title': 'Radiance and Resilience',
+        'feature-2-text': 'Food-grade aluminum pouches are sterilized at high temperature to seal in every drop of nourishment. Shelf-stable and ready to drink whenever you need it.',
+        'feature-3-title': 'Premium Food-Based Nourishment',
+        'feature-3-text': 'Zero cholesterol, zero fat, and no added preservatives. Complete nutrition labeling and multiple SGS quality tests offer everyday peace of mind.',
+        'feature-4-title': 'Vitality in Every Drop',
+        'feature-4-text': 'Premium Silkie chickens are carefully selected and gently extracted over low heat for 12 hours to yield free amino acids and a mellow, clean-tasting essence.',
+        'process-title': 'The Science of Chicken Essence',
+        'science-method-title': 'Traditional Drip Extraction · No Steam Reflux',
+        'science-method-desc': 'We extract the essence gently over low heat for 12 hours, using steam vents to collect it drop by drop. No water is added. A two-stage defatting process removes excess fat and gaminess while preserving pure, small-molecule nutrients.',
+        'science-chicken-title': 'Chicken Breed Analysis: Silkie vs. Taiwanese Heritage Chicken',
+        'science-chicken-desc': 'Different chicken breeds have different nutrient densities. Government testing data indicate that Silkie chickens contain significantly higher levels of trace minerals and carnosine than other breeds.',
         'science-chicken-comparison': `
-            <div class="comparison-row"><strong>Silkie (Black-bone)</strong>: Rich in melanin and concentrated BCAA, the ultimate medicinal choice.</div>
-            <div class="comparison-row"><strong>Native Indigenous</strong>: Firm texture, sweet flavor, balanced collagen, and highly bioavailable peptides.</div>
-            <div class="comparison-row"><strong>Common Broiler</strong>: Short growth cycle, lower nutrient density, often diluted or flavored.</div>
+            <div class="comparison-row"><strong>Silkie Chicken</strong>: Contains natural dark pigment and a higher concentration of branched-chain amino acids (BCAAs), making it well suited to traditional tonic dishes.</div>
+            <div class="comparison-row"><strong>Taiwanese Heritage Chicken</strong>: Firm in texture and mellow in flavor, with a balanced abundance of collagen and peptides.</div>
+            <div class="comparison-row"><strong>Conventional Broiler</strong>: Raised for a shorter period and generally lower in nutrient density, it may require added seasoning or water.</div>
         `,
-        'science-benefits-title': 'Bioactive Components & Health Benefits',
-        'science-benefit-1': '<strong>Anti-Fatigue</strong>: Increases glycogen storage for enhanced physical endurance and recovery.',
-        'science-benefit-2': '<strong>Rapid Absorption</strong>: Small-molecule amino acids are absorbed quickly to nourish weak systems.',
-        'science-benefit-3': '<strong>Elasticity Support</strong>: Rich collagen peptides support skin firmness and joint health.',
-        'btn-consult': 'Discover More Science',
+        'science-benefits-title': 'Key Nutrients and Potential Benefits',
+        'science-benefit-1': '<strong>Helps combat fatigue</strong>: Supports greater liver glycogen storage to improve exercise performance and endurance.',
+        'science-benefit-2': '<strong>Supports efficient recovery</strong>: Free amino acids can be absorbed quickly, making them suitable for nutritional support after surgery or during periods of weakness.',
+        'science-benefit-3': '<strong>Supports flexibility and resilience</strong>: Rich collagen peptides help support skin elasticity and smooth joint movement.',
+        'btn-consult': 'Learn More About the Science',
         'footer-brand': 'Sumikado Selection',
-        'footer-slogan': 'Making your wellness journey spectacular.',
+        'footer-slogan': 'A more nourishing path to everyday well-being.',
         'footer-copy': '&copy; 2026 Sumikado Selection. All rights reserved.',
         'modal-login-tab': 'Login',
-        'modal-register-tab': 'Register',
-        'modal-login-lead': 'Welcome back!',
-        'modal-register-lead': 'Join Sumikado for exclusive benefits.',
+        'modal-register-tab': 'Create Account',
+        'modal-login-lead': 'Welcome back. Choose a quick way to sign in below.',
+        'modal-register-lead': 'Join Sumikado and enjoy exclusive member benefits.',
+        'modal-close': 'Close',
+        'recipe-ingredients-title': 'Ingredients',
+        'recipe-steps-title': 'Method',
+        'coming-soon': 'Coming Soon',
+        'coming-soon-lead': 'Please stay tuned',
+        'coming-soon-copy': 'More content is on the way. Please stay tuned.',
         'nav-language': 'Change language',
         'nav-menu': 'Open navigation menu',
         'nav-menu-label': 'Menu',
-        'btn-line-order': 'Easy Order',
+        'btn-line-order': 'Order with Ease',
         'btn-line-shop': 'Shop on LINE',
         'btn-line-ask': 'Ask us on LINE',
-        'product-chengyun-title': 'Cheng Yun Original Silkie Chicken',
-        'product-chengrun-title': 'Cheng Run Collagen Native Chicken',
+        'product-chengyun-title': 'Cheng Yun Original Silkie',
+        'product-chengrun-title': 'Cheng Run Collagen Heritage Chicken',
         'carousel-label': 'Product package carousel',
         'carousel-prev': 'Previous product',
         'carousel-next': 'Next product',
-        'nav-kitchen': 'Kitchen',
+        'carousel-select': 'Select a product',
+        'brand-home-label': 'Sumikado home',
+        'brand-logo-alt': 'Sumikado logo',
+        'product-chengyun-package-alt': 'Cheng Yun Original Silkie Chicken Essence outer box',
+        'product-chengyun-pouch-alt': 'Cheng Yun Original Silkie Chicken Essence individual pouch',
+        'product-chengrun-package-alt': 'Cheng Run Collagen Taiwanese Heritage Chicken Essence outer box',
+        'product-chengrun-pouch-alt': 'Cheng Run Collagen Taiwanese Heritage Chicken Essence individual pouch',
+        'product-mask-package-alt': 'Cheng Run Copper Peptide Botanical Sheet Mask gift box',
+        'product-mask-sheet-alt': 'Illustration of an unfolded sheet mask',
+        'product-chengyun-features-label': 'Cheng Yun product features',
+        'product-chengrun-features-label': 'Cheng Run chicken essence features',
+        'product-mask-features-label': 'Cheng Run sheet mask features',
+        'trust-strip-label': 'Sumikado quality commitments',
+        'concept-founder-alt': 'Portrait of the Sumikado founder',
+        'concept-craft-alt': 'Sumikado culinary craft and slow-extraction process',
+        'concept-window-alt': 'Detail of a traditional Taiwanese iron window grille',
+        'nav-kitchen': 'SUMIKADO KITCHEN',
         'kitchen-badge': 'SUMIKADŌ KITCHEN',
         'kitchen-title': 'Sumikado Kitchen',
-        'kitchen-subtitle': 'Where every drop of essence transforms into warmth and beauty on your table.',
-        'kitchen-home-title': 'Home Kitchen',
+        'kitchen-subtitle': 'A place where every drop of essence becomes warmth and vitality at the table.',
+        'kitchen-home-image-alt': 'Sumikado family cooking',
+        'kitchen-master-image-alt': 'Chef-prepared cuisine and cooking demonstration',
+        'kitchen-event-image-alt': 'Sheet mask reward for the Cheng Fang Selection recipe campaign',
+        'kitchen-home-title': 'The Sumikado Family Kitchen',
         'kitchen-home-desc': `
-            The kitchen is the warmest place in the home, safeguarding the health of the entire family. Memories of its flavors preserve the fragrance of the years.<br>
-            Under the name "Sumikado Recipes," we recreate the moments of home life and share the true taste of love and heritage.
+            The kitchen is the warmest place in the home, and the heart of a family’s well-being. The flavors we remember carry the fragrance of years gone by.<br>
+            Through “Sumikado Recipes,” we recreate the small moments of home cooking and share the true taste of love and traditions passed down.
         `,
-        'kitchen-master-title': "Chef's Interest",
+        'kitchen-master-title': "The Chef’s Touch",
         'kitchen-master-desc': `
-            Reflections on fingertips—the exploration of craftsmanship.<br>
-            Bringing master secrets to your table, sharing the nourishing moisture and long-lasting aftertaste of life's true flavors.
+            Every movement of the hand reflects a craftsperson’s pursuit of flavor.<br>
+            We bring accomplished chefs’ closely held techniques to your table, inviting you to savor deeply nourishing flavors and a finish that lingers.
         `,
-        'kitchen-btn-home': 'Welcome Home &rarr;',
-        'kitchen-btn-enter': 'Culinary Studio &rarr;',
-        'kitchen-event-title': 'Curated Tastes',
-        'kitchen-event-desc': 'A selection of hidden flavors from local masters. Everyone is a curator of taste here. "Your secret recipe is precious."',
-        'reward-badge': '🎁 Selection Reward',
+        'kitchen-btn-home': 'Come Home to Dinner &rarr;',
+        'kitchen-btn-enter': 'Cooking Class &rarr;',
+        'kitchen-event-title': 'Cheng Fang Selection',
+        'kitchen-event-desc': 'A search for exceptional home cooks and the flavors they keep close. We are looking for people who bring taste to life in their everyday kitchens. Here, everyone is a curator of flavor—and your treasured recipe is one of Sumikado’s most precious finds.',
+        'reward-badge': '🎁 Selected Recipe Reward',
         'kitchen-event-requirements': `
-            <li>1. Must include Sumikado Chicken Essence products</li>
-            <li>2. Provide detailed ingredients, steps, and dish photos</li>
-            <li>3. Receive one box of "Mask" (5pcs) upon publication</li>
+            <li>1. Your recipe must include a product from the Sumikado Chicken Essence range</li>
+            <li>2. Please provide a detailed ingredient list, step-by-step method, and close-up photos of the finished dish</li>
+            <li>3. If your recipe is selected and published, you will receive one box of sheet masks (5 masks)</li>
         `,
-        'kitchen-btn-submit': 'Submit Now',
-        'recipe-home-badge': 'Home Kitchen #01',
-        'recipe-home-title': 'Silky Essence Steamed Egg',
+        'kitchen-btn-submit': 'Submit Your Recipe',
+        'recipe-home-badge': 'Family Kitchen #01',
+        'recipe-home-title': 'Silky Chicken Essence Steamed Egg',
+        'recipe-home-image-alt': 'Finished Silky Chicken Essence Steamed Egg',
         'recipe-home-ingredients': `
-            <li>Sumikado Chicken Essence 1 pack (60ml)</li>
-            <li>Eggs x2</li>
-            <li>Warm water 140ml</li>
-            <li>A pinch of salt</li>
-            <li>Thin Shiitake slices / Salmon Roe (Garnish)</li>
+            <li>1 pouch Sumikado Chicken Essence (60 ml)</li>
+            <li>2 eggs</li>
+            <li>140 ml warm water</li>
+            <li>Pinch of salt</li>
+            <li>Thinly sliced fresh shiitake mushrooms / salmon roe (for garnish)</li>
         `,
         'recipe-home-steps': `
-            <li>Whisk eggs, then mix in chicken essence, warm water, and salt.</li>
-            <li>Sift twice to remove bubbles and impurities.</li>
-            <li>Steam on medium heat for 8-10 mins and open the lid.</li>
-            <li>Add shiitake slices, steam for 3 mins, then garnish with salmon roe.</li>
+            <li>Beat the eggs until evenly combined. Stir in the chicken essence, warm water, and a pinch of salt.</li>
+            <li>Strain the mixture twice to remove bubbles and any unmixed egg.</li>
+            <li>Steam over medium heat for 8–10 minutes, then quickly lift the lid.</li>
+            <li>Arrange the shiitake slices on top and steam for another 3 minutes. Garnish with salmon roe to serve.</li>
         `,
-        'recipe-chef-badge': "Chef's Interest #01",
-        'recipe-chef-title': 'Japanese Collagen Chicken Soup Pot',
+        'recipe-chef-badge': "The Chef’s Touch #01",
+        'recipe-chef-title': 'Japanese-Style Collagen Chicken Hot Pot',
+        'recipe-chef-image-alt': 'Finished Japanese-Style Collagen Chicken Hot Pot',
         'recipe-chef-ingredients': `
-            <li>Sumikado Collagen Chicken Essence 2 packs</li>
-            <li>Chicken thigh chunks 300g</li>
-            <li>Kelp stock 800ml</li>
-            <li>Shiitake, Tofu, seasonal vegetables</li>
-            <li>Ponzu or sesame sauce (for dipping)</li>
+            <li>2 pouches Sumikado Cheng Run Collagen Chicken Essence</li>
+            <li>300 g tender chicken thigh, cut into bite-size pieces</li>
+            <li>Napa cabbage, as needed</li>
+            <li>800 ml kombu stock</li>
+            <li>Fresh shiitake mushrooms, tofu, and seasonal vegetables</li>
+            <li>Ponzu or sesame dipping sauce</li>
         `,
         'recipe-chef-steps': `
-            <li>Blanch chicken chunks to remove impurities.</li>
-            <li>Simmer chicken in kelp stock for 15 minutes until tender.</li>
-            <li>Add vegetables, tofu, and shiitake.</li>
-            <li>Pour in chicken essence before serving to lock in nutrition and flavor.</li>
+            <li>Blanch the chicken pieces briefly to remove blood and impurities, then set aside.</li>
+            <li>Add the chicken to the kombu stock and simmer for 15 minutes, or until tender.</li>
+            <li>Add the seasonal vegetables, tofu, and shiitake mushrooms.</li>
+            <li>Just before removing the pot from the heat, pour in both pouches of chicken essence for a deeper, gently savory finish.</li>
         `,
         'beautology-badge': 'VITAL BEAUTY',
-        'beautology-title': "🌸 Dr. Hana's Vital Beauty",
-        'beautology-intro-quote': '— Beauty is the natural overflow of vital energy —',
+        'beautology-title': "🌸 Dr. HANA’s Vital Beauty Academy",
+        'beautology-intro-quote': '— Vital beauty is what naturally radiates when qi and blood are abundant —',
         'beautology-intro-title': '▋ What is "Vital Beauty"?',
-        'beautology-intro-text': 'A discipline combining Beauty and Vitality. In TCM, external dryness stems from internal "Yin Deficiency" and "Qi Weakness". True beauty is the natural radiance that blossoms once deep physiological functions are fully restored.',
-        'beautology-exp-title': '▋ Three Pregnancies, Four Children: Evidence of Rebirth',
-        'beautology-exp-text': 'Having raised four children through three pregnancies, I experienced profound exhaustion and nutrient depletion. Choosing to return to professional life quickly, I delved into "TCM Nourishment & Lactation". I learned that mothers need precision "micro-substances" rather than heavy, burdensome supplements.',
-        'beautology-advocate-title': '▋ My Research Vision',
-        'beautology-advocate-text': 'Sumi (Purity) . Returning to the pure origin <br> Ka (Flower) . The radiance of hydration and blossoming <br><br> Following the seasons, drop by drop, we nourish. When Vital Energy flows freely like clouds, natural harmony restores the true brilliance of life. — Dr. HANA',
-        'beautology-lesson-1-title': 'Lesson 1: Modern TCM: Medical Evidence of Essence',
-        'beautology-tag-hot': 'Popular',
-        'beautology-lesson-1-subtitle': '— From Lactation Research to Cellular Reconstruction —',
-        'beautology-lesson-1-desc': 'As a TCM Master, I analyzed classical texts and modern nutrition. "Dual Tonification of Qi and Blood" is not just a slogan; it is a systematic logic of micronutrients and physiological operation.',
-        'beautology-l1-s1-title': '1. Milk is Blood Transformed: The Science of Motherhood',
-        'beautology-l1-s1-text': 'TCM states: "Milk originates from the spleen and stomach, is transformed by the liver, and is essentially the product of Qi and Blood." For nursing mothers, local ancient breed chickens enhance spleen energy, while Silkie chickens provide 2-3x more Iron (Fe) and Zinc (Zn) to repair the mother and nourish the child through milk.',
-        'beautology-l1-s2-title': '2. Micro-substances: The Power of Small Molecule Peptides',
-        'beautology-l1-s2-text': 'Why "Micro-repair"? A weak postpartum digestion cannot handle heavy meals (Deficiency Resistance). Our low-heat extraction transforms protein into free amino acids and collagen peptides. These micro-substances bypass complex digestion to repair cells directly, achieving nourishment without irritation.',
-        'beautology-l1-s3-title': '3. Double Support: Nourishing Inner Beauty',
-        'beautology-l1-s3-text': 'Based on three successful births, I formulated two precise treatments:<br><strong>【Cheng Yun | Essence of Qi】：</strong> Focuses on "Qi" for stamina during and after pregnancy.<br><strong>【Cheng Run | Drinkable Beauty Liquid】：</strong> Focuses on "Yin" with added collagen for structural repair and radiance.',
-        'beautology-footer-quote': '"My research began with a simple goal: to safeguard every woman navigating motherhood and professional life using scientific TCM logic." —— Dr. HANA',
-        'beautology-next-lessons-title': 'My Lecture Notes',
-        'beautology-lesson-2': 'Lesson 2: Soil Theory — Why "Cheng Yun" is the Foundation of Life.',
-        'beautology-lesson-3': 'Lesson 3: The Yin Science of Silkie Chicken Essence.',
-        'beautology-lesson-4': 'Lesson 4: Reset Key 60 Days — Postpartum Recovery Plan.',
+        'beautology-intro-text': 'Vital Beauty is a practice of balancing beauty and vitality. From the perspective of Chinese medicine, outward dryness and dullness may reflect internal yin deficiency or depleted qi. True beauty is not something applied only to the surface; it blooms naturally when the body’s deeper functions are replenished.',
+        'beautology-exp-title': '▋ Three Pregnancies, Four Children: A Lived Journey from Depletion to Renewal',
+        'beautology-exp-text': 'I went through three pregnancies and was blessed with four children. Even as pregnancy and childbirth depleted my jing and blood and left me profoundly exhausted, I cared for my children and returned to work quickly. Feeling my energy drain and my youth gradually slip away led me to study Chinese herbal nourishment and lactation in depth. I know how difficult—and sacred—it is to make it through this season and slowly find yourself again. Women do not need heavy supplementation that burdens the body; they need precise support that helps fine, essential nutrients move where they are needed.',
+        'beautology-advocate-title': '▋ Why I Began This Research',
+        'beautology-advocate-text': 'Sumi（澄）— a return to pure beginnings <br> Ka（花）— radiance that blooms with nourishment <br><br> Moving with the seasons, we nourish drop by drop. When qi and blood flow as freely as clouds, nature and harmony restore the radiance of life. — Dr. HANA',
+        'beautology-lesson-1-title': 'Lesson 1: A Modern Language for Chinese Medicine — The Evidence Behind Nourishment, Drop by Drop',
+        'beautology-tag-hot': 'Popular Article',
+        'beautology-lesson-1-subtitle': '— From Lactation Research to Rebuilding Qi and Blood, Through the Logic of Fine Nutrients —',
+        'beautology-lesson-1-desc': 'In the Vital Beauty Academy, I introduced the idea of a postpartum Reset. With a master’s degree in Chinese medicine, I have studied both classical herbal texts and modern nutrition in depth. I found that “replenishing both qi and blood” is more than a slogan; it follows a precise logic grounded in micronutrients and human physiology.',
+        'beautology-l1-s1-title': '1. Milk Is Transformed from Blood: The Deeper Science of Lactation Support',
+        'beautology-l1-s1-text': 'Chinese medicine teaches that “milk originates in the spleen and stomach, is transformed through the liver, and is ultimately derived from qi and blood.” After childbirth and during breastfeeding, the body must redirect an extraordinary amount of energy.<br><strong>The spleen and stomach are the foundation of acquired vitality:</strong> We use Taiwanese heritage chicken, traditionally valued for warming the center and replenishing qi, to support the digestive and transformative functions of the spleen and stomach. Only when central qi is sufficient can dietary nutrients be transformed into an ample supply of nourishing milk.<br><strong>The “black gold” that nourishes yin and blood:</strong> Silkie chicken is traditionally associated with the liver and kidney meridians and contains two to three times as much iron (Fe) and zinc (Zn) as conventional chicken. These nutrients help replenish maternal depletion and can also be passed to the baby through breast milk.',
+        'beautology-l1-s2-title': '2. The Movement of Fine Nutrients: The Power of Small-Molecule Peptides',
+        'beautology-l1-s2-text': 'Why do I emphasize recovery through fine nutrients? After childbirth, digestion is often weak, and rich meals can become an added burden—a state Chinese medicine describes as being “too deficient to tolerate tonics.”<br><strong>Breaking nutrients into smaller molecules:</strong> A controlled-temperature extraction process converts large protein molecules into free amino acids and collagen peptides.<br><strong>Bioavailability:</strong> These fine nutrients are easier for the body to use without a lengthy, demanding digestive process, helping nourishment reach the body more efficiently. The goal is the highest form of restorative care: replenishing without creating excess heat and nourishing without heaviness.',
+        'beautology-l1-s3-title': '3. Cheng Yun and Cheng Run: Two Ways to Support Beauty from Within',
+        'beautology-l1-s3-text': 'Drawing on my research and my own experience of three pregnancies, I translated this knowledge into two purposefully formulated products:<br><strong>【Cheng Yun | Drops of Vitality】:</strong> Made primarily with Silkie chicken and designed to replenish everyday vitality—ideal for building strength before childbirth and restoring central qi afterward.<br><strong>【Cheng Run | Beauty Essence You Can Drink】:</strong> Made primarily with Taiwanese heritage chicken and enriched with collagen to support a healthy postpartum complexion and radiance from within.',
+        'beautology-footer-quote': '“My research began with a simple purpose: to use the scientific logic of Chinese medicine to care for every woman nurturing new life, and every woman moving between the demands of work and family.” —— Dr. HANA',
+        'beautology-next-lessons-title': 'Lecture Notes',
+        'beautology-lesson-2': 'Lesson 2: Preparing the Soil — Why Cheng Yun Is the Foundation for Nurturing Life',
+        'beautology-lesson-3': 'Lesson 3: The Yin-Nourishing Wisdom of “Black Gold” — Silkie Chicken and Your Drinkable Beauty Essence',
+        'beautology-lesson-4': 'Lesson 4: The Critical 60-Day Reset — A Postpartum Care Plan from a Practitioner with a Master’s Degree in Chinese Medicine',
     }
 };

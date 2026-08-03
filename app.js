@@ -20,15 +20,46 @@ function setLanguage(lang) {
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            if (el.dataset.i18nTarget === 'aria-label') {
-                el.setAttribute('aria-label', translations[lang][key]);
-            } else if (el.tagName === 'INPUT' && el.dataset.i18nTarget === 'placeholder') {
-                el.placeholder = translations[lang][key];
+            const target = el.dataset.i18nTarget;
+            if (target) {
+                el.setAttribute(target, translations[lang][key]);
             } else {
                 el.innerHTML = translations[lang][key];
             }
         }
     });
+
+    const page = document.body.dataset.page;
+    const pageTitle = translations[lang]?.[`page-${page}-title`];
+    const pageDescription = translations[lang]?.[`page-${page}-desc`];
+    if (pageTitle) document.title = pageTitle;
+    if (pageDescription) document.querySelector('meta[name="description"]')?.setAttribute('content', pageDescription);
+
+    document.querySelectorAll('.nav-brand').forEach((brand) => {
+        brand.setAttribute('aria-label', translations[lang]['brand-home-label']);
+        brand.querySelector('img')?.setAttribute('alt', translations[lang]['brand-logo-alt']);
+    });
+    document.querySelectorAll('.modal-close').forEach((button) => {
+        button.setAttribute('aria-label', translations[lang]['modal-close']);
+    });
+    document.querySelectorAll('.teaser-item .status').forEach((status) => {
+        status.textContent = translations[lang]['coming-soon'];
+    });
+
+    // Keep the primary story order consistent across every page: PRODUCTS → BRAND CONCEPTS.
+    const nav = document.getElementById('navLinks');
+    const productsLink = nav?.querySelector('[data-i18n="nav-product"]')?.parentElement;
+    const conceptsLink = nav?.querySelector('[data-i18n="nav-about"]')?.parentElement;
+    if (nav && productsLink && conceptsLink) nav.insertBefore(productsLink, conceptsLink);
+
+    const recipeModal = document.getElementById('recipeModal');
+    if (recipeModal && !recipeModal.classList.contains('hidden') && recipeModal.dataset.currentRecipe) {
+        loadRecipeData(recipeModal.dataset.currentRecipe);
+    }
+    const lessonModal = document.getElementById('lessonModal');
+    if (lessonModal && !lessonModal.classList.contains('hidden') && lessonModal.dataset.currentLesson) {
+        loadLessonData(lessonModal.dataset.currentLesson);
+    }
 
     closeLanguageMenu();
     closeNavigationMenu();
@@ -98,6 +129,40 @@ function startHeroCarousel() {
     if (!carousel || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     stopHeroCarousel();
     heroCarouselTimer = setInterval(() => showHeroCarouselSlide(heroCarouselIndex + 1), 5000);
+}
+
+function setupProductRailProgress() {
+    const rail = document.querySelector('.product-editorial-list');
+    const progress = document.querySelector('[data-product-rail-progress]');
+    const controls = progress ? Array.from(progress.querySelectorAll('[data-product-rail-index]')) : [];
+    if (!rail || !progress || !controls.length) return;
+
+    const update = () => {
+        const overflow = rail.scrollWidth - rail.clientWidth;
+        const isScrollable = overflow > 1;
+        progress.classList.toggle('is-scrollable', isScrollable);
+        if (!isScrollable) return;
+
+        const activeIndex = Math.round((rail.scrollLeft / overflow) * (controls.length - 1));
+
+        controls.forEach((control, index) => {
+            const isActive = index === activeIndex;
+            control.classList.toggle('is-active', isActive);
+            control.setAttribute('aria-current', String(isActive));
+        });
+    };
+
+    controls.forEach((control) => {
+        control.addEventListener('click', () => {
+            const index = Number(control.dataset.productRailIndex);
+            const overflow = rail.scrollWidth - rail.clientWidth;
+            rail.scrollTo({ left: overflow * (index / (controls.length - 1)), behavior: 'smooth' });
+        });
+    });
+
+    rail.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    window.requestAnimationFrame(update);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -195,6 +260,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const animatedElements = document.querySelectorAll('.fade-up-scroll, .fade-in-scroll');
     animatedElements.forEach(el => observer.observe(el));
+
+    setupProductRailProgress();
 
     const heroCarousel = document.querySelector('[data-carousel]');
     if (heroCarousel) {

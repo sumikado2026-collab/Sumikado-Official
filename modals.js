@@ -5,6 +5,7 @@ function toggleRecipeModal(type) {
     
     if (isHidden) {
         if (type) {
+            modal.dataset.currentRecipe = type;
             loadRecipeData(type);
         }
         modal.classList.remove('hidden');
@@ -31,12 +32,14 @@ function loadRecipeData(type) {
         badge.innerText = data['recipe-home-badge'];
         title.innerText = data['recipe-home-title'];
         img.src = 'assets/recipes/recipe_egg_portrait.jpg';
+        img.alt = data['recipe-home-image-alt'];
         ingredients.innerHTML = data['recipe-home-ingredients'];
         steps.innerHTML = data['recipe-home-steps'];
     } else if (type === 'chef') {
         badge.innerText = data['recipe-chef-badge'];
         title.innerText = data['recipe-chef-title'];
         img.src = 'assets/recipes/recipe_collagen_soup.jpg';
+        img.alt = data['recipe-chef-image-alt'];
         ingredients.innerHTML = data['recipe-chef-ingredients'];
         steps.innerHTML = data['recipe-chef-steps'];
     }
@@ -54,6 +57,7 @@ function toggleLessonModal(lessonId) {
     
     if (isHidden) {
         if (lessonId) {
+            modal.dataset.currentLesson = lessonId;
             loadLessonData(lessonId);
             modal.classList.remove('hidden');
             document.body.classList.add('overlay-active');
@@ -102,9 +106,9 @@ function loadLessonData(id) {
         // Placeholder for Coming Soon lessons
         const lessonNum = id.split('-')[1];
         title.innerText = data['beautology-lesson-' + lessonNum];
-        subtitle.innerText = "Coming Soon";
-        lead.innerText = "敬請期待";
-        grid.innerHTML = `<div class="coming-soon-placeholder"><p>更多精彩內容正在準備中，敬請期待。</p></div>`;
+        subtitle.innerText = data['coming-soon'];
+        lead.innerText = data['coming-soon-lead'];
+        grid.innerHTML = `<div class="coming-soon-placeholder"><p>${data['coming-soon-copy']}</p></div>`;
         quote.innerText = "";
     }
 }
