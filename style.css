@@ -1,4 +1,4 @@
 /* CSS entry point. Preserve import order when adding new style groups. */
 @import url("css/base.css?v=17");
 @import url("css/sections.css?v=18");
-@import url("css/components.css?v=37");
+@import url("css/components.css?v=42");

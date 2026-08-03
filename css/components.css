@@ -2272,6 +2272,78 @@ body.overlay-active {
     color: white;
 }
 
+.footer-social {
+    max-width: 420px;
+    margin: 2rem auto 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-social-title {
+    margin: 0 0 0.85rem !important;
+    color: var(--text-main) !important;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+}
+
+.footer-social-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.footer-social-button {
+    position: relative;
+    display: block;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(51, 51, 51, 0.28);
+    border-radius: 50%;
+    background: transparent;
+    color: transparent;
+    font-size: 0;
+    line-height: 1;
+    opacity: 0.82;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.footer-social-button:disabled {
+    cursor: default;
+}
+
+.footer-social-button::before {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    content: '';
+    background: center / contain no-repeat url('https://cdn.simpleicons.org/instagram/333333');
+}
+
+.footer-social-button:nth-child(2)::before {
+    background-image: url('https://cdn.simpleicons.org/facebook/333333');
+}
+
+.footer-social-button:nth-child(3)::before {
+    background-image: url('https://cdn.simpleicons.org/threads/333333');
+}
+
+@media (max-width: 480px) {
+    .footer-social {
+        max-width: 340px;
+    }
+
+    .footer-social-button { width: 42px; min-width: 42px; height: 42px; }
+}
+
 .btn-clean {
     border: none;
     background: none;
@@ -2911,6 +2983,13 @@ body.overlay-active {
     color: #d9c8e5;
 }
 
+.concept-links {
+    flex: 0 0 auto;
+    display: grid;
+    gap: 0.9rem;
+    justify-items: start;
+}
+
 @media (max-width: 900px) {
     .editorial-heading,
     .product-editorial,
@@ -2945,6 +3024,10 @@ body.overlay-active {
     .concept-closing {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .concept-links {
+        width: 100%;
     }
 }
 
