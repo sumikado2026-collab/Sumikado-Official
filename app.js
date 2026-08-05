@@ -135,7 +135,21 @@ function setupProductRailProgress() {
     const rail = document.querySelector('.product-editorial-list');
     const progress = document.querySelector('[data-product-rail-progress]');
     const controls = progress ? Array.from(progress.querySelectorAll('[data-product-rail-index]')) : [];
+    const previousButton = document.querySelector('[data-action="product-rail-prev"]');
+    const nextButton = document.querySelector('[data-action="product-rail-next"]');
     if (!rail || !progress || !controls.length) return;
+
+    const getActiveIndex = () => {
+        const overflow = rail.scrollWidth - rail.clientWidth;
+        if (overflow <= 1) return 0;
+        return Math.round((rail.scrollLeft / overflow) * (controls.length - 1));
+    };
+
+    const goToIndex = (index) => {
+        const overflow = rail.scrollWidth - rail.clientWidth;
+        const targetIndex = Math.max(0, Math.min(controls.length - 1, index));
+        rail.scrollTo({ left: overflow * (targetIndex / (controls.length - 1)), behavior: 'smooth' });
+    };
 
     const update = () => {
         const overflow = rail.scrollWidth - rail.clientWidth;
@@ -143,22 +157,26 @@ function setupProductRailProgress() {
         progress.classList.toggle('is-scrollable', isScrollable);
         if (!isScrollable) return;
 
-        const activeIndex = Math.round((rail.scrollLeft / overflow) * (controls.length - 1));
+        const activeIndex = getActiveIndex();
 
         controls.forEach((control, index) => {
             const isActive = index === activeIndex;
             control.classList.toggle('is-active', isActive);
             control.setAttribute('aria-current', String(isActive));
         });
+
+        if (previousButton) previousButton.disabled = activeIndex === 0;
+        if (nextButton) nextButton.disabled = activeIndex === controls.length - 1;
     };
 
     controls.forEach((control) => {
         control.addEventListener('click', () => {
-            const index = Number(control.dataset.productRailIndex);
-            const overflow = rail.scrollWidth - rail.clientWidth;
-            rail.scrollTo({ left: overflow * (index / (controls.length - 1)), behavior: 'smooth' });
+            goToIndex(Number(control.dataset.productRailIndex));
         });
     });
+
+    previousButton?.addEventListener('click', () => goToIndex(getActiveIndex() - 1));
+    nextButton?.addEventListener('click', () => goToIndex(getActiveIndex() + 1));
 
     rail.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
