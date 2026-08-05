@@ -6,6 +6,8 @@
 
 This is the main website base folder for Sumikado, and its contents are used by the staging preview and future production website. You do not need coding experience: describe the desired result in plain language and follow the workflow below.
 
+AI agents must follow [`AGENTS.md`](AGENTS.md) for required editing, validation, and deployment behavior.
+
 ## 安全編輯流程 / Safe editing cycle
 
 ### 1. 先描述一個完整的修改里程碑 / Describe one complete milestone
@@ -88,6 +90,10 @@ Only consider staging deployment when the milestone is sufficiently complete and
 推送到 `main` 前，應先整理修改摘要，並取得明確同意。未經同意，不要將變更推送到 `main`。
 
 Before staging deployment, summarize the final changes and obtain explicit approval. Do not push to `main` without approval.
+
+### AI agent 規範 / AI agent rules
+
+AI agents must follow [`AGENTS.md`](AGENTS.md) for required validation, deployment authorization, and post-change sync notice behavior.
 
 ## 測試預覽與正式部署 / Staging preview and production deployment
 

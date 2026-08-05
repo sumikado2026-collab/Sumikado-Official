@@ -2317,6 +2317,10 @@ body.overlay-active {
     cursor: default;
 }
 
+.footer-social-button[href] {
+    cursor: pointer;
+}
+
 .footer-social-button::before {
     position: absolute;
     inset: 0;
