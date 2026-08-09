@@ -1623,6 +1623,7 @@ body.overlay-active {
 }
 
 .teaser-item .status {
+    display: none;
     font-size: 0.8rem;
     color: var(--primary);
     text-transform: uppercase;

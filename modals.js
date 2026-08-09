@@ -80,35 +80,30 @@ function loadLessonData(id) {
     const lead = document.getElementById('lessonModalLead');
     const grid = document.getElementById('lessonModalGrid');
     const quote = document.getElementById('lessonModalQuote');
+    const fallback = window.translations.zh;
+    const get = (key) => data[key] || fallback[key] || '';
 
-    if (id === 'lesson-1') {
-        title.innerText = data['beautology-lesson-1-title'];
-        subtitle.innerText = data['beautology-lesson-1-subtitle'];
-        lead.innerText = data['beautology-lesson-1-desc'];
-        
-        // Build the grid items manually for now or use a dedicated key if complex
-        grid.innerHTML = `
-            <div class="lesson-article">
-                <h4>${data['beautology-l1-s1-title']}</h4>
-                <p>${data['beautology-l1-s1-text']}</p>
-            </div>
-            <div class="lesson-article">
-                <h4>${data['beautology-l1-s2-title']}</h4>
-                <p>${data['beautology-l1-s2-text']}</p>
-            </div>
-            <div class="lesson-article full-width">
-                <h4>${data['beautology-l1-s3-title']}</h4>
-                <p>${data['beautology-l1-s3-text']}</p>
-            </div>
-        `;
-        quote.innerText = data['beautology-footer-quote'];
-    } else {
-        // Placeholder for Coming Soon lessons
-        const lessonNum = id.split('-')[1];
-        title.innerText = data['beautology-lesson-' + lessonNum];
-        subtitle.innerText = data['coming-soon'];
-        lead.innerText = data['coming-soon-lead'];
-        grid.innerHTML = `<div class="coming-soon-placeholder"><p>${data['coming-soon-copy']}</p></div>`;
-        quote.innerText = "";
-    }
+    const lessonNum = id.split('-')[1];
+    const keyPrefix = `beautology-l${lessonNum}`;
+
+    title.innerText = get('beautology-lesson-' + lessonNum);
+    subtitle.innerText = get(`${keyPrefix}-subtitle`);
+    lead.innerText = get(`${keyPrefix}-desc`);
+    grid.innerHTML = `
+        <div class="lesson-article">
+            <h4>${get(`${keyPrefix}-s1-title`)}</h4>
+            <p>${get(`${keyPrefix}-s1-text`)}</p>
+        </div>
+        <div class="lesson-article">
+            <h4>${get(`${keyPrefix}-s2-title`)}</h4>
+            <p>${get(`${keyPrefix}-s2-text`)}</p>
+        </div>
+        <div class="lesson-article full-width">
+            <h4>${get(`${keyPrefix}-s3-title`)}</h4>
+            <p>${get(`${keyPrefix}-s3-text`)}</p>
+        </div>
+    `;
+    quote.innerText = lessonNum === '1'
+        ? get('beautology-footer-quote')
+        : get(`${keyPrefix}-quote`);
 }
