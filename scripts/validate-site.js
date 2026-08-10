@@ -33,11 +33,28 @@ function collectReferences(contents, pattern) {
     return [...contents.matchAll(pattern)].map((match) => match[1]);
 }
 
-const htmlPages = ['index.html', 'science.html', 'kitchen.html', 'beautology.html'];
+const htmlPages = [
+    'index.html',
+    'science.html',
+    'kitchen.html',
+    'beautology.html',
+    'academy-fatigue.html',
+    'academy-lactation.html',
+    'academy-yin-fire.html',
+    'academy-fatigue-en.html',
+    'academy-lactation-en.html',
+    'academy-yin-fire-en.html',
+    'academy-fatigue-ja.html',
+    'academy-lactation-ja.html',
+    'academy-yin-fire-ja.html'
+];
+const articlePages = htmlPages.filter((relativePath) => relativePath.startsWith('academy-'));
 const stylePath = requireFile('style.css');
 let translationData = null;
 
-['translations.js', 'modals.js', 'app.js'].forEach(checkJavaScript);
+['translations.js', 'modals.js', 'app.js', 'academy.js'].forEach(checkJavaScript);
+const robotsPath = requireFile('robots.txt');
+const sitemapPath = requireFile('sitemap.xml');
 
 const translationPath = path.join(siteRoot, 'translations.js');
 if (fs.existsSync(translationPath)) {
@@ -61,6 +78,57 @@ htmlPages.forEach((relativePath) => {
                 }
             });
         });
+    }
+});
+
+articlePages.forEach((relativePath) => {
+    const absolutePath = path.join(siteRoot, relativePath);
+    if (!fs.existsSync(absolutePath)) return;
+    const html = fs.readFileSync(absolutePath, 'utf8');
+    const headings = html.match(/<h1\b/gi) || [];
+
+    const jsonLd = html.match(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/i);
+
+    if (!/<article\b/i.test(html)) failures.push(`Missing article landmark in ${relativePath}`);
+    if (headings.length !== 1) failures.push(`Expected one H1 in ${relativePath}, found ${headings.length}`);
+    if (!/<meta\s+name=["']description["']/i.test(html)) failures.push(`Missing description meta in ${relativePath}`);
+    if (!/<link\s+rel=["']canonical["']/i.test(html)) failures.push(`Missing canonical URL in ${relativePath}`);
+    if (!jsonLd) {
+        failures.push(`Missing Article JSON-LD in ${relativePath}`);
+    } else {
+        try {
+            const structuredData = JSON.parse(jsonLd[1]);
+            if (structuredData['@type'] !== 'Article') failures.push(`Expected Article JSON-LD in ${relativePath}`);
+        } catch (error) {
+            failures.push(`Invalid Article JSON-LD in ${relativePath}: ${error.message}`);
+        }
+    }
+    if (!/<html\s+lang=["'][^"']+["']/i.test(html)) failures.push(`Missing document language in ${relativePath}`);
+    if (!/academy-sources/i.test(html)) failures.push(`Missing visible source section in ${relativePath}`);
+    if ((html.match(/hreflang=/gi) || []).length < 4) failures.push(`Missing complete hreflang set in ${relativePath}`);
+});
+
+if (fs.existsSync(robotsPath)) {
+    const robots = fs.readFileSync(robotsPath, 'utf8');
+    if (!/Sitemap:\s*https:\/\/www\.sumikado-official\.com\/sitemap\.xml/i.test(robots)) {
+        failures.push('robots.txt does not declare the production sitemap');
+    }
+}
+
+if (fs.existsSync(sitemapPath)) {
+    const sitemap = fs.readFileSync(sitemapPath, 'utf8');
+    articlePages.forEach((relativePath) => {
+        if (!sitemap.includes(`https://www.sumikado-official.com/${relativePath}`)) {
+            failures.push(`Sitemap is missing ${relativePath}`);
+        }
+    });
+}
+
+const wrongAcademyName = String.fromCodePoint(0x7f8e, 0x9e97, 0x5b78, 0x5802);
+htmlPages.forEach((relativePath) => {
+    const absolutePath = path.join(siteRoot, relativePath);
+    if (fs.existsSync(absolutePath) && fs.readFileSync(absolutePath, 'utf8').includes(wrongAcademyName)) {
+        failures.push(`Wrong academy name found in ${relativePath}`);
     }
 });
 
