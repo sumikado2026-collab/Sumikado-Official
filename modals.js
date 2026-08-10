@@ -106,4 +106,12 @@ function loadLessonData(id) {
     quote.innerText = lessonNum === '1'
         ? get('beautology-footer-quote')
         : get(`${keyPrefix}-quote`);
+
+    if (lessonNum === '6') {
+        grid.insertAdjacentHTML('beforeend', `
+            <div class="lesson-article full-width">
+                <a class="editorial-link" href="https://oashop.line.me/shops/@902daadp" target="_blank" rel="noopener noreferrer">${get('beautology-l6-cta')}</a>
+            </div>
+        `);
+    }
 }
