@@ -41,12 +41,15 @@ const htmlPages = [
     'academy-fatigue.html',
     'academy-lactation.html',
     'academy-yin-fire.html',
+    'academy-sports.html',
     'academy-fatigue-en.html',
     'academy-lactation-en.html',
     'academy-yin-fire-en.html',
+    'academy-sports-en.html',
     'academy-fatigue-ja.html',
     'academy-lactation-ja.html',
-    'academy-yin-fire-ja.html'
+    'academy-yin-fire-ja.html',
+    'academy-sports-ja.html'
 ];
 const articlePages = htmlPages.filter((relativePath) => relativePath.startsWith('academy-'));
 const stylePath = requireFile('style.css');
