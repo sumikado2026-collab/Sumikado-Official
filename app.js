@@ -61,6 +61,8 @@ function setLanguage(lang) {
         loadLessonData(lessonModal.dataset.currentLesson);
     }
 
+    setProductFeatureVideoLanguage(lang);
+
     closeLanguageMenu();
     closeNavigationMenu();
 }
@@ -183,16 +185,30 @@ function setupProductRailProgress() {
     window.requestAnimationFrame(update);
 }
 
+function playProductFeatureVideo(video) {
+    video.muted = true;
+    video.play().catch(() => {
+        // Native controls remain available if a browser blocks autoplay.
+    });
+}
+
+function setProductFeatureVideoLanguage(lang) {
+    document.querySelectorAll('.product-feature-video').forEach((video) => {
+        const source = video.querySelector('source');
+        const nextSource = lang === 'ja' ? video.dataset.videoSourceJa : video.dataset.videoSourceDefault;
+        if (!source || !nextSource || source.getAttribute('src') === nextSource) return;
+
+        video.pause();
+        source.setAttribute('src', nextSource);
+        video.load();
+    });
+}
+
 function setupProductFeatureVideos() {
     document.querySelectorAll('.product-feature-video').forEach((video) => {
         video.muted = true;
-
-        const startPlayback = () => video.play().catch(() => {
-            // Native controls remain available if a browser blocks autoplay.
-        });
-
-        video.addEventListener('loadedmetadata', startPlayback, { once: true });
-        if (video.readyState >= HTMLMediaElement.HAVE_METADATA) startPlayback();
+        video.addEventListener('loadeddata', () => playProductFeatureVideo(video));
+        if (video.readyState >= HTMLMediaElement.HAVE_METADATA) playProductFeatureVideo(video);
         video.load();
     });
 }
