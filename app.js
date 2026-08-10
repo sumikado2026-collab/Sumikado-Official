@@ -195,7 +195,11 @@ function playProductFeatureVideo(video) {
 function setProductFeatureVideoLanguage(lang) {
     document.querySelectorAll('.product-feature-video').forEach((video) => {
         const source = video.querySelector('source');
-        const nextSource = lang === 'ja' ? video.dataset.videoSourceJa : video.dataset.videoSourceDefault;
+        const nextSource = lang === 'ja'
+            ? video.dataset.videoSourceJa
+            : lang === 'en'
+                ? video.dataset.videoSourceEn
+                : video.dataset.videoSourceDefault;
         if (!source || !nextSource || source.getAttribute('src') === nextSource) return;
 
         video.pause();
