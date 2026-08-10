@@ -183,6 +183,20 @@ function setupProductRailProgress() {
     window.requestAnimationFrame(update);
 }
 
+function setupProductFeatureVideos() {
+    document.querySelectorAll('.product-feature-video').forEach((video) => {
+        video.muted = true;
+
+        const startPlayback = () => video.play().catch(() => {
+            // Native controls remain available if a browser blocks autoplay.
+        });
+
+        video.addEventListener('loadedmetadata', startPlayback, { once: true });
+        if (video.readyState >= HTMLMediaElement.HAVE_METADATA) startPlayback();
+        video.load();
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Language i18n Logic
@@ -280,6 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => observer.observe(el));
 
     setupProductRailProgress();
+    setupProductFeatureVideos();
 
     const heroCarousel = document.querySelector('[data-carousel]');
     if (heroCarousel) {
