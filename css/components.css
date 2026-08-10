@@ -2999,10 +2999,22 @@ body.overlay-active {
     line-height: 1.35;
 }
 
-.concept-copy > p:last-child {
+.concept-copy > p:not(.concept-en) {
     color: rgba(255, 255, 255, 0.64);
     font-size: 1rem;
     line-height: 2;
+}
+
+.concept-cta {
+    margin-top: 1.75rem;
+    min-height: 52px;
+    padding: 0.2rem 0;
+    font-size: 1.04rem;
+    letter-spacing: 0.1em;
+}
+
+.concept-copy .concept-cta {
+    color: #f0dfff;
 }
 
 .concept-closing {
