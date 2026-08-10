@@ -89,7 +89,32 @@ function loadLessonData(id) {
     title.innerText = get('beautology-lesson-' + lessonNum);
     subtitle.innerText = get(`${keyPrefix}-subtitle`);
     lead.innerText = get(`${keyPrefix}-desc`);
-    grid.innerHTML = `
+    if (lessonNum === '5') {
+        const rows = [1, 2, 3, 4, 5, 6, 7].map((row) => `
+            <tr>
+                <th scope="row">${get(`${keyPrefix}-row${row}-context`)}</th>
+                <td>${get(`${keyPrefix}-row${row}-amount`)}</td>
+                <td>${get(`${keyPrefix}-row${row}-duration`)}</td>
+                <td>${get(`${keyPrefix}-row${row}-next`)}</td>
+            </tr>
+        `).join('');
+        grid.innerHTML = `
+            <div class="lesson-article full-width lesson-table-wrap">
+                <table class="lesson-table">
+                    <thead><tr><th>${get(`${keyPrefix}-table-context`)}</th><th>${get(`${keyPrefix}-table-amount`)}</th><th>${get(`${keyPrefix}-table-duration`)}</th><th>${get(`${keyPrefix}-table-next`)}</th></tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>
+            </div>
+            <div class="lesson-article full-width lesson-safety-note">
+                <h4>${get(`${keyPrefix}-safety-title`)}</h4>
+                <p>${get(`${keyPrefix}-safety-text`)}</p>
+            </div>
+            <div class="lesson-article full-width">
+                <a class="editorial-link" href="https://oashop.line.me/shops/@902daadp" target="_blank" rel="noopener noreferrer">${get(`${keyPrefix}-cta`)}</a>
+            </div>
+        `;
+    } else {
+        grid.innerHTML = `
         <div class="lesson-article">
             <h4>${get(`${keyPrefix}-s1-title`)}</h4>
             <p>${get(`${keyPrefix}-s1-text`)}</p>
@@ -103,6 +128,7 @@ function loadLessonData(id) {
             <p>${get(`${keyPrefix}-s3-text`)}</p>
         </div>
     `;
+    }
     quote.innerText = lessonNum === '1'
         ? get('beautology-footer-quote')
         : get(`${keyPrefix}-quote`);
