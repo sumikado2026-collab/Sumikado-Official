@@ -110,7 +110,7 @@ function loadLessonData(id) {
                 <p>${get(`${keyPrefix}-safety-text`)}</p>
             </div>
             <div class="lesson-article full-width">
-                <a class="editorial-link" href="https://oashop.line.me/shops/@902daadp" target="_blank" rel="noopener noreferrer">${get(`${keyPrefix}-cta`)}</a>
+                <a class="editorial-link" href="https://lin.ee/Zq3SQVo" target="_blank" rel="noopener noreferrer">${get(`${keyPrefix}-cta`)}</a>
             </div>
         `;
     } else {
