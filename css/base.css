@@ -40,6 +40,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Keep Japanese sentences—including Latin acronyms—in one deliberate typeface. */
+html[lang="ja"] {
+    --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-synthesis: none;
+}
+
 section,
 header {
     scroll-margin-top: 90px;
@@ -251,7 +258,7 @@ img {
 }
 
 .lesson-num {
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-sans);
     font-size: 0.9rem;
     color: var(--primary);
     font-weight: 600;

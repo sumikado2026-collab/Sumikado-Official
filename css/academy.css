@@ -297,7 +297,7 @@ html[lang="ja"] .academy-article h1,
 html[lang="ja"] .academy-article h2,
 html[lang="ja"] .academy-article h3,
 html[lang="ja"] .academy-brand {
-    font-family: "Noto Serif JP", var(--font-serif);
+    font-family: var(--font-serif);
 }
 
 html[lang="en"] .academy-article h1,
