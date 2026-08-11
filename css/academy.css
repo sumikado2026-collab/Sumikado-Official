@@ -258,6 +258,12 @@
     text-underline-offset: 0.2em;
 }
 
+.academy-header-languages {
+    margin-top: 0;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
 .academy-answer {
     margin: 2rem 0 2.5rem;
     padding: 1.5rem 1.6rem;
@@ -409,6 +415,7 @@ html[lang="en"] .academy-brand {
     .academy-brand { font-size: 0.92rem; }
     .academy-brand img { width: 48px; height: 32px; }
     .academy-site-nav { display: none; }
+    .academy-header-languages { font-size: 0.75rem; }
     .academy-section { padding: 3.5rem 1.25rem 0; }
     .academy-article-wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
     .academy-answer, .academy-caution, .academy-author, .academy-sources { padding: 1.2rem; }

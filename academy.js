@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const lessonLanguage = document.documentElement.dataset.lessonLanguage;
+    if (lessonLanguage) localStorage.setItem('selectedLanguage', lessonLanguage);
+
     document.addEventListener('click', (event) => {
         const target = event.target.closest('[data-action]');
         if (!target) return;

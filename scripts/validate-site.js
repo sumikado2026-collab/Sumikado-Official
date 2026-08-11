@@ -38,6 +38,8 @@ const htmlPages = [
     'science.html',
     'kitchen.html',
     'beautology.html',
+    'beautology-en.html',
+    'beautology-ja.html',
     'academy-fatigue.html',
     'academy-lactation.html',
     'academy-yin-fire.html',
@@ -52,6 +54,7 @@ const htmlPages = [
     'academy-sports-ja.html'
 ];
 const articlePages = htmlPages.filter((relativePath) => relativePath.startsWith('academy-'));
+const academyHubPages = ['beautology.html', 'beautology-en.html', 'beautology-ja.html'];
 const stylePath = requireFile('style.css');
 let translationData = null;
 
@@ -91,6 +94,7 @@ articlePages.forEach((relativePath) => {
     const headings = html.match(/<h1\b/gi) || [];
 
     const jsonLd = html.match(/<script\s+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/i);
+    const expectedLessonLanguage = relativePath.endsWith('-en.html') ? 'en' : relativePath.endsWith('-ja.html') ? 'ja' : 'zh';
 
     if (!/<article\b/i.test(html)) failures.push(`Missing article landmark in ${relativePath}`);
     if (headings.length !== 1) failures.push(`Expected one H1 in ${relativePath}, found ${headings.length}`);
@@ -107,8 +111,28 @@ articlePages.forEach((relativePath) => {
         }
     }
     if (!/<html\s+lang=["'][^"']+["']/i.test(html)) failures.push(`Missing document language in ${relativePath}`);
+    if (!new RegExp(`data-lesson-language=["']${expectedLessonLanguage}["']`, 'i').test(html)) {
+        failures.push(`Missing fixed lesson language in ${relativePath}`);
+    }
+    if (!/src=["']academy\.js\?v=2["']/i.test(html)) {
+        failures.push(`Missing academy language state script in ${relativePath}`);
+    }
     if (!/academy-sources/i.test(html)) failures.push(`Missing visible source section in ${relativePath}`);
     if ((html.match(/hreflang=/gi) || []).length < 4) failures.push(`Missing complete hreflang set in ${relativePath}`);
+});
+
+academyHubPages.forEach((relativePath) => {
+    const absolutePath = path.join(siteRoot, relativePath);
+    if (!fs.existsSync(absolutePath)) return;
+    const html = fs.readFileSync(absolutePath, 'utf8');
+    const headings = html.match(/<h1\b/gi) || [];
+
+    if (headings.length !== 1) failures.push(`Expected one H1 in ${relativePath}, found ${headings.length}`);
+    if (!/<meta\s+name=["']description["']/i.test(html)) failures.push(`Missing description meta in ${relativePath}`);
+    if (!/<link\s+rel=["']canonical["']/i.test(html)) failures.push(`Missing canonical URL in ${relativePath}`);
+    if (!/<html\s+lang=["'][^"']+["']/i.test(html)) failures.push(`Missing document language in ${relativePath}`);
+    if ((html.match(/hreflang=/gi) || []).length < 4) failures.push(`Missing complete hreflang set in ${relativePath}`);
+    if (!/data-lesson-language=["'](?:zh|en|ja)["']/i.test(html)) failures.push(`Missing fixed lesson language in ${relativePath}`);
 });
 
 if (fs.existsSync(robotsPath)) {
@@ -120,6 +144,11 @@ if (fs.existsSync(robotsPath)) {
 
 if (fs.existsSync(sitemapPath)) {
     const sitemap = fs.readFileSync(sitemapPath, 'utf8');
+    academyHubPages.forEach((relativePath) => {
+        if (!sitemap.includes(`https://www.sumikado-official.com/${relativePath}`)) {
+            failures.push(`Sitemap is missing ${relativePath}`);
+        }
+    });
     articlePages.forEach((relativePath) => {
         if (!sitemap.includes(`https://www.sumikado-official.com/${relativePath}`)) {
             failures.push(`Sitemap is missing ${relativePath}`);

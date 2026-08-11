@@ -71,7 +71,9 @@ function toggleLessonModal(lessonId) {
 }
 
 function loadLessonData(id) {
-    const lang = localStorage.getItem('selectedLanguage') || 'zh';
+    // Static academy hubs declare their own language so a localized lesson
+    // never falls back to a visitor's previous site-language preference.
+    const lang = document.documentElement.dataset.lessonLanguage || localStorage.getItem('selectedLanguage') || 'zh';
     const data = window.translations[lang];
     
     // Elements in the lesson modal
@@ -99,15 +101,15 @@ function loadLessonData(id) {
             </tr>
         `).join('');
         grid.innerHTML = `
+            <div class="lesson-article full-width lesson-safety-note">
+                <h4>${get(`${keyPrefix}-safety-title`)}</h4>
+                <p>${get(`${keyPrefix}-safety-text`)}</p>
+            </div>
             <div class="lesson-article full-width lesson-table-wrap">
                 <table class="lesson-table">
                     <thead><tr><th>${get(`${keyPrefix}-table-context`)}</th><th>${get(`${keyPrefix}-table-amount`)}</th><th>${get(`${keyPrefix}-table-duration`)}</th><th>${get(`${keyPrefix}-table-next`)}</th></tr></thead>
                     <tbody>${rows}</tbody>
                 </table>
-            </div>
-            <div class="lesson-article full-width lesson-safety-note">
-                <h4>${get(`${keyPrefix}-safety-title`)}</h4>
-                <p>${get(`${keyPrefix}-safety-text`)}</p>
             </div>
             <div class="lesson-article full-width">
                 <a class="editorial-link" href="https://lin.ee/Zq3SQVo" target="_blank" rel="noopener noreferrer">${get(`${keyPrefix}-cta`)}</a>
@@ -136,7 +138,7 @@ function loadLessonData(id) {
     if (lessonNum === '6') {
         grid.insertAdjacentHTML('beforeend', `
             <div class="lesson-article full-width">
-                <a class="editorial-link" href="https://oashop.line.me/shops/@902daadp" target="_blank" rel="noopener noreferrer">${get('beautology-l6-cta')}</a>
+                <a class="editorial-link" href="https://lin.ee/Zq3SQVo" target="_blank" rel="noopener noreferrer">${get('beautology-l6-cta')}</a>
             </div>
         `);
     }
