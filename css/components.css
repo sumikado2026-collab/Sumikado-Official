@@ -1195,27 +1195,10 @@ body.overlay-active {
 
 .science-nutrition-card {
     display: grid;
-    grid-template-columns: minmax(210px, 0.75fr) minmax(0, 1.25fr);
-    gap: clamp(1.5rem, 4vw, 3.5rem);
+    grid-template-columns: minmax(0, 42rem);
+    justify-content: center;
     align-items: center;
     background: #f8f2fa;
-}
-
-.science-nutrition-label {
-    margin: 0;
-    max-width: 300px;
-    padding: clamp(0.75rem, 2vw, 1.25rem);
-    background: #eadfec;
-    border-radius: 18px;
-}
-
-.science-nutrition-label img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
 }
 
 .nutrition-table table {
@@ -1249,11 +1232,6 @@ body.overlay-active {
     font-size: 0.8rem !important;
 }
 
-@media (max-width: 700px) {
-    .science-nutrition-card {
-        grid-template-columns: 1fr;
-    }
-}
 
 .comparison-box {
     margin-top: 25px;
