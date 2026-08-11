@@ -95,9 +95,8 @@ window.translations = {
         'science-purity-title': '單一原料・不加水',
         'science-purity-desc': '成分只有台灣烏骨雞。全程不加一滴水，蒸氣不回流至萃取液；不添加焦糖色素、人工香料或調味添加物。',
         'science-nutrition-title': '營養資訊',
-        'science-nutrition-intro': '以下數據依正式送印的中文營養標示呈現。每份為 60 毫升；本包裝含 1 份。',
         'science-nutrition-table': `<table><caption>營養標示｜每份 60 毫升（本包裝含 1 份）</caption><thead><tr><th>項目</th><th>每份</th><th>每 100 毫升</th></tr></thead><tbody><tr><th>熱量</th><td>23.3 大卡</td><td>38.8 大卡</td></tr><tr><th>蛋白質</th><td>5.8 公克</td><td>9.7 公克</td></tr><tr><th>脂肪</th><td>0 公克</td><td>0 公克</td></tr><tr><th>飽和脂肪</th><td>0 公克</td><td>0 公克</td></tr><tr><th>反式脂肪</th><td>0 公克</td><td>0 公克</td></tr><tr><th>碳水化合物</th><td>0 公克</td><td>0 公克</td></tr><tr><th>糖</th><td>0 公克</td><td>0 公克</td></tr><tr><th>鈉</th><td>54.5 毫克</td><td>90.9 毫克</td></tr></tbody></table>`,
-        'science-nutrition-note': '本頁為網站資訊；成分與營養標示請以產品包裝上的正式中文標示為準。',
+        'science-nutrition-note': '請以包裝標示為準。',
         'science-chicken-title': '雞種科學分析：烏骨雞 vs. 原生雞',
         'science-chicken-desc': '不同雞種蘊含著不同的營養密度。根據國家檢驗數據，烏骨雞在微量元素與肌肽含量上，有著顯著的領先。',
         'science-chicken-comparison': `
@@ -422,9 +421,8 @@ window.translations = {
         'science-purity-title': '単一原料・加水なし',
         'science-purity-desc': '原材料は台湾産の烏骨鶏のみ。水を一滴も加えず、蒸気を抽出液に戻さない製法です。カラメル色素・人工香料・調味料（添加物）は使用していません。',
         'science-nutrition-title': '栄養成分表示',
-        'science-nutrition-intro': '正式な中国語栄養表示に基づく参考情報です。1袋は 60 mL、1袋当たり 1食分です。',
         'science-nutrition-table': `<table><caption>栄養成分表示（参考）｜1袋（60 mL）当たり</caption><thead><tr><th>項目</th><th>1袋当たり</th><th>100 mL当たり</th></tr></thead><tbody><tr><th>熱量</th><td>23.3 kcal</td><td>38.8 kcal</td></tr><tr><th>たんぱく質</th><td>5.8 g</td><td>9.7 g</td></tr><tr><th>脂質</th><td>0 g</td><td>0 g</td></tr><tr><th>飽和脂肪酸</th><td>0 g</td><td>0 g</td></tr><tr><th>トランス脂肪酸</th><td>0 g</td><td>0 g</td></tr><tr><th>炭水化物</th><td>0 g</td><td>0 g</td></tr><tr><th>糖類</th><td>0 g</td><td>0 g</td></tr><tr><th>食塩相当量</th><td>0.1 g</td><td>0.2 g</td></tr></tbody></table>`,
-        'science-nutrition-note': '食塩相当量は、正式な中国語表示のナトリウム量から換算した参考値です。製品表示は正式な中国語ラベルをご確認ください。',
+        'science-nutrition-note': '食塩相当量は参考値です。',
         'science-chicken-title': '鶏種の科学的比較：烏骨鶏 vs. 台湾在来鶏',
         'science-chicken-desc': '鶏は品種によって栄養密度が異なります。公的機関の検査データでは、烏骨鶏は微量元素とカルノシンの含有量において、ほかの鶏種を大きく上回っています。',
         'science-chicken-comparison': `
@@ -728,9 +726,8 @@ window.translations = {
         'science-purity-title': 'One Ingredient. No Water Added.',
         'science-purity-desc': 'Made with Taiwanese Silkie chicken as the only ingredient. No water is added, and steam is not returned to the extract. No caramel color, artificial flavors, or seasoning additives.',
         'science-nutrition-title': 'Nutrition Information',
-        'science-nutrition-intro': 'Reference information transcribed from the official printed Chinese nutrition label. Serving size: 1 pouch (60 mL); servings per package: 1.',
         'science-nutrition-table': `<table><caption>Nutrition Information (website reference)</caption><thead><tr><th>Nutrient</th><th>Per pouch (60 mL)</th><th>Per 100 mL</th></tr></thead><tbody><tr><th>Energy</th><td>23.3 kcal</td><td>38.8 kcal</td></tr><tr><th>Protein</th><td>5.8 g</td><td>9.7 g</td></tr><tr><th>Fat</th><td>0 g</td><td>0 g</td></tr><tr><th>Saturated Fat</th><td>0 g</td><td>0 g</td></tr><tr><th>Trans Fat</th><td>0 g</td><td>0 g</td></tr><tr><th>Carbohydrate</th><td>0 g</td><td>0 g</td></tr><tr><th>Sugars</th><td>0 g</td><td>0 g</td></tr><tr><th>Sodium</th><td>54.5 mg</td><td>90.9 mg</td></tr></tbody></table>`,
-        'science-nutrition-note': 'For website reference only. This is not a U.S. Nutrition Facts panel; please refer to the official Chinese product label.',
+        'science-nutrition-note': 'Website reference; not a U.S. Nutrition Facts panel.',
         'science-chicken-title': 'Chicken Breed Analysis: Silkie vs. Taiwanese Heritage Chicken',
         'science-chicken-desc': 'Different chicken breeds have different nutrient densities. Government testing data indicate that Silkie chickens contain significantly higher levels of trace minerals and carnosine than other breeds.',
         'science-chicken-comparison': `
