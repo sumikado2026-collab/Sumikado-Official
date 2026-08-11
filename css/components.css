@@ -2956,6 +2956,25 @@ body.overlay-active {
     border-right: 0;
 }
 
+.product-facts a {
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-facts a:hover strong,
+.product-facts a:focus-visible strong {
+    color: var(--primary);
+}
+
+.product-facts a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 5px;
+}
+
 .product-facts strong {
     color: var(--primary-hover);
     font-size: 0.82rem;
@@ -3004,6 +3023,10 @@ body.overlay-active {
 .editorial-link:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 5px;
+}
+
+.product-science-link {
+    margin: -0.45rem 0 1.65rem;
 }
 
 .trust-strip {
