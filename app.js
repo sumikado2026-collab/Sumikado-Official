@@ -35,6 +35,12 @@ function setLanguage(lang) {
     if (pageTitle) document.title = pageTitle;
     if (pageDescription) document.querySelector('meta[name="description"]')?.setAttribute('content', pageDescription);
 
+    // Keep Academy links in the language the visitor selected on the homepage.
+    const academyPage = lang === 'ja' ? 'beautology-ja.html' : lang === 'en' ? 'beautology-en.html' : 'beautology.html';
+    document.querySelectorAll('a[data-i18n="nav-beautology"], a[data-i18n="concept-beautology-link"]').forEach((link) => {
+        link.setAttribute('href', academyPage);
+    });
+
     document.querySelectorAll('.nav-brand').forEach((brand) => {
         brand.setAttribute('aria-label', translations[lang]['brand-home-label']);
         brand.querySelector('img')?.setAttribute('alt', translations[lang]['brand-logo-alt']);
