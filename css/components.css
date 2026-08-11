@@ -2543,6 +2543,17 @@ body.overlay-active {
 }
 
 /* --- Official brand lockup --- */
+.nav-brand {
+    gap: 0.65rem;
+}
+
+.nav-brand .brand-emblem {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    object-fit: contain;
+}
+
 .nav-brand .brand-logo {
     width: 120px;
     height: 64px;
@@ -2553,6 +2564,16 @@ body.overlay-active {
 }
 
 @media (max-width: 760px) {
+    .nav-brand {
+        gap: 0.45rem;
+    }
+
+    .nav-brand .brand-emblem {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
     .nav-brand .brand-logo {
         width: 88px;
         height: 47px;
@@ -2560,6 +2581,12 @@ body.overlay-active {
 }
 
 @media (max-width: 380px) {
+    .nav-brand .brand-emblem {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+    }
+
     .nav-brand .brand-logo {
         width: 76px;
         height: 41px;
