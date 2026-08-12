@@ -2582,6 +2582,43 @@ body.overlay-active {
     }
 }
 
+/* Founder portrait: a smaller, calm focal point on a seamless coral backdrop. */
+.concept-item.concept-item--founder figure {
+    display: grid;
+    place-items: center;
+    min-height: 560px;
+    background: #f9e4e1;
+}
+
+.concept-item.concept-item--founder figure::after {
+    display: none;
+}
+
+.concept-item.concept-item--founder figure img {
+    width: clamp(160px, 42%, 260px);
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+    filter: none;
+}
+
+.concept-item.concept-item--founder:hover figure img {
+    transform: none;
+    filter: none;
+}
+
+@media (max-width: 900px) {
+    .concept-item.concept-item--founder figure {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .concept-item.concept-item--founder figure {
+        min-height: 390px;
+    }
+}
+
 /* --- Official brand lockup --- */
 .nav-brand {
     gap: 0.65rem;
