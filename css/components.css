@@ -3195,6 +3195,43 @@ body.overlay-active {
     transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
 }
 
+/* Founder portrait: keep its original proportion at half size, centered in the image field. */
+.concept-item.concept-item--founder figure {
+    display: grid;
+    place-items: center;
+    min-height: 560px;
+    background: #f9e4e1;
+}
+
+.concept-item.concept-item--founder figure::after {
+    display: none;
+}
+
+.concept-item.concept-item--founder figure img {
+    width: 50%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+    filter: none;
+}
+
+.concept-item.concept-item--founder:hover figure img {
+    transform: none;
+    filter: none;
+}
+
+@media (max-width: 900px) {
+    .concept-item.concept-item--founder figure {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 640px) {
+    .concept-item.concept-item--founder figure {
+        min-height: 390px;
+    }
+}
+
 .concept-item:nth-child(3) figure img {
     object-fit: cover;
     padding: 0;
