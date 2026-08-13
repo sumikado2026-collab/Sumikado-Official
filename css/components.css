@@ -3195,12 +3195,12 @@ body.overlay-active {
     transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
 }
 
-/* Founder portrait: keep its original proportion at half size, centered in the image field. */
+/* Founder portrait: let the brand story lead, with the portrait as a quiet accent. */
 .concept-item.concept-item--founder figure {
     display: grid;
     place-items: center;
-    min-height: 560px;
-    background: #f9e4e1;
+    min-height: 0;
+    background: transparent;
 }
 
 .concept-item.concept-item--founder figure::after {
@@ -3208,7 +3208,7 @@ body.overlay-active {
 }
 
 .concept-item.concept-item--founder figure img {
-    width: 50%;
+    width: min(100%, 240px);
     height: auto;
     min-height: 0;
     object-fit: contain;
@@ -3220,15 +3220,30 @@ body.overlay-active {
     filter: none;
 }
 
+@media (min-width: 901px) {
+    .concept-item.concept-item--founder {
+        grid-template-columns: minmax(220px, 0.72fr) minmax(360px, 1.28fr);
+        gap: clamp(3rem, 7vw, 7rem);
+    }
+}
+
 @media (max-width: 900px) {
     .concept-item.concept-item--founder figure {
-        min-height: 480px;
+        min-height: 0;
+    }
+
+    .concept-item.concept-item--founder figure img {
+        width: min(50%, 220px);
     }
 }
 
 @media (max-width: 640px) {
     .concept-item.concept-item--founder figure {
-        min-height: 390px;
+        min-height: 0;
+    }
+
+    .concept-item.concept-item--founder figure img {
+        width: min(52%, 190px);
     }
 }
 
