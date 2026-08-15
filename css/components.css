@@ -3195,6 +3195,11 @@ body.overlay-active {
     transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
 }
 
+/* Preserve the generous negative space of the vertical real-product photo. */
+.concept-item--craft figure img {
+    object-position: center 57%;
+}
+
 /* Founder portrait: let the brand story lead, with the portrait as a quiet accent. */
 .concept-item.concept-item--founder figure {
     display: grid;
