@@ -6,3 +6,8 @@ server.log
 *.log
 TestFile
 node_modules
+AGENTS.md
+README.md
+DEPLOYMENT.md
+cloudbuild*.yaml
+scripts/

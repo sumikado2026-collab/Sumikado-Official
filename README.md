@@ -105,9 +105,9 @@ AI agents must follow [`AGENTS.md`](AGENTS.md) for required validation, deployme
 
 https://sumikado-32747562295.asia-east1.run.app/
 
-正式 Cloud Run 服務仍在規劃中。建立後，正式版本會透過發行分支或標籤部署，而不是透過 `main`。
+獨立正式發布設定檔已備妥，但正式 Cloud Run 服務、需人工核准的發行標籤觸發器及網域切換仍待 Google Cloud 管理員建立。推送 `main` 不會透過這份設定檔發布正式版；實際設定步驟請見 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
-The production Cloud Run service is still pending. Once created, production releases will deploy from a release branch or tag, not from `main`.
+The separate production release configuration is prepared, but the production Cloud Run service, approval-gated tag trigger, and domain cutover still require Google Cloud administration. Pushes to `main` do not use that production configuration; see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## 部署資訊 / Deployment details
 
@@ -121,7 +121,7 @@ Deployment files must remain at this folder's root. See [DEPLOYMENT.md](DEPLOYME
 - 測試 Cloud Run 服務 / Staging Cloud Run service: `official-website`
 - 區域 / Region: `asia-east1`
 - 測試部署方式 / Staging deployment: automatic on push to `main`
-- 正式部署 / Production deployment: pending a new service and release branch/tag configuration
+- 正式部署 / Production deployment: tag-based configuration prepared; separate service, trigger, and domain cutover pending
 
 ## 網站檔案 / Website files
 
@@ -131,7 +131,7 @@ Deployment files must remain at this folder's root. See [DEPLOYMENT.md](DEPLOYME
 - `app.js` — 語言切換與一般頁面互動 / language switching and general page behavior
 - `style.css` 與 `css/` — 視覺樣式與分類樣式表 / visual styling and organized stylesheets
 - `assets/` — 已核准的網站素材 / approved website assets
-- `Dockerfile`、`nginx.conf`、`cloudbuild.yaml` — 部署設定；必須保留在根目錄 / deployment configuration; must remain at the root
+- `Dockerfile`、`nginx.conf`、`cloudbuild.yaml`、`cloudbuild.production.yaml` — 部署設定；必須保留在根目錄 / deployment configuration; must remain at the root
 
 請不要將無關的草稿、參考素材或暫存檔放在這個資料夾。
 
