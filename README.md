@@ -2,9 +2,9 @@
 
 ## 這個資料夾的用途 / What this folder is
 
-這是澄花堂的主要網站基礎資料夾，內容會用於測試預覽與未來的正式網站。即使沒有程式經驗，也可以用自然語言描述想修改的內容，再依照以下流程進行。
+這是澄花堂官網的原始碼資料夾。即使沒有程式經驗，也可以用自然語言描述想修改的內容，再依照以下流程進行。
 
-This is the main website base folder for Sumikado, and its contents are used by the staging preview and future production website. You do not need coding experience: describe the desired result in plain language and follow the workflow below.
+This folder contains the Sumikado website source. You do not need coding experience: describe the desired result in plain language and follow the workflow below.
 
 AI agents must follow [`AGENTS.md`](AGENTS.md) for required editing, validation, and deployment behavior.
 
@@ -83,31 +83,29 @@ node scripts/validate-site.js
 
 ### 5. 完成後才考慮發布 / Consider release only when complete
 
-只有在這個修改里程碑已經足夠完整並完成檢查後，才應考慮部署到測試預覽環境。每次修改不代表都要立即部署。
+只有在這個修改里程碑已經足夠完整並完成檢查後，才應考慮部署到官網。每次修改不代表都要立即部署。
 
-Only consider staging deployment when the milestone is sufficiently complete and reviewed. Every edit does not need to be deployed immediately.
+Only consider website deployment when the milestone is complete and reviewed. Every edit does not need to be deployed immediately.
 
 推送到 `main` 前，應先整理修改摘要，並取得明確同意。未經同意，不要將變更推送到 `main`。
 
-Before staging deployment, summarize the final changes and obtain explicit approval. Do not push to `main` without approval.
+Before website deployment, summarize the final changes and obtain explicit approval. Do not push to `main` without approval.
 
 ### AI agent 規範 / AI agent rules
 
 AI agents must follow [`AGENTS.md`](AGENTS.md) for required validation, deployment authorization, and post-change sync notice behavior.
 
-## 測試預覽與正式部署 / Staging preview and production deployment
+## 官網部署 / Website deployment
 
-`main` 是測試預覽分支，推送到 `main` 會自動部署到目前的 Cloud Run 服務。
+推送 `main` 會自動部署到既有 Cloud Run 服務 `official-website`，更新官網內容。
 
-`main` is the staging-preview branch. Pushes to `main` automatically deploy to the current Cloud Run service.
+Pushing `main` automatically deploys to the existing `official-website` Cloud Run service and updates the website.
 
-測試預覽網站 / Staging preview:
+Cloud Run 網址 / Cloud Run URL:
 
 https://sumikado-32747562295.asia-east1.run.app/
 
-獨立正式發布設定檔已備妥，但正式 Cloud Run 服務、需人工核准的發行標籤觸發器及網域切換仍待 Google Cloud 管理員建立。推送 `main` 不會透過這份設定檔發布正式版；實際設定步驟請見 [DEPLOYMENT.md](DEPLOYMENT.md)。
-
-The separate production release configuration is prepared, but the production Cloud Run service, approval-gated tag trigger, and domain cutover still require Google Cloud administration. Pushes to `main` do not use that production configuration; see [DEPLOYMENT.md](DEPLOYMENT.md).
+官網 / Website: https://www.sumikado-official.com/
 
 ## 部署資訊 / Deployment details
 
@@ -116,12 +114,11 @@ The separate production release configuration is prepared, but the production Cl
 Deployment files must remain at this folder's root. See [DEPLOYMENT.md](DEPLOYMENT.md) for details.
 
 - 儲存庫 / Repository: [sumikado2026-collab/Sumikado-Official](https://github.com/sumikado2026-collab/Sumikado-Official)
-- 測試預覽分支 / Staging-preview branch: `main`
+- 官網部署分支 / Website deployment branch: `main`
 - Google Cloud 專案 / Google Cloud project: `official-website-490303`
-- 測試 Cloud Run 服務 / Staging Cloud Run service: `official-website`
+- Cloud Run 服務 / Cloud Run service: `official-website`
 - 區域 / Region: `asia-east1`
-- 測試部署方式 / Staging deployment: automatic on push to `main`
-- 正式部署 / Production deployment: tag-based configuration prepared; separate service, trigger, and domain cutover pending
+- 部署方式 / Deployment: automatic on approved push to `main`
 
 ## 網站檔案 / Website files
 
@@ -131,7 +128,7 @@ Deployment files must remain at this folder's root. See [DEPLOYMENT.md](DEPLOYME
 - `app.js` — 語言切換與一般頁面互動 / language switching and general page behavior
 - `style.css` 與 `css/` — 視覺樣式與分類樣式表 / visual styling and organized stylesheets
 - `assets/` — 已核准的網站素材 / approved website assets
-- `Dockerfile`、`nginx.conf`、`cloudbuild.yaml`、`cloudbuild.production.yaml` — 部署設定；必須保留在根目錄 / deployment configuration; must remain at the root
+- `Dockerfile`、`nginx.conf`、`cloudbuild.yaml` — 部署設定；必須保留在根目錄 / deployment configuration; must remain at the root
 
 請不要將無關的草稿、參考素材或暫存檔放在這個資料夾。
 
