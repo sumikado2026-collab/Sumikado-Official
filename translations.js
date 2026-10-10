@@ -2,6 +2,13 @@
 
 window.translations = {
     'zh': {
+        'science-protein-title': '認識蛋白質、胜肽與吸收',
+        'science-protein-content': '蛋白質含量看得見：SGS 實測粗蛋白 8.0 g／100 mL，換算每包 60 mL 約 4.8 g。',
+        'science-protein-peptides': '認識小分子營養：檢驗亦測得游離胺基酸、肌肽與甲肌肽。人體小腸可透過 PEPT1 轉運蛋白吸收二胜肽與三胜肽。',
+        'science-protein-purity': '檢驗數據透明：脂肪、飽和脂肪、反式脂肪及膽固醇均未檢出；鈉為 95.3 mg／100 mL，換算每包約 57 mg。',
+        'science-protein-context': '成分檢驗不等同吸收率試驗，尚不能據此宣稱本品 PDCAAS 為 1.0，或吸收優於蛋、奶。N.D. 表示低於定量極限，非絕對零；結果限送驗樣品，營養資訊以實際包裝為準。',
+        'science-protein-reports': 'SGS 檢驗數據 · ABA26903112／ABA26903114',
+        'science-protein-source': 'FAO · 蛋白質品質評估',
         'science-firdi-anserine-note': "雞肉中的天然二胜肽，為肌肽的甲基化形式。",
         'science-firdi-carnosine-note': "由 β-丙胺酸與組胺酸組成的天然二胜肽。",
         'science-peptide-research': "肌肽與甲肌肽的研究，關注其抗氧化與酸鹼緩衝特性。",
@@ -516,6 +523,13 @@ window.translations = {
         'beautology-l6-cta': '透過官方 LINE 諮詢日常補給方案',
     },
     'ja': {
+        'science-protein-title': 'たんぱく質・ペプチドと吸収を知る',
+        'science-protein-content': 'たんぱく質を数値で確認：SGS の粗たんぱく質測定値は 100 mL あたり 8.0 g。1 袋 60 mL に換算すると約 4.8 g です。',
+        'science-protein-peptides': '小さな分子の栄養成分：遊離アミノ酸、カルノシン、アンセリンも検出されています。小腸は PEPT1 輸送体を介してジペプチドとトリペプチドを吸収できます。',
+        'science-protein-purity': '検査結果を公開：脂肪、飽和脂肪酸、トランス脂肪酸、コレステロールは不検出。ナトリウムは 100 mL あたり 95.3 mg、1 袋換算で約 57 mg です。',
+        'science-protein-context': '成分検査は吸収率試験ではなく、本品の PDCAAS が 1.0、または卵や牛乳より吸収が優れることを示しません。N.D. は定量限界未満で、絶対的なゼロではありません。結果は検査試料に限られ、栄養情報は実際の包装表示をご確認ください。',
+        'science-protein-reports': 'SGS 検査結果 · ABA26903112／ABA26903114',
+        'science-protein-source': 'FAO · たんぱく質の品質評価',
         'science-firdi-anserine-note': "鶏肉に含まれる天然ジペプチド。カルノシンのメチル化体です。",
         'science-firdi-carnosine-note': "β-アラニンとヒスチジンからなる天然ジペプチド。",
         'science-peptide-research': "カルノシンとアンセリンは、抗酸化特性とpH緩衝能の研究で注目されています。",
@@ -1009,6 +1023,13 @@ window.translations = {
         'beautology-l6-cta': '公式LINEで、日々の食事への取り入れ方をスタッフに相談する',
     },
     'en': {
+        'science-protein-title': 'Understanding Protein, Peptides & Absorption',
+        'science-protein-content': 'Protein in numbers: SGS measured 8.0 g of crude protein per 100 mL, equivalent to about 4.8 g per 60 mL pouch.',
+        'science-protein-peptides': 'Small nutrient molecules: testing also identified free amino acids, carnosine and anserine. The intestine can absorb di- and tripeptides through PEPT1.',
+        'science-protein-purity': 'Transparent results: fat, saturated fat, trans fat and cholesterol were not detected. Sodium was 95.3 mg per 100 mL, about 57 mg per pouch.',
+        'science-protein-context': 'Composition tests do not establish a PDCAAS of 1.0 or better absorption than eggs or milk. N.D. means below the quantification limit, not absolute zero. Results apply to the tested sample; refer to the package for nutrition information.',
+        'science-protein-reports': 'SGS results · ABA26903112 / ABA26903114',
+        'science-protein-source': 'FAO · Protein quality',
         'science-firdi-anserine-note': "A natural dipeptide in chicken, and a methylated form of carnosine.",
         'science-firdi-carnosine-note': "A natural dipeptide formed from beta-alanine and histidine.",
         'science-peptide-research': "Research on carnosine and anserine explores their antioxidant and pH-buffering properties.",
