@@ -2,6 +2,13 @@
 
 window.translations = {
     'zh': {
+        'science-purine-title': "普林檢驗",
+        'science-purine-item': "普林（黃嘌呤、次黃嘌呤、鳥嘌呤、腺嘌呤）",
+        'science-purine-result': "原報告結果：0.0680%（w/w，重量比），換算為 68.0 mg／100 g；定量極限 0.0500%（w/w），相當於 50.0 mg／100 g。",
+        'science-purine-method': "方法：內部方法 TESP-UF-0146，參照 Food Chemistry 2015，Vol. 170，p.303-307；HPLC/DAD 分析。",
+        'science-purine-scope': "本次提供報告第 2 頁及部分第 3 頁截圖，並非完整 4 頁報告。批號及完整樣品資訊尚待原件核對；不以其他報告密度換算每包含量。結果僅適用送驗樣品。",
+        'science-purine-image': "檢視報告截圖（非完整報告）",
+        'science-purine-download': "下載完整檢驗數據彙整（A4 PDF）",
         'science-protein-title': '認識蛋白質、胜肽與吸收',
         'science-protein-content': '蛋白質含量看得見：SGS 實測粗蛋白 8.0 g／100 mL，換算每包 60 mL 約 4.8 g。',
         'science-protein-peptides': '認識小分子營養：檢驗亦測得游離胺基酸、肌肽與甲肌肽。人體小腸可透過 PEPT1 轉運蛋白吸收二胜肽與三胜肽。',
@@ -26,7 +33,7 @@ window.translations = {
         'science-report-downloads-title': "SGS 檢驗報告",
         'science-report-downloads-note': "完整報告・英文 PDF",
         'science-report-nutrition-label': "營養與一般成分",
-        'science-report-purine-pending': "普林檢驗報告｜待公布",
+
         'science-firdi-originals-title': "食研所檢驗報告",
         'science-firdi-originals-note': "完整報告與胺基酸附件，點選可放大查閱。",
         'science-firdi-original-page1': "FIRDI 115SA02246 報告第 1 頁：檢驗結果與備註",
@@ -523,6 +530,13 @@ window.translations = {
         'beautology-l6-cta': '透過官方 LINE 諮詢日常補給方案',
     },
     'ja': {
+        'science-purine-title': "プリン体検査",
+        'science-purine-item': "プリン体（キサンチン、ヒポキサンチン、グアニン、アデニン）",
+        'science-purine-result': "原報告値：0.0680%（w/w、重量比）、換算値 68.0 mg/100 g。定量限界は 0.0500%（w/w）、50.0 mg/100 g に相当します。",
+        'science-purine-method': "方法：内部法 TESP-UF-0146、Food Chemistry 2015、Vol. 170、p.303-307 を参照。HPLC/DAD 分析。",
+        'science-purine-scope': "提供資料は全 4 ページ中の 2 ページ目と 3 ページ目の一部を含む画像です。ロットと試料の詳細は原本での確認待ちです。他の報告書の密度で 1 袋分に換算していません。結果は検査試料に限ります。",
+        'science-purine-image': "報告書の画像を見る（全ページではありません）",
+        'science-purine-download': "検査データ一覧をダウンロード（A4 PDF・中国語）",
         'science-protein-title': 'たんぱく質・ペプチドと吸収を知る',
         'science-protein-content': 'たんぱく質を数値で確認：SGS の粗たんぱく質測定値は 100 mL あたり 8.0 g。1 袋 60 mL に換算すると約 4.8 g です。',
         'science-protein-peptides': '小さな分子の栄養成分：遊離アミノ酸、カルノシン、アンセリンも検出されています。小腸は PEPT1 輸送体を介してジペプチドとトリペプチドを吸収できます。',
@@ -547,7 +561,7 @@ window.translations = {
         'science-report-downloads-title': "SGS 検査報告書",
         'science-report-downloads-note': "報告書全文・英語 PDF",
         'science-report-nutrition-label': "栄養・一般成分",
-        'science-report-purine-pending': "プリン体検査報告書｜公開予定",
+
         'science-firdi-originals-title': "FIRDI 検査報告書",
         'science-firdi-originals-note': "報告書全文とアミノ酸の添付資料。画像を選択して拡大できます。",
         'science-firdi-original-page1': "FIRDI 115SA02246 第1ページ：検査結果と注記",
@@ -1023,6 +1037,13 @@ window.translations = {
         'beautology-l6-cta': '公式LINEで、日々の食事への取り入れ方をスタッフに相談する',
     },
     'en': {
+        'science-purine-title': "Purine testing",
+        'science-purine-item': "Purines (xanthine, hypoxanthine, guanine, adenine)",
+        'science-purine-result': "Reported result: 0.0680% (w/w), equivalent to 68.0 mg/100 g. The quantification limit is 0.0500% (w/w), equivalent to 50.0 mg/100 g.",
+        'science-purine-method': "Method: in-house TESP-UF-0146, referring to Food Chemistry 2015, Vol. 170, pp. 303-307; HPLC/DAD analysis.",
+        'science-purine-scope': "The supplied screenshot shows page 2 and part of page 3 of a four-page report. Lot and full sample details await verification against the complete report. No per-pouch conversion uses density from another report. Results apply only to the tested sample.",
+        'science-purine-image': "View report screenshot (not the complete report)",
+        'science-purine-download': "Download compiled test data (A4 PDF, Chinese)",
         'science-protein-title': 'Understanding Protein, Peptides & Absorption',
         'science-protein-content': 'Protein in numbers: SGS measured 8.0 g of crude protein per 100 mL, equivalent to about 4.8 g per 60 mL pouch.',
         'science-protein-peptides': 'Small nutrient molecules: testing also identified free amino acids, carnosine and anserine. The intestine can absorb di- and tripeptides through PEPT1.',
@@ -1047,7 +1068,7 @@ window.translations = {
         'science-report-downloads-title': "SGS Reports",
         'science-report-downloads-note': "Complete reports · English PDF",
         'science-report-nutrition-label': "Nutrition and general composition",
-        'science-report-purine-pending': "Purine Report | Awaiting Publication",
+
         'science-firdi-originals-title': "FIRDI Report",
         'science-firdi-originals-note': "Complete report and amino acid attachment. Select an image to enlarge.",
         'science-firdi-original-page1': "FIRDI 115SA02246 page 1: test results and notes",
